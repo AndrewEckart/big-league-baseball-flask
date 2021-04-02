@@ -1,0 +1,32 @@
+starters:
+  1B: "Jose Abreu"
+  2B: "David Fletcher"
+  SS: "Adalberto Mondesi"
+  3B: "Jose Ramirez"
+  C: "Salvador Perez"
+  OF:
+    - "Nelson Cruz"
+    - "Randy Arozarena"
+    - "Lourdes Gurriel Jr."
+  DH: "Austin Meadows"
+bench:
+  - ["OF", "Jarred Kelenic"]
+  - ["C", "Mike Zunino"]
+  - ["1B", "Ji-Man Choi"]
+  - ["2B", "Joey Wendle"]
+  - ["C", "Danny Jansen"]
+rotation:
+  - "Kenta Maeda"
+  - "James Paxton"
+  - "John Means"
+  - "Jordan Montgomery"
+  - "Kyle Gibson"
+  - "Dylan Cease"
+  - "Raisel Iglesias"
+  - "Trevor Rosenthal"
+minors:
+  - ["C", "Kyle Higashioka"]
+  - ["OF", "Alex Kirilloff"]
+  - ["P", "Matthew Boyd"]
+  - ["P", "Matt Shoemaker"]
+  - ["P", "Tarik Skubal"]

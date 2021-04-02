@@ -117,7 +117,8 @@ class Team:
             rating += factor * hitter.stolen_bases / 5
             hits += factor * hitter.hits
             ab += factor * hitter.at_bats
-        rating += (hits/ab * 1000 - 250) * (self.season.avg_games_played / 162)
+        avg = hits/ab if ab else 0.0
+        rating += (avg * 1000 - 250) * (self.season.avg_games_played / 162)
         return rating
 
     @property
@@ -131,7 +132,7 @@ class Team:
             er += pitcher.earned_runs
             strikeouts += pitcher.strikeouts
             walks += pitcher.walks
-        era = 9 * er / ip
+        era = 9 * er / ip if ip else 0.0
         rating += era * self.season.avg_games_played
         innings_delta = ip - 1000
         if innings_delta < 0:

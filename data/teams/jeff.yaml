@@ -1,0 +1,32 @@
+starters:
+  1B: "Yuli Gurriel"
+  2B: "Cesar Hernandez"
+  SS: "Marcus Semien"
+  3B: "DJ LeMahieu"
+  C: "Yasmani Grandal"
+  OF:
+    - "J.D. Martinez"
+    - "Mark Canha"
+    - "Andrew Benintendi"
+  DH: "Jorge Soler"
+bench:
+  - ["SS", "Elvis Andrus"]
+  - ["2B", "Freddy Galvis"]
+  - ["1B", "Mitch Moreland"]
+  - ["OF", "Alex Verdugo"]
+  - ["OF", "Dexter Fowler"]
+rotation:
+  - "Shane Bieber"
+  - "Zack Greinke"
+  - "Brady Singer"
+  - "Eduardo Rodriguez"
+  - "Michael Pineda"
+  - "Rafael Montero"
+  - "Diego Castillo"
+  - "Alex Colome"
+minors:
+  - ["OF", "Manuel Margot"]
+  - ["OF", "Robbie Grossman"]
+  - ["1B", "Jake Bauers"]
+  - ["P", "Griffin Canning"]
+  - ["P", "Jordan Lyles"]

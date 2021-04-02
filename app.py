@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 import logging
 
 from flask import Flask, render_template, abort
@@ -13,7 +14,13 @@ league = League(103)
 season = Season(year=2021, league=league)
 managers = [
     "Andrew",
-    "John"
+    "Evans",
+    "Jeff",
+    "John",
+    "Myron",
+    "Paula",
+    "Rich",
+    "Scott",
 ]
 teams = {manager.lower(): Team(manager, season) for manager in managers}
 

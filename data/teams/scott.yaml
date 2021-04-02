@@ -1,0 +1,32 @@
+starters:
+  1B: "Bobby Dalbec"
+  2B: "Cavan Biggio"
+  SS: "Anthony Rendon"
+  3B: "Bo Bichette"
+  C: "Sean Murphy"
+  OF:
+    - "Eddie Rosario"
+    - "Anthony Santander"
+    - "Ryan Mountcastle"
+  DH: "Shohei Ohtani"
+bench:
+  - ["OF", "Clint Frazier"]
+  - ["3B", "Nick Solak"]
+  - ["OF", "Leody Taveras"]
+  - ["OF", "Nomar Mazara"]
+  - ["1B", "Rowdy Tellez"]
+rotation:
+  - "Lucas Giolito"
+  - "Zach Plesac"
+  - "Marco Gonzales"
+  - "Cristian Javier"
+  - "Justus Sheffield"
+  - "Josh Fleming"
+  - "Jorge Alcala"
+  - "Liam Hendriks"
+minors:
+  - ["3B", "Maikel Franco"]
+  - ["C", "Samuel Huff"]
+  - ["P", "Kohei Arihara"]
+  - ["P", "Dane Dunning"]
+  - ["P", "Jonathan Loaisiga"]

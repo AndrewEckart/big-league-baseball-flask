@@ -1,0 +1,32 @@
+starters:
+  1B: "Trey Mancini"
+  2B: "Brandon Lowe"
+  SS: "Xander Bogaerts"
+  3B: "Miguel Sano"
+  C: "Isiah Kiner-Falefa"
+  OF:
+    - "Kyle Tucker"
+    - "Joey Gallo"
+    - "Ramon Laureano"
+  DH: "Renato Nunez"
+bench:
+  - ["3B", "Giovanny Urshela"]
+  - ["2B", "Ty France"]
+  - ["1B", "Evan White"]
+  - ["OF", "Randal Grichuk"]
+  - ["SS", "Willi Castro"]
+rotation:
+  - "Jose Berrios"
+  - "Jesus Luzardo"
+  - "Lance McCullers Jr."
+  - "Dylan Bundy"
+  - "Mike Minor"
+  - "Yusei Kikuchi"
+  - "Taylor Rogers"
+  - "Jordan Romano"
+minors:
+  - ["OF", "Stephen Piscotty"]
+  - ["2B", "Enrique Hernandez"]
+  - ["P", "Spencer Turnbull"]
+  - ["P", "Peter Fairbanks"]
+  - ["P", "Nick Wittgren"]

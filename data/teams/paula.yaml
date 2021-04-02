@@ -1,0 +1,32 @@
+starters:
+  1B: "Luke Voit"
+  2B: "Gleyber Torres"
+  SS: "Alex Bregman"
+  3B: "Yoan Moncada"
+  C: "Mitch Garver"
+  OF:
+    - "Max Kepler"
+    - "Byron Buxton"
+    - "Dylan Moore"
+  DH: "Yordan Alvarez"
+bench:
+  - ["OF", "Kevin Kiermaier"]
+  - ["OF", "David Dahl"]
+  - ["1B", "Nate Lowe"]
+  - ["3B", "Marwin Gonzalez"]
+  - ["2B", "Rougned Odor"]
+rotation:
+  - "Tyler Glasnow"
+  - "Chris Bassitt"
+  - "Domingo German"
+  - "Ryan Yarbrough"
+  - "Jake Odorizzi"
+  - "Ryan Pressly"
+  - "James Karinchak"
+  - "J.B. Wendelken"
+minors:
+  - ["OF", "Tyler Wade"]
+  - ["2B", "Aledmys Diaz"]
+  - ["P", "Aaron Bummer"]
+  - ["P", "Michael Wacha"]
+  - ["P", "Greg Holland"]
