@@ -1,0 +1,32 @@
+starters:
+  1B: "Matt Olson"
+  2B: "Jose Altuve"
+  SS: "Jorge Polanco"
+  3B: "Rafael Devers"
+  C: "Wilson Ramos"
+  OF:
+    - "George Springer"
+    - "Michael Brantley"
+    - "Aaron Hicks"
+  DH: "Franmil Reyes"
+bench:
+  - ["3B", "Josh Donaldson"]
+  - ["3B", "Kyle Seager"]
+  - ["OF", "Kyle Lewis"]
+  - ["OF", "Adam Eaton"]
+  - ["SS", "J.P. Crawford"]
+rotation:
+  - "Hyun-Jin Ryu"
+  - "Lance Lynn"
+  - "Andrew Heaney"
+  - "Sean Manaea"
+  - "Jose Quintana"
+  - "Chris Archer"
+  - "J.A. Happ"
+  - "Garrett Crochet"
+minors:
+  - ["SS", "Andrelton Simmons"]
+  - ["SS", "Jose Iglesias"]
+  - ["P", "Alex Cobb"]
+  - ["P", "Chris Flexen"]
+  - ["P", "Jake Diekman"]
