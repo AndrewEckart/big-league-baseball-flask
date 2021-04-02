@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from "hitter_table.html" import hitter_table %}
+{% from "pitcher_table.html" import pitcher_table %}
+
+
+{% block content %}
+  <div>
+    <div class="content-section">
+      <h5 class="mb-2">Starters</h5>
+      {{ hitter_table(team.starters) }}
+    </div>
+
+    <div class="content-section">
+      <h5 class="mb-2">Bench</h5>
+      {{ hitter_table(team.bench) }}
+    </div>
+
+    <div class="content-section">
+      <h5 class="mb-2">Minors - Hitters</h5>
+      {{ hitter_table(team.minors_hitters) }}
+    </div>
+
+    <div class="content-section">
+      <h5 class="mb-2">Rotation</h5>
+      {{ pitcher_table(team.rotation) }}
+    </div>
+
+    <div class="content-section">
+      <h5 class="mb-2">Minors - Pitchers</h5>
+      {{ pitcher_table(team.minors_pitchers) }}
+    </div>
+  </div>
+{% endblock %}

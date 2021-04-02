@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% block head %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block styles %}
+      <!-- Bootstrap CSS -->
+      {{ bootstrap.load_css() }}
+      <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    {% endblock %}
+
+    <title>Big League Baseball</title>
+  {% endblock %}
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+    <div class="container">
+      <a href="/" class="navbar-brand mr-4">Big League Baseball</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Page content -->
+<main role="main" class="container">
+  <div class="row justify-content-center">
+  {% block content %}{% endblock %}
+  </div>
+</main>
+
+
+{% block scripts %}
+  <!-- Optional JavaScript -->
+  {{ bootstrap.load_js() }}
+{% endblock %}
+</body>
+</html>

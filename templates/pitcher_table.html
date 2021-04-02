@@ -1,0 +1,21 @@
+{% from 'bootstrap/table.html' import render_table %}
+
+{% macro pitcher_table(data) %}
+  {{ render_table(
+      data,
+      titles=[
+        ("position", "Pos"),
+        ("name", "Name"),
+        ("team", "Team"),
+        ("innings_pitched_str", "IP"),
+        ("earned_runs", "ER"),
+        ("wins", "W"),
+        ("saves", "SV"),
+        ("strikeouts", "K"),
+        ("walks", "BB"),
+        ("earned_run_average_str", "ERA")
+      ],
+      table_classes="table-sm"
+    )
+  }}
+{% endmacro %}
