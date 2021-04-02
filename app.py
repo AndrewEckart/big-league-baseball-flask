@@ -1,4 +1,4 @@
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
 import logging
 
 from flask import Flask, render_template, abort
@@ -27,10 +27,13 @@ teams = {manager.lower(): Team(manager, season) for manager in managers}
 
 @app.route('/')
 def home():
-    for team in teams.values():
-        team.fetch_all_stats()
-    standings = sorted(teams.values(), key=lambda t: t.rating, reverse=True)
-    return render_template("home.html", season=season, teams=standings)
+    with ThreadPoolExecutor() as executor:
+        futures = [
+            executor.submit(lambda t: t.fetch_all_stats(), t) for t in teams.values()
+        ]
+        wait(futures, return_when=ALL_COMPLETED)
+        standings = sorted(teams.values(), key=lambda t: t.rating, reverse=True)
+        return render_template("home.html", season=season, teams=standings)
 
 
 @app.route("/teams/<manager>")
