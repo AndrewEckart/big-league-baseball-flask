@@ -5,7 +5,8 @@ import yaml
 
 from models.player import Player, Hitter, Pitcher
 from models.position import Position
-from models.season import Season
+from models.role import Role
+from models.season import Season, League
 
 
 def parse_starters(data) -> Dict[Position, Union[Hitter, List[Hitter]]]:
@@ -35,7 +36,7 @@ def parse_minors(data) -> List[Player]:
 class Team:
     def __init__(self, manager: str, season: Season):
         self.manager = manager
-        self.season = Season
+        self.season = season
 
         with open(f"data/teams/{manager.lower()}.yaml", "r") as f:
             data = yaml.safe_load(f)
@@ -74,6 +75,9 @@ class Team:
         self.rotation = rotation
         self.minors = minors
 
+    def __repr__(self):
+        return f"{self.__class__.__name__}(manager='{self.manager}')"
+
     @property
     def players(self) -> List[Player]:
         return [
@@ -97,22 +101,48 @@ class Team:
 
     @property
     def rating(self):
-        return self.offense_rating + self.pitching_rating
+        return self.offense - self.pitching
 
     @property
-    def offense_rating(self) -> float:
-        rating = 0.0
-        for hitter in self.starters:
-            rating += hitter.runs / 2
-            rating += hitter.rbi / 2
-            rating += hitter.home_runs / 4
-            rating += hitter.stolen_bases / 5
+    def offense(self) -> float:
+        rating = ab = hits = 0.0
+        for hitter, role in [
+            *[(p, Role.STARTER) for p in self.starters],
+            *[(p, Role.BENCH) for p in self.bench]
+        ]:
+            factor = role.value / 100
+            rating += factor * hitter.runs / 2
+            rating += factor * hitter.rbi / 2
+            rating += factor * hitter.home_runs / 4
+            rating += factor * hitter.stolen_bases / 5
+            hits += factor * hitter.hits
+            ab += factor * hitter.at_bats
+        rating += (hits/ab * 1000 - 250) * (self.season.avg_games_played / 162)
+        return rating
 
-    
     @property
-    def pitching_rating(self) -> float:
-        pass
+    def pitching(self) -> float:
+        rating = ip = 0.0
+        er = strikeouts = walks = 0
+        for pitcher in self.rotation:
+            rating -= pitcher.wins
+            rating -= pitcher.saves / 3
+            ip += pitcher.innings_pitched
+            er += pitcher.earned_runs
+            strikeouts += pitcher.strikeouts
+            walks += pitcher.walks
+        era = 9 * er / ip
+        rating += era * self.season.avg_games_played
+        innings_delta = ip - 1000
+        if innings_delta < 0:
+            rating -= innings_delta / 3 * (self.season.avg_games_played / 162)
+        else:
+            rating -= innings_delta / 5
+        rating -= (strikeouts - walks) / 10
+        return rating
 
 
 if __name__ == "__main__":
-    team = Team("Andrew")
+    league = League(103)
+    season = Season(year=2021, league=league)
+    team = Team("Andrew", season)

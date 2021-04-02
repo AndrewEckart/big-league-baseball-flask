@@ -1,0 +1,26 @@
+{% macro standings_table(teams) %}
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Manager</th>
+        <th scope="col">Offense</th>
+        <th scope="col">Pitching (-)</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for team in teams %}
+      <tr>
+        <th scope="row">
+          <a href="/teams/{{ team.manager.lower() }}">
+            {{ team.manager }}
+          </a>
+        </th>
+        <td>{{ "%.1f"|format(team.offense) }}</td>
+        <td>{{ "%.1f"|format(team.pitching) }}</td>
+        <td>{{ "%.1f"|format(team.rating) }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endmacro %}
