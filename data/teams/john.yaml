@@ -1,5 +1,5 @@
 starters:
-  1B: "Jeimer Candelario"
+  1B: "Carlos Santana"
   2B: "Whit Merrifield"
   SS: "Tim Anderson"
   3B: "Matt Chapman"
@@ -8,10 +8,10 @@ starters:
     - "Mike Trout"
     - "Justin Upton"
     - "Teoscar Hernandez"
-  DH: "Carlos Santana"
+  DH: "Albert Pujols"
 bench:
   - ["OF", "Mitch Haniger"]
-  - ["1B", "Albert Pujols"]
+  - ["1B", "Jeimer Candelario"]
   - ["SS", "Willy Adames"]
   - ["2B", "Jonathan Schoop"]
   - ["OF", "Willie Calhoun"]
