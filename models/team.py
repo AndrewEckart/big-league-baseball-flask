@@ -116,8 +116,8 @@ class Team:
         for pitcher in self.rotation:
             rating -= pitcher.wins
             rating -= pitcher.saves / 3
-            ip += pitcher.innings_pitched
-            er += pitcher.earned_runs
+            ip += pitcher.ip
+            er += pitcher.er
             strikeouts += pitcher.strikeouts
             walks += pitcher.walks
         era = 9 * er / ip if ip else 0.0

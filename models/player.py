@@ -104,16 +104,16 @@ class Pitcher(Player):
         self.mlb_id = self.all_players.loc[name, "MLBID"]
 
     @property
-    def innings_pitched(self) -> float:
+    def ip(self) -> float:
         whole, fraction = divmod(float(self.season_stats.get("inningsPitched", 0.0)), 1)
         return whole + fraction * 10/3
 
     @property
-    def innings_pitched_str(self) -> str:
-        return f"{self.innings_pitched:.2f}"
+    def formatted_ip(self) -> str:
+        return format_innings_pitched(self.ip)
 
     @property
-    def earned_runs(self) -> int:
+    def er(self) -> int:
         return int(self.season_stats.get("earnedRuns", 0))
 
     @property
@@ -134,17 +134,34 @@ class Pitcher(Player):
 
     @property
     def earned_run_average(self) -> float:
-        if not self.innings_pitched:
+        if not self.ip:
             return 0.0
-        return 9 * self.earned_runs / self.innings_pitched
+        return 9 * self.er / self.ip
 
     @property
-    def earned_run_average_str(self) -> str:
-        return f"{self.earned_run_average:.2f}"
+    def formatted_era(self) -> str:
+        return format_era(self.earned_run_average)
+
+
+def format_innings_pitched(innings_pitched: float) -> str:
+    return f"{innings_pitched:.2f}"
+
+
+def format_era(earned_run_average: float) -> str:
+    return f"{earned_run_average:.2f}"
 
 
 class PitcherList(list):
-    pass
+
+    def get_summary_stats(self, label="Total"):
+        stats = SimpleNamespace(ip=0.0, er=0, wins=0, saves=0, strikeouts=0, walks=0)
+        for pitcher in self:
+            for attr in vars(stats):
+                setattr(stats, attr, getattr(stats, attr) + getattr(pitcher, attr))
+        stats.formatted_ip = format_innings_pitched(stats.ip)
+        stats.formatted_era = format_era(9 * stats.er / stats.ip)
+        stats.name = label
+        return stats
 
 
 if __name__ == "__main__":
