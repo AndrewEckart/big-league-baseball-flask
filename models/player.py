@@ -162,8 +162,8 @@ class PitcherList(list):
             for attr in vars(stats):
                 setattr(stats, attr, getattr(stats, attr) + getattr(pitcher, attr))
         stats.formatted_ip = format_innings_pitched(stats.ip)
-        stats.ip = 9 * stats.er / stats.ip if stats.ip else 0.0
-        stats.formatted_era = format_era(stats.ip)
+        stats.era = 9 * stats.er / stats.ip if stats.ip else 0.0
+        stats.formatted_era = format_era(stats.era)
         stats.name = label
         return stats
 
