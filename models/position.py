@@ -13,3 +13,13 @@ class Position(Enum):
 
     def __str__(self):
         return self.value
+
+
+infield = [
+    Position.FIRST_BASE,
+    Position.SECOND_BASE,
+    Position.SHORTSTOP,
+    Position.THIRD_BASE,
+    Position.CATCHER,
+    Position.DESIGNATED_HITTER
+]

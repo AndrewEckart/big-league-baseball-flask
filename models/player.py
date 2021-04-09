@@ -84,13 +84,14 @@ class HitterList(list):
         super().__init__(*args)
         self.role = role
 
-    def get_summary_stats(self, label="Total"):
+    def get_summary_stats(self, label=None):
         stats = SimpleNamespace(ab=0, runs=0, hits=0, hr=0, rbi=0, sb=0)
         for hitter in self:
             for attr in vars(stats):
                 setattr(stats, attr, getattr(stats, attr) + getattr(hitter, attr))
         stats.formatted_avg = format_batting_average(stats.hits / stats.ab)
-        stats.name = label
+        if label:
+            stats.name = label
         return stats
 
 

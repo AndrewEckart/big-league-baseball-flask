@@ -1,10 +1,11 @@
 from concurrent.futures import ThreadPoolExecutor
-from typing import Dict, List
+from types import SimpleNamespace
+from typing import List
 
 import yaml
 
 from models.player import Player, Hitter, Pitcher, HitterList, PitcherList
-from models.position import Position
+from models.position import Position, infield
 from models.role import Role
 from models.season import Season, League
 
@@ -17,16 +18,13 @@ def parse_starters(data) -> HitterList:
     if len(outfielders) != 3:
         raise ValueError("Expected 3 starting OF")
 
-    infield = set(Position.__members__.values())\
-        .difference({Position.OUTFIELD, Position.PITCHER})
-    infielders: Dict[Position, Hitter] = {
-        pos: Hitter(data[pos.value], pos) for pos in infield
-    }
+    infielders = {pos: Hitter(data[pos.value], pos) for pos in infield}
     for p in infield:
         if not isinstance(infielders.get(p), Hitter):
             raise ValueError(f"Expected exactly one starting {p.value}")
 
-    return HitterList([*infielders.values(), *outfielders], role=Role.STARTER)
+    dh = infielders.pop(Position.DESIGNATED_HITTER)
+    return HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER)
 
 
 def parse_bench(data) -> HitterList:
@@ -87,39 +85,52 @@ class Team:
             executor.map(lambda p: p.fetch_stats(), self.players)
 
     @property
-    def rating(self):
-        return self.offense - self.pitching
+    def rating(self) -> float:
+        return self.offense + self.pitching + self.innings_bonus_or_penalty
+
+    @property
+    def hitting_totals(self):
+        starters = self.starters.get_summary_stats()
+        bench = self.bench.get_summary_stats()
+        totals = {}
+        for v in vars(bench):
+            if v in {"name", "formatted_avg"}:
+                continue
+            totals[v] = getattr(starters, v) + getattr(bench, v) / 2
+        return SimpleNamespace(**totals)
 
     @property
     def offense(self) -> float:
-        rating = ab = hits = 0.0
-        for hitters in [self.starters, self.bench]:
-            factor = hitters.role.value / 100
-            stats = hitters.get_summary_stats()
-            rating += factor * stats.runs / 2
-            rating += factor * stats.rbi / 2
-            rating += factor * stats.hr / 4
-            rating += factor * stats.sb / 5
-            hits += factor * stats.hits
-            ab += factor * stats.ab
-        avg = hits/ab if ab else 0.0
+        stats = self.hitting_totals
+        rating = (stats.runs + stats.rbi) / 2 + stats.hr / 4 + stats.sb / 5
+        avg = stats.hits / stats.ab if stats.ab else 0.0
         rating += (avg * 1000 - 250) * (self.season.avg_games_played / 162)
         return rating
 
     @property
-    def pitching(self) -> float:
-        rating = 0.0
+    def innings_bonus_or_penalty(self) -> float:
         stats = self.rotation.get_summary_stats()
-        rating -= stats.wins
-        rating -= stats.saves / 3
-        era = 9 * stats.er / stats.ip if stats.ip else 0.0
-        rating += era * self.season.avg_games_played
         innings_delta = stats.ip - 1000
-        if innings_delta < 0:
-            rating -= innings_delta / 3 * (self.season.avg_games_played / 162)
+        if innings_delta >= 0:
+            return innings_delta / 5
         else:
-            rating -= innings_delta / 5
-        rating -= (stats.strikeouts - stats.walks) / 10
+            return innings_delta / 3 * (self.season.avg_games_played / 162)
+
+    @property
+    def prorated_bonus_or_penalty(self) -> float:
+        stats = self.rotation.get_summary_stats()
+        innings_delta = stats.ip - (1000 * (self.season.avg_games_played / 162))
+        if innings_delta >= 0:
+            return innings_delta / 5
+        else:
+            return innings_delta / 3
+
+    @property
+    def pitching(self) -> float:
+        stats = self.rotation.get_summary_stats()
+        rating = stats.wins + stats.saves / 3 + (stats.strikeouts - stats.walks) / 10
+        era = 9 * stats.er / stats.ip if stats.ip else 0.0
+        rating -= era * self.season.avg_games_played
         return rating
 
 
