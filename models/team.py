@@ -1,5 +1,4 @@
 from concurrent.futures import ThreadPoolExecutor
-from itertools import chain
 from typing import Dict, List
 
 import yaml
@@ -38,7 +37,7 @@ def parse_bench(data) -> HitterList:
     )
 
 
-def parse_rotation(data) -> List[Pitcher]:
+def parse_rotation(data) -> PitcherList:
     if not len(data) == 8:
         raise ValueError("Expected 8 pitchers")
     return PitcherList(Pitcher(name) for name in data)
@@ -94,40 +93,33 @@ class Team:
     @property
     def offense(self) -> float:
         rating = ab = hits = 0.0
-        for hitter, role in chain(
-            [(p, Role.STARTER) for p in self.starters],
-            [(p, Role.BENCH) for p in self.bench]
-        ):
-            factor = role.value / 100
-            rating += factor * hitter.runs / 2
-            rating += factor * hitter.rbi / 2
-            rating += factor * hitter.hr / 4
-            rating += factor * hitter.sb / 5
-            hits += factor * hitter.hits
-            ab += factor * hitter.ab
+        for hitters in [self.starters, self.bench]:
+            factor = hitters.role.value / 100
+            stats = hitters.get_summary_stats()
+            rating += factor * stats.runs / 2
+            rating += factor * stats.rbi / 2
+            rating += factor * stats.hr / 4
+            rating += factor * stats.sb / 5
+            hits += factor * stats.hits
+            ab += factor * stats.ab
         avg = hits/ab if ab else 0.0
         rating += (avg * 1000 - 250) * (self.season.avg_games_played / 162)
         return rating
 
     @property
     def pitching(self) -> float:
-        rating = ip = 0.0
-        er = strikeouts = walks = 0
-        for pitcher in self.rotation:
-            rating -= pitcher.wins
-            rating -= pitcher.saves / 3
-            ip += pitcher.ip
-            er += pitcher.er
-            strikeouts += pitcher.strikeouts
-            walks += pitcher.walks
-        era = 9 * er / ip if ip else 0.0
+        rating = 0.0
+        stats = self.rotation.get_summary_stats()
+        rating -= stats.wins
+        rating -= stats.saves / 3
+        era = 9 * stats.er / stats.ip if stats.ip else 0.0
         rating += era * self.season.avg_games_played
-        innings_delta = ip - 1000
+        innings_delta = stats.ip - 1000
         if innings_delta < 0:
             rating -= innings_delta / 3 * (self.season.avg_games_played / 162)
         else:
             rating -= innings_delta / 5
-        rating -= (strikeouts - walks) / 10
+        rating -= (stats.strikeouts - stats.walks) / 10
         return rating
 
 
