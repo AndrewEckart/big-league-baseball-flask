@@ -5,9 +5,9 @@
   {{ render_table(
       hitters + [hitters.get_summary_stats(label=summary_label)],
       titles=[
-        ("position", "Pos"),
         ("name", "Name"),
         ("team", "Team"),
+        ("position", "Pos"),
         ("ab", "AB"),
         ("runs", "Runs"),
         ("hits", "Hits"),

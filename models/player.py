@@ -24,6 +24,7 @@ class Player:
     def fetch_stats(self):
         data = statsapi.player_stat_data(self.mlb_id, group=self.stats_group)
         self.team = data.get("current_team")
+        self.team = team_abbreviations.get(self.team, self.team)
         stats = data.get("stats")
         if stats:
             season_stats = next(s for s in stats if int(s["season"]) == 2021)
@@ -163,6 +164,25 @@ class PitcherList(list):
         stats.formatted_era = format_era(9 * stats.er / stats.ip)
         stats.name = label
         return stats
+
+
+team_abbreviations = {
+    "New York Yankees": "NYY",
+    "Boston Red Sox": "BOS",
+    "Tampa Bay Rays": "TB",
+    "Toronto Blue Jays": "TOR",
+    "Baltimore Orioles": "BAL",
+    "Cleveland Indians": "CLE",
+    "Detroit Tigers": "DET",
+    "Minnesota Twins": "MIN",
+    "Chicago White Sox": "CWS",
+    "Kansas City Royals": "KC",
+    "Texas Rangers": "TEX",
+    "Houston Astros": "HOU",
+    "Seattle Mariners": "SEA",
+    "Oakland Athletics": "OAK",
+    "Los Angeles Angels": "LAA"
+}
 
 
 if __name__ == "__main__":
