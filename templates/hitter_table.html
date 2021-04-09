@@ -1,19 +1,20 @@
 {% from 'bootstrap/table.html' import render_table %}
 
-{% macro hitter_table(data) %}
+{% macro hitter_table(hitters, summary_label) %}
+  {% set summary_label = summary_label | default("Total") %}
   {{ render_table(
-      data,
+      hitters + [hitters.get_summary_stats(label=summary_label)],
       titles=[
         ("position", "Pos"),
         ("name", "Name"),
         ("team", "Team"),
-        ("at_bats", "AB"),
+        ("ab", "AB"),
         ("runs", "Runs"),
         ("hits", "Hits"),
-        ("home_runs", "HR"),
+        ("hr", "HR"),
         ("rbi", "RBI"),
-        ("stolen_bases", "SB"),
-        ("batting_average_str", "AVG")
+        ("sb", "SB"),
+        ("formatted_avg", "AVG")
       ],
       table_classes="table-sm",
       responsive=True,

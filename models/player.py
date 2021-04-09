@@ -1,9 +1,11 @@
+from types import SimpleNamespace
 from typing import Any, Dict
 
 import pandas as pd
 import statsapi
 
 from models.position import Position
+from models.role import Role
 
 
 class Player:
@@ -41,7 +43,7 @@ class Hitter(Player):
         self.mlb_id = self.all_players.loc[name, "MLBID"]
 
     @property
-    def at_bats(self) -> int:
+    def ab(self) -> int:
         return int(self.season_stats.get("atBats", 0))
 
     @property
@@ -53,7 +55,7 @@ class Hitter(Player):
         return int(self.season_stats.get("hits", 0))
 
     @property
-    def home_runs(self) -> int:
+    def hr(self) -> int:
         return int(self.season_stats.get("homeRuns", 0))
 
     @property
@@ -61,20 +63,35 @@ class Hitter(Player):
         return int(self.season_stats.get("rbi", 0))
 
     @property
-    def stolen_bases(self) -> int:
+    def sb(self) -> int:
         return int(self.season_stats.get("stolenBases", 0))
 
     @property
-    def batting_average(self) -> float:
-        return self.hits / self.at_bats if self.at_bats else 0.0
+    def avg(self) -> float:
+        return self.hits / self.ab if self.ab else 0.0
 
     @property
-    def batting_average_str(self):
-        return f"{self.batting_average:.3f}"
+    def formatted_avg(self):
+        return format_batting_average(self.avg)
+
+
+def format_batting_average(average: float) -> str:
+    return f"{average:.3f}"
 
 
 class HitterList(list):
-    pass
+    def __init__(self, *args, role: Role):
+        super().__init__(*args)
+        self.role = role
+
+    def get_summary_stats(self, label="Total"):
+        stats = SimpleNamespace(ab=0, runs=0, hits=0, hr=0, rbi=0, sb=0)
+        for hitter in self:
+            for attr in vars(stats):
+                setattr(stats, attr, getattr(stats, attr) + getattr(hitter, attr))
+        stats.formatted_avg = format_batting_average(stats.hits / stats.ab)
+        stats.name = label
+        return stats
 
 
 class Pitcher(Player):

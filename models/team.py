@@ -1,5 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
-from typing import Dict, List, Union
+from itertools import chain
+from typing import Dict, List
 
 import yaml
 
@@ -13,9 +14,7 @@ def parse_starters(data) -> HitterList:
     if not len(data) == 7:
         raise ValueError("Expected 7 starter positions")
 
-    outfielders = HitterList(
-        Hitter(name, Position.OUTFIELD) for name in data[Position.OUTFIELD.value]
-    )
+    outfielders = [Hitter(name, Position.OUTFIELD) for name in data["OF"]]
     if len(outfielders) != 3:
         raise ValueError("Expected 3 starting OF")
 
@@ -28,13 +27,15 @@ def parse_starters(data) -> HitterList:
         if not isinstance(infielders.get(p), Hitter):
             raise ValueError(f"Expected exactly one starting {p.value}")
 
-    return HitterList([*infielders.values(), *outfielders])
+    return HitterList([*infielders.values(), *outfielders], role=Role.STARTER)
 
 
 def parse_bench(data) -> HitterList:
     if not len(data) == 5:
         raise ValueError("Expected 5 bench hitters")
-    return HitterList(Hitter(name, Position(pos)) for pos, name in data)
+    return HitterList(
+        (Hitter(name, Position(pos)) for pos, name in data), role=Role.BENCH
+    )
 
 
 def parse_rotation(data) -> List[Pitcher]:
@@ -46,7 +47,7 @@ def parse_rotation(data) -> List[Pitcher]:
 def parse_minors(data) -> (HitterList, PitcherList):
     if len(data) > 5:
         raise ValueError("Must have at most 5 players in minors")
-    hitters, pitchers = HitterList(), PitcherList()
+    hitters, pitchers = HitterList(role=Role.MINORS), PitcherList()
     for pos, name in data:
         if pos == Position.PITCHER.value:
             pitchers.append(Pitcher(name))
@@ -93,17 +94,17 @@ class Team:
     @property
     def offense(self) -> float:
         rating = ab = hits = 0.0
-        for hitter, role in [
-            *[(p, Role.STARTER) for p in self.starters],
-            *[(p, Role.BENCH) for p in self.bench]
-        ]:
+        for hitter, role in chain(
+            [(p, Role.STARTER) for p in self.starters],
+            [(p, Role.BENCH) for p in self.bench]
+        ):
             factor = role.value / 100
             rating += factor * hitter.runs / 2
             rating += factor * hitter.rbi / 2
-            rating += factor * hitter.home_runs / 4
-            rating += factor * hitter.stolen_bases / 5
+            rating += factor * hitter.hr / 4
+            rating += factor * hitter.sb / 5
             hits += factor * hitter.hits
-            ab += factor * hitter.at_bats
+            ab += factor * hitter.ab
         avg = hits/ab if ab else 0.0
         rating += (avg * 1000 - 250) * (self.season.avg_games_played / 162)
         return rating
