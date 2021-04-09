@@ -73,6 +73,10 @@ class Hitter(Player):
         return f"{self.batting_average:.3f}"
 
 
+class HitterList(list):
+    pass
+
+
 class Pitcher(Player):
     stats_group = "pitching"
     all_players = pd.read_csv("data/pitchers.csv", index_col="Name")
@@ -120,6 +124,10 @@ class Pitcher(Player):
     @property
     def earned_run_average_str(self) -> str:
         return f"{self.earned_run_average:.2f}"
+
+
+class PitcherList(list):
+    pass
 
 
 if __name__ == "__main__":

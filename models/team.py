@@ -3,34 +3,58 @@ from typing import Dict, List, Union
 
 import yaml
 
-from models.player import Player, Hitter, Pitcher
+from models.player import Player, Hitter, Pitcher, HitterList, PitcherList
 from models.position import Position
 from models.role import Role
 from models.season import Season, League
 
 
-def parse_starters(data) -> Dict[Position, Union[Hitter, List[Hitter]]]:
-    starters = {Position.OUTFIELD: []}
-    for pos, value in data.items():
-        position = Position(pos)
-        if position == Position.OUTFIELD:
-            starters[position] = [Hitter(name, position) for name in value]
-        else:
-            starters[position] = Hitter(value, position)
-    return starters
+def parse_starters(data) -> HitterList:
+    if not len(data) == 7:
+        raise ValueError("Expected 7 starter positions")
+
+    outfielders = HitterList(
+        Hitter(name, Position.OUTFIELD) for name in data[Position.OUTFIELD.value]
+    )
+    if len(outfielders) != 3:
+        raise ValueError("Expected 3 starting OF")
+
+    infield = set(Position.__members__.values())\
+        .difference({Position.OUTFIELD, Position.PITCHER})
+    infielders: Dict[Position, Hitter] = {
+        pos: Hitter(data[pos.value], pos) for pos in infield
+    }
+    for p in infield:
+        if not isinstance(infielders.get(p), Hitter):
+            raise ValueError(f"Expected exactly one starting {p.value}")
+
+    return HitterList([*infielders.values(), *outfielders])
 
 
-def parse_bench(data) -> List[Hitter]:
-    return [Hitter(name, Position(pos)) for pos, name in data]
+def parse_bench(data) -> HitterList:
+    if not len(data) == 5:
+        raise ValueError("Expected 5 bench hitters")
+    return HitterList(Hitter(name, Position(pos)) for pos, name in data)
 
 
 def parse_rotation(data) -> List[Pitcher]:
-    return [Pitcher(name) for name in data]
+    if not len(data) == 8:
+        raise ValueError("Expected 8 pitchers")
+    return PitcherList(Pitcher(name) for name in data)
 
 
-def parse_minors(data) -> List[Player]:
-    return [Hitter(name, Position(pos)) if pos != "P" else Pitcher(name)
-            for pos, name in data]
+def parse_minors(data) -> (HitterList, PitcherList):
+    if len(data) > 5:
+        raise ValueError("Must have at most 5 players in minors")
+    hitters, pitchers = HitterList(), PitcherList()
+    for pos, name in data:
+        if pos == Position.PITCHER.value:
+            pitchers.append(Pitcher(name))
+        else:
+            hitters.append(Hitter(name, Position(pos)))
+    if len(pitchers) > 3:
+        raise ValueError("Must have at most 3 pitchers in minors")
+    return hitters, pitchers
 
 
 class Team:
@@ -40,40 +64,10 @@ class Team:
 
         with open(f"data/teams/{manager.lower()}.yaml", "r") as f:
             data = yaml.safe_load(f)
-            starters = parse_starters(data["starters"])
-            bench = parse_bench(data["bench"])
-            rotation = parse_rotation(data["rotation"])
-            minors = parse_minors(data["minors"])
-
-        if not len(starters) == 7:
-            raise ValueError("Expected 7 starter positions")
-        elif not len(bench) == 5:
-            raise ValueError("Expected 5 bench hitters")
-        elif not len(rotation) == 8:
-            raise ValueError("Expected 8 pitchers")
-        elif len(minors) > 5:
-            raise ValueError("Must have at most 5 players in minors")
-        for p in [
-            Position.FIRST_BASE,
-            Position.SECOND_BASE,
-            Position.SHORTSTOP,
-            Position.THIRD_BASE,
-            Position.CATCHER,
-            Position.DESIGNATED_HITTER,
-        ]:
-            if not isinstance(starters[p], Hitter):
-                raise ValueError(f"Expected exactly one starting {p.value}")
-        outfielders = starters[Position.OUTFIELD]
-        if not isinstance(outfielders, list) or len(outfielders) != 3:
-            raise ValueError("Must have a list of 3 starting OF")
-        elif len([p for p in minors if isinstance(p, Pitcher)]) > 3:
-            raise ValueError("Must have at most 3 pitchers in minors")
-
-        self.starters = [p for k, p in starters.items() if k != Position.OUTFIELD] + \
-            starters[Position.OUTFIELD]
-        self.bench = bench
-        self.rotation = rotation
-        self.minors = minors
+            self.starters = parse_starters(data["starters"])
+            self.bench = parse_bench(data["bench"])
+            self.rotation = parse_rotation(data["rotation"])
+            self.minors_hitters, self.minors_pitchers = parse_minors(data["minors"])
 
     def __repr__(self):
         return f"{self.__class__.__name__}(manager='{self.manager}')"
@@ -83,17 +77,10 @@ class Team:
         return [
             *self.starters,
             *self.bench,
+            *self.minors_hitters,
             *self.rotation,
-            *self.minors
+            *self.minors_pitchers
         ]
-
-    @property
-    def minors_hitters(self):
-        return [p for p in self.minors if isinstance(p, Hitter)]
-
-    @property
-    def minors_pitchers(self):
-        return [p for p in self.minors if isinstance(p, Pitcher)]
 
     def fetch_all_stats(self):
         with ThreadPoolExecutor() as executor:
