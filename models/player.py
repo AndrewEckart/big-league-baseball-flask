@@ -90,7 +90,8 @@ class HitterList(list):
         for hitter in self:
             for attr in vars(stats):
                 setattr(stats, attr, getattr(stats, attr) + getattr(hitter, attr))
-        stats.formatted_avg = format_batting_average(stats.hits / stats.ab)
+        stats.avg = stats.hits / stats.ab if stats.ab else 0.0
+        stats.formatted_avg = format_batting_average(stats.avg)
         if label:
             stats.name = label
         return stats
@@ -161,7 +162,8 @@ class PitcherList(list):
             for attr in vars(stats):
                 setattr(stats, attr, getattr(stats, attr) + getattr(pitcher, attr))
         stats.formatted_ip = format_innings_pitched(stats.ip)
-        stats.formatted_era = format_era(9 * stats.er / stats.ip)
+        stats.ip = 9 * stats.er / stats.ip if stats.ip else 0.0
+        stats.formatted_era = format_era(stats.ip)
         stats.name = label
         return stats
 
