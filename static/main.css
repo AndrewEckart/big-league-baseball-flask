@@ -22,4 +22,5 @@ body {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  max-width: 100vw;
 }
