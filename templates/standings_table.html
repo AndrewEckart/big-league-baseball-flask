@@ -4,10 +4,11 @@
       <tr>
         <th scope="col">Manager</th>
         <th scope="col">Offense</th>
-        <th scope="col">Pitching (excl. b/p)</th>
+        <th scope="col" data-toggle="tooltip" data-placement="top" title="Excluding bonus/penalty">
+          Pitching
+        </th>
         <th scope="col">Bonus/Penalty</th>
         <th scope="col">Total</th>
-        <th scope="col">Prorated B/P</th>
       </tr>
     </thead>
     <tbody>
@@ -22,7 +23,6 @@
         <td>{{ "%.1f"|format(team.pitching) }}</td>
         <td>{{ "%.1f"|format(team.innings_bonus_or_penalty) }}</td>
         <td>{{ "%.1f"|format(team.rating) }}</td>
-        <td>{{ "%.1f"|format(team.prorated_bonus_or_penalty) }}</td>
       </tr>
     {% endfor %}
     </tbody>

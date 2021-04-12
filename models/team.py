@@ -110,15 +110,6 @@ class Team:
     @property
     def innings_bonus_or_penalty(self) -> float:
         stats = self.rotation.get_summary_stats()
-        innings_delta = stats.ip - 1000
-        if innings_delta >= 0:
-            return innings_delta / 5
-        else:
-            return innings_delta / 3 * (self.season.avg_games_played / 162)
-
-    @property
-    def prorated_bonus_or_penalty(self) -> float:
-        stats = self.rotation.get_summary_stats()
         innings_delta = stats.ip - (1000 * (self.season.avg_games_played / 162))
         if innings_delta >= 0:
             return innings_delta / 5

@@ -40,10 +40,14 @@
   </div>
 </main>
 
+{{ bootstrap.load_js(with_popper=True) }}
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
 
-{% block scripts %}
-  <!-- Optional JavaScript -->
-  {{ bootstrap.load_js() }}
-{% endblock %}
+<!-- Optional JavaScript -->
+{% block scripts %}{% endblock %}
 </body>
 </html>
