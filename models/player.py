@@ -25,10 +25,10 @@ class Player:
         data = statsapi.player_stat_data(self.mlb_id, group=self.stats_group)
         self.team = data.get("current_team")
         self.team = team_abbreviations.get(self.team, self.team)
-        stats = data.get("stats")
+        stats = data.get("stats", [])
+        current_season = [s for s in stats if int(s["season"]) == 2021]
         if stats:
-            season_stats = next(s for s in stats if int(s["season"]) == 2021)
-            self.season_stats = season_stats["stats"]
+            self.season_stats = current_season[-1]["stats"]
 
 
 class Hitter(Player):
@@ -188,9 +188,10 @@ team_abbreviations = {
 
 
 if __name__ == "__main__":
-    hitter = Hitter("Gary Sanchez", Position.OUTFIELD)
     pitcher = Pitcher("Shane Bieber")
-
-    hitter.fetch_stats()
-    Hitter("Mike Trout", Position.OUTFIELD).fetch_stats()
     pitcher.fetch_stats()
+    print(pitcher.season_stats)
+
+    hitter = Hitter("Albert Pujols", Position.FIRST_BASE)
+    hitter.fetch_stats()
+    print(hitter.season_stats)
