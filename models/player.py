@@ -183,7 +183,22 @@ team_abbreviations = {
     "Houston Astros": "HOU",
     "Seattle Mariners": "SEA",
     "Oakland Athletics": "OAK",
-    "Los Angeles Angels": "LAA"
+    "Los Angeles Angels": "LAA",
+    "New York Mets": "NYM",
+    "Atlanta Braves": "ATL",
+    "Philadelphia Phillies": "PHI",
+    "Washington Nationals": "WSH",
+    "Miami Marlins": "MIA",
+    "Milwaukee Brewers": "MIL",
+    "Chicago Cubs": "CHC",
+    "St. Louis Cardinals": "STL",
+    "Cincinnati Reds": "CIN",
+    "Pittsburgh Pirates": "PIT",
+    "San Francisco Giants": "SFG",
+    "San Diego Padres": "SD",
+    "Los Angeles Dodgers": "LAD",
+    "Colorado Rockies": "COL",
+    "Arizona Diamondbacks": "ARI"
 }
 
 
