@@ -14,7 +14,7 @@ class League:
 @dataclass
 class Season:
     year: int
-    league: League
+    league: League = League(103)  # Defaults to American League
 
     @cached_property(ttl=10800)
     def avg_games_played(self) -> int:
@@ -31,6 +31,10 @@ class Season:
         result = round(total_games / teams)
         logging.info(f"Computed average games played: {result}")
         return result
+
+    @property
+    def progress(self) -> float:
+        return self.avg_games_played / 162
 
     @property
     def last_year(self) -> int:

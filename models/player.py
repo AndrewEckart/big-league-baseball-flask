@@ -7,6 +7,7 @@ import statsapi
 
 from models.position import Position
 from models.role import Role
+from models.season import Season
 
 
 class Player:
@@ -15,11 +16,12 @@ class Player:
     mlb_id: int
     team: str
     year: int = 2021
+    season: Season
     stats_group: str
-    season_stats: Dict[str, Any] = {}
+    stats: Dict[str, Any] = {}
     all_players: pd.DataFrame
 
-    def __init__(self, name: str, position: Position):
+    def __init__(self, name: str, position: Position, season: Season):
         match = re.match(r"^(.*)\s\((\d{4})\)$", name)
         if match is not None:
             name, year = match.groups()
@@ -27,12 +29,19 @@ class Player:
 
         self.name = name
         self.position = position
+        self.season = season
         self.mlb_id = self.all_players.loc[name, "MLBID"]
 
     def __repr__(self):
         attrs = ["name", "position", "mlb_id"]
         values = ", ".join([f"{attr}={getattr(self, attr)}" for attr in attrs])
         return f"{self.__class__.__name__}({values})"
+
+    @property
+    def notes(self) -> str:
+        if self.year != self.season.year:
+            return f"({self.year})"
+        return ""
 
     def fetch_stats(self):
         stats_type = "season" if self.year == 2021 else "yearByYear"
@@ -44,41 +53,41 @@ class Player:
         stats = data.get("stats", [])
         current_season = [s for s in stats if int(s["season"]) == self.year]
         if stats:
-            self.season_stats = current_season[-1]["stats"]
+            self.stats = current_season[-1]["stats"]
 
 
 class Hitter(Player):
     stats_group = "hitting"
     all_players = pd.read_csv("data/hitters.csv", index_col="Name")
 
-    def __init__(self, name: str, position: Position):
+    def __init__(self, name: str, position: Position, season: Season):
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
-        super().__init__(name, position)
+        super().__init__(name, position, season)
 
     @property
     def ab(self) -> int:
-        return int(self.season_stats.get("atBats", 0))
+        return int(self.stats.get("atBats", 0))
 
     @property
     def runs(self) -> int:
-        return int(self.season_stats.get("runs", 0))
+        return int(self.stats.get("runs", 0))
 
     @property
     def hits(self) -> int:
-        return int(self.season_stats.get("hits", 0))
+        return int(self.stats.get("hits", 0))
 
     @property
     def hr(self) -> int:
-        return int(self.season_stats.get("homeRuns", 0))
+        return int(self.stats.get("homeRuns", 0))
 
     @property
     def rbi(self) -> int:
-        return int(self.season_stats.get("rbi", 0))
+        return int(self.stats.get("rbi", 0))
 
     @property
     def sb(self) -> int:
-        return int(self.season_stats.get("stolenBases", 0))
+        return int(self.stats.get("stolenBases", 0))
 
     @property
     def avg(self) -> float:
@@ -92,9 +101,9 @@ class Hitter(Player):
         super().fetch_stats()
         if self.year != 2021:
             for key in ["atBats", "runs", "hits", "homeRuns", "rbi", "stolenBases"]:
-                if key not in self.season_stats:
+                if key not in self.stats:
                     continue
-                self.season_stats[key] = round(0.7 * self.season_stats[key])
+                self.stats[key] = round(0.7 * self.stats[key] * self.season.progress)
 
 
 def format_batting_average(average: float) -> str:
@@ -122,12 +131,12 @@ class Pitcher(Player):
     stats_group = "pitching"
     all_players = pd.read_csv("data/pitchers.csv", index_col="Name")
 
-    def __init__(self, name: str):
-        super().__init__(name, Position.PITCHER)
+    def __init__(self, name: str, season: Season):
+        super().__init__(name, Position.PITCHER, season)
 
     @property
     def ip(self) -> float:
-        whole, fraction = divmod(float(self.season_stats.get("inningsPitched", 0.0)), 1)
+        whole, fraction = divmod(float(self.stats.get("inningsPitched", 0.0)), 1)
         return whole + fraction * 10/3
 
     @property
@@ -136,23 +145,23 @@ class Pitcher(Player):
 
     @property
     def er(self) -> int:
-        return int(self.season_stats.get("earnedRuns", 0))
+        return int(self.stats.get("earnedRuns", 0))
 
     @property
     def wins(self) -> int:
-        return int(self.season_stats.get("wins", 0))
+        return int(self.stats.get("wins", 0))
 
     @property
     def saves(self) -> int:
-        return int(self.season_stats.get("saves", 0))
+        return int(self.stats.get("saves", 0))
 
     @property
     def strikeouts(self) -> int:
-        return int(self.season_stats.get("strikeOuts", 0))
+        return int(self.stats.get("strikeOuts", 0))
 
     @property
     def walks(self) -> int:
-        return int(self.season_stats.get("baseOnBalls", 0))
+        return int(self.stats.get("baseOnBalls", 0))
 
     @property
     def earned_run_average(self) -> float:
@@ -167,15 +176,15 @@ class Pitcher(Player):
     def fetch_stats(self):
         super().fetch_stats()
         if self.year != 2021:
-            outs = round(self.season_stats.get("outs", 0) * 0.8)
+            outs = round(self.stats.get("outs", 0) * 0.8 * self.season.progress)
             whole, fraction = divmod(outs, 3)
-            self.season_stats["inningsPitched"] = f"{whole}.{fraction}"
-            er = round(self.season_stats.get("earnedRuns", 0) * 0.8 * 1.3)
-            self.season_stats["earnedRuns"] = er
+            self.stats["inningsPitched"] = f"{whole}.{fraction}"
+            er = round(self.stats.get("earnedRuns", 0)*0.8*1.3*self.season.progress)
+            self.stats["earnedRuns"] = er
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
-                if key not in self.season_stats:
+                if key not in self.stats:
                     continue
-                self.season_stats[key] = round(0.7 * self.season_stats[key])
+                self.stats[key] = round(0.7 * self.stats[key] * self.season.progress)
 
 
 def format_innings_pitched(innings_pitched: float) -> str:
@@ -237,8 +246,8 @@ team_abbreviations = {
 if __name__ == "__main__":
     pitcher = Pitcher("Shane Bieber")
     pitcher.fetch_stats()
-    print(pitcher.season_stats)
+    print(pitcher.stats)
 
     hitter = Hitter("Albert Pujols (2019)", Position.FIRST_BASE)
     hitter.fetch_stats()
-    print(hitter.season_stats)
+    print(hitter.stats)

@@ -1,6 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
 from types import SimpleNamespace
-from typing import List
+from typing import Any, Dict, List
 
 import yaml
 
@@ -10,51 +10,6 @@ from models.role import Role
 from models.season import Season, League
 
 
-def parse_starters(data) -> HitterList:
-    if not len(data) == 7:
-        raise ValueError("Expected 7 starter positions")
-
-    outfielders = [Hitter(name, Position.OUTFIELD) for name in data["OF"]]
-    if len(outfielders) != 3:
-        raise ValueError("Expected 3 starting OF")
-
-    infielders = {pos: Hitter(data[pos.value], pos) for pos in infield}
-    for p in infield:
-        if not isinstance(infielders.get(p), Hitter):
-            raise ValueError(f"Expected exactly one starting {p.value}")
-
-    dh = infielders.pop(Position.DESIGNATED_HITTER)
-    return HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER)
-
-
-def parse_bench(data) -> HitterList:
-    if not len(data) == 5:
-        raise ValueError("Expected 5 bench hitters")
-    return HitterList(
-        (Hitter(name, Position(pos)) for pos, name in data), role=Role.BENCH
-    )
-
-
-def parse_rotation(data) -> PitcherList:
-    if not len(data) == 8:
-        raise ValueError("Expected 8 pitchers")
-    return PitcherList(Pitcher(name) for name in data)
-
-
-def parse_minors(data) -> (HitterList, PitcherList):
-    if len(data) > 5:
-        raise ValueError("Must have at most 5 players in minors")
-    hitters, pitchers = HitterList(role=Role.MINORS), PitcherList()
-    for pos, name in data:
-        if pos == Position.PITCHER.value:
-            pitchers.append(Pitcher(name))
-        else:
-            hitters.append(Hitter(name, Position(pos)))
-    # if len(pitchers) > 3:
-    #     raise ValueError("Must have at most 3 pitchers in minors")
-    return hitters, pitchers
-
-
 class Team:
     def __init__(self, manager: str, season: Season):
         self.manager = manager
@@ -62,13 +17,57 @@ class Team:
 
         with open(f"data/teams/{manager.lower()}.yaml", "r") as f:
             data = yaml.safe_load(f)
-            self.starters = parse_starters(data["starters"])
-            self.bench = parse_bench(data["bench"])
-            self.rotation = parse_rotation(data["rotation"])
-            self.minors_hitters, self.minors_pitchers = parse_minors(data["minors"])
+            self.starters = self.parse_starters(data["starters"])
+            self.bench = self.parse_bench(data["bench"])
+            self.rotation = self.parse_rotation(data["rotation"])
+            self.minors_hitters, self.minors_pitchers = self.parse_minors(data["minors"])
 
     def __repr__(self):
         return f"{self.__class__.__name__}(manager='{self.manager}')"
+
+    def parse_starters(self, data: Dict[str, Any]) -> HitterList:
+        if not len(data) == 7:
+            raise ValueError("Expected 7 starter positions")
+
+        outfielders = [
+            Hitter(name, Position.OUTFIELD, self.season) for name in data["OF"]
+        ]
+        if len(outfielders) != 3:
+            raise ValueError("Expected 3 starting OF")
+
+        infielders = {pos: Hitter(data[pos.value], pos, self.season) for pos in infield}
+        for p in infield:
+            if not isinstance(infielders.get(p), Hitter):
+                raise ValueError(f"Expected exactly one starting {p.value}")
+
+        dh = infielders.pop(Position.DESIGNATED_HITTER)
+        return HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER)
+
+    def parse_bench(self, data: List[List[str]]) -> HitterList:
+        if not len(data) == 5:
+            raise ValueError("Expected 5 bench hitters")
+        return HitterList(
+            (Hitter(name, Position(pos), self.season) for pos, name in data),
+            role=Role.BENCH
+        )
+
+    def parse_rotation(self, data: List[str]) -> PitcherList:
+        if not len(data) == 8:
+            raise ValueError("Expected 8 pitchers")
+        return PitcherList(Pitcher(name, self.season) for name in data)
+
+    def parse_minors(self, data: List[List[str]]) -> (HitterList, PitcherList):
+        if len(data) > 5:
+            raise ValueError("Must have at most 5 players in minors")
+        hitters, pitchers = HitterList(role=Role.MINORS), PitcherList()
+        for pos, name in data:
+            if pos == Position.PITCHER.value:
+                pitchers.append(Pitcher(name, self.season))
+            else:
+                hitters.append(Hitter(name, Position(pos), self.season))
+        # if len(pitchers) > 3:
+        #     raise ValueError("Must have at most 3 pitchers in minors")
+        return hitters, pitchers
 
     @property
     def players(self) -> List[Player]:
@@ -104,13 +103,13 @@ class Team:
         stats = self.hitting_totals
         rating = (stats.runs + stats.rbi) / 2 + stats.hr / 4 + stats.sb / 5
         avg = stats.hits / stats.ab if stats.ab else 0.0
-        rating += (avg * 1000 - 250) * (self.season.avg_games_played / 162)
+        rating += (avg * 1000 - 250) * self.season.progress
         return rating
 
     @property
     def innings_bonus_or_penalty(self) -> float:
         stats = self.rotation.get_summary_stats()
-        innings_delta = stats.ip - (1000 * (self.season.avg_games_played / 162))
+        innings_delta = stats.ip - (1000 * self.season.progress)
         if innings_delta >= 0:
             return innings_delta / 5
         else:
