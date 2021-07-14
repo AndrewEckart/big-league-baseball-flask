@@ -10,23 +10,23 @@ starters:
     - "Lourdes Gurriel Jr."
   DH: "Austin Meadows"
 bench:
-  - ["OF", "Jarred Kelenic"]
-  - ["C", "Mike Zunino"]
+  - ["OF", "Alex Kirilloff"]
+  - ["3B", "Josh Donaldson"]
   - ["1B", "Ji-Man Choi"]
   - ["2B", "Joey Wendle"]
-  - ["C", "Danny Jansen"]
+  - ["SS", "Willy Adames"]
 rotation:
   - "Kenta Maeda"
-  - "James Paxton"
+  - "James Paxton (2019)"
   - "John Means"
   - "Jordan Montgomery"
   - "Kyle Gibson"
   - "Dylan Cease"
   - "Raisel Iglesias"
-  - "Trevor Rosenthal"
+  - "Tarik Skubal"
 minors:
   - ["C", "Kyle Higashioka"]
-  - ["OF", "Alex Kirilloff"]
-  - ["P", "Matthew Boyd"]
+  - ["OF", "Jarred Kelenic"]
+  - ["C", "Danny Jansen"]
   - ["P", "Matt Shoemaker"]
-  - ["P", "Tarik Skubal"]
+  - ["P", "Trevor Rosenthal"]

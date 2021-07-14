@@ -17,6 +17,17 @@ class Player:
     year: int = 2021
     stats_group: str
     season_stats: Dict[str, Any] = {}
+    all_players: pd.DataFrame
+
+    def __init__(self, name: str, position: Position):
+        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
+        if match is not None:
+            name, year = match.groups()
+            self.year = int(year)
+
+        self.name = name
+        self.position = position
+        self.mlb_id = self.all_players.loc[name, "MLBID"]
 
     def __repr__(self):
         attrs = ["name", "position", "mlb_id"]
@@ -34,7 +45,6 @@ class Player:
         current_season = [s for s in stats if int(s["season"]) == self.year]
         if stats:
             self.season_stats = current_season[-1]["stats"]
-            # for key in set(self.season_stats.keys()).intersection()
 
 
 class Hitter(Player):
@@ -44,15 +54,7 @@ class Hitter(Player):
     def __init__(self, name: str, position: Position):
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
-
-        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
-        if match is not None:
-            name, year = match.groups()
-            self.year = int(year)
-
-        self.name = name
-        self.position = position
-        self.mlb_id = self.all_players.loc[name, "MLBID"]
+        super().__init__(name, position)
 
     @property
     def ab(self) -> int:
@@ -121,9 +123,7 @@ class Pitcher(Player):
     all_players = pd.read_csv("data/pitchers.csv", index_col="Name")
 
     def __init__(self, name: str):
-        self.name = name
-        self.position = Position.PITCHER
-        self.mlb_id = self.all_players.loc[name, "MLBID"]
+        super().__init__(name, Position.PITCHER)
 
     @property
     def ip(self) -> float:
@@ -163,6 +163,19 @@ class Pitcher(Player):
     @property
     def formatted_era(self) -> str:
         return format_era(self.earned_run_average)
+
+    def fetch_stats(self):
+        super().fetch_stats()
+        if self.year != 2021:
+            outs = round(self.season_stats.get("outs", 0) * 0.8)
+            whole, fraction = divmod(outs, 3)
+            self.season_stats["inningsPitched"] = f"{whole}.{fraction}"
+            er = round(self.season_stats.get("earnedRuns", 0) * 0.8 * 1.3)
+            self.season_stats["earnedRuns"] = er
+            for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
+                if key not in self.season_stats:
+                    continue
+                self.season_stats[key] = round(0.7 * self.season_stats[key])
 
 
 def format_innings_pitched(innings_pitched: float) -> str:
@@ -222,9 +235,9 @@ team_abbreviations = {
 
 
 if __name__ == "__main__":
-    # pitcher = Pitcher("Shane Bieber")
-    # pitcher.fetch_stats()
-    # print(pitcher.season_stats)
+    pitcher = Pitcher("Shane Bieber")
+    pitcher.fetch_stats()
+    print(pitcher.season_stats)
 
     hitter = Hitter("Albert Pujols (2019)", Position.FIRST_BASE)
     hitter.fetch_stats()
