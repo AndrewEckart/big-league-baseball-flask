@@ -1,5 +1,6 @@
+import re
 from types import SimpleNamespace
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 import pandas as pd
 import statsapi
@@ -13,6 +14,7 @@ class Player:
     position: Position
     mlb_id: int
     team: str
+    year: int = 2021
     stats_group: str
     season_stats: Dict[str, Any] = {}
 
@@ -22,13 +24,17 @@ class Player:
         return f"{self.__class__.__name__}({values})"
 
     def fetch_stats(self):
-        data = statsapi.player_stat_data(self.mlb_id, group=self.stats_group)
+        stats_type = "season" if self.year == 2021 else "yearByYear"
+        data = statsapi.player_stat_data(
+            self.mlb_id, group=self.stats_group, type=stats_type
+        )
         self.team = data.get("current_team")
         self.team = team_abbreviations.get(self.team, self.team)
         stats = data.get("stats", [])
-        current_season = [s for s in stats if int(s["season"]) == 2021]
+        current_season = [s for s in stats if int(s["season"]) == self.year]
         if stats:
             self.season_stats = current_season[-1]["stats"]
+            # for key in set(self.season_stats.keys()).intersection()
 
 
 class Hitter(Player):
@@ -38,6 +44,11 @@ class Hitter(Player):
     def __init__(self, name: str, position: Position):
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
+
+        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
+        if match is not None:
+            name, year = match.groups()
+            self.year = int(year)
 
         self.name = name
         self.position = position
@@ -75,12 +86,20 @@ class Hitter(Player):
     def formatted_avg(self):
         return format_batting_average(self.avg)
 
+    def fetch_stats(self):
+        super().fetch_stats()
+        if self.year != 2021:
+            for key in ["atBats", "runs", "hits", "homeRuns", "rbi", "stolenBases"]:
+                if key not in self.season_stats:
+                    continue
+                self.season_stats[key] = round(0.7 * self.season_stats[key])
+
 
 def format_batting_average(average: float) -> str:
     return f"{average:.3f}"
 
 
-class HitterList(list):
+class HitterList(List[Hitter]):
     def __init__(self, *args, role: Role):
         super().__init__(*args)
         self.role = role
@@ -154,7 +173,7 @@ def format_era(earned_run_average: float) -> str:
     return f"{earned_run_average:.2f}"
 
 
-class PitcherList(list):
+class PitcherList(List[Pitcher]):
 
     def get_summary_stats(self, label="Total"):
         stats = SimpleNamespace(ip=0.0, er=0, wins=0, saves=0, strikeouts=0, walks=0)
@@ -203,10 +222,10 @@ team_abbreviations = {
 
 
 if __name__ == "__main__":
-    pitcher = Pitcher("Shane Bieber")
-    pitcher.fetch_stats()
-    print(pitcher.season_stats)
+    # pitcher = Pitcher("Shane Bieber")
+    # pitcher.fetch_stats()
+    # print(pitcher.season_stats)
 
-    hitter = Hitter("Albert Pujols", Position.FIRST_BASE)
+    hitter = Hitter("Albert Pujols (2019)", Position.FIRST_BASE)
     hitter.fetch_stats()
     print(hitter.season_stats)

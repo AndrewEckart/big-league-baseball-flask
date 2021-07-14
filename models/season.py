@@ -31,3 +31,9 @@ class Season:
         result = round(total_games / teams)
         logging.info(f"Computed average games played: {result}")
         return result
+
+    @property
+    def last_year(self) -> int:
+        if self.year == 2021:
+            return 2019
+        return self.year - 1
