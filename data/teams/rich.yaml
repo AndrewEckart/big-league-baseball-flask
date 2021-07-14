@@ -8,25 +8,25 @@ starters:
     - "Kyle Tucker"
     - "Joey Gallo"
     - "Ramon Laureano"
-  DH: "Renato Nunez"
+  DH: "Randal Grichuk"
 bench:
   - ["3B", "Giovanny Urshela"]
   - ["2B", "Ty France"]
-  - ["1B", "Evan White"]
-  - ["OF", "Randal Grichuk"]
+  - ["SS", "Jose Iglesias"]
+  - ["DH", "Renato Nunez"]
   - ["SS", "Willi Castro"]
 rotation:
   - "Jose Berrios"
-  - "Jesus Luzardo"
+  - "Spencer Turnbull"
   - "Lance McCullers Jr."
-  - "Dylan Bundy"
+  - "Jake Diekman"
   - "Mike Minor"
   - "Yusei Kikuchi"
   - "Taylor Rogers"
   - "Jordan Romano"
 minors:
   - ["OF", "Stephen Piscotty"]
-  - ["2B", "Enrique Hernandez"]
-  - ["P", "Spencer Turnbull"]
-  - ["P", "Peter Fairbanks"]
+  - ["1B", "Evan White"]
+  - ["P", "Jesus Luzardo"]
+  - ["P", "Dylan Bundy"]
   - ["P", "Nick Wittgren"]

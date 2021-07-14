@@ -50,8 +50,8 @@ def parse_minors(data) -> (HitterList, PitcherList):
             pitchers.append(Pitcher(name))
         else:
             hitters.append(Hitter(name, Position(pos)))
-    if len(pitchers) > 3:
-        raise ValueError("Must have at most 3 pitchers in minors")
+    # if len(pitchers) > 3:
+    #     raise ValueError("Must have at most 3 pitchers in minors")
     return hitters, pitchers
 
 

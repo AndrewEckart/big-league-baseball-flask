@@ -1,22 +1,22 @@
 starters:
   1B: "Carlos Santana"
-  2B: "Whit Merrifield"
+  2B: "Jonathan Schoop"
   SS: "Tim Anderson"
   3B: "Matt Chapman"
   C: "Christian Vazquez"
   OF:
-    - "Mike Trout"
-    - "Justin Upton"
+    - "Whit Merrifield"
+    - "Mitch Haniger"
     - "Teoscar Hernandez"
-  DH: "Albert Pujols"
+  DH: "Mike Trout"
 bench:
-  - ["OF", "Mitch Haniger"]
+  - ["OF", "Justin Upton"]
   - ["1B", "Jeimer Candelario"]
-  - ["SS", "Willy Adames"]
-  - ["2B", "Jonathan Schoop"]
+  - ["SS", "Amed Rosario"]
+  - ["1B", "Albert Pujols"]
   - ["OF", "Willie Calhoun"]
 rotation:
-  - "Brad Keller"
+  - "Matthew Boyd"
   - "Dallas Keuchel"
   - "Nathan Eovaldi"
   - "Garrett Richards"
@@ -25,8 +25,8 @@ rotation:
   - "Rich Hill"
   - "Josh Staumont"
 minors:
-  - ["SS", "Amed Rosario"]
   - ["OF", "Victor Reyes"]
   - ["P", "Tyler Duffey"]
   - ["P", "Triston McKenzie"]
   - ["P", "Mike Fiers"]
+  - ["P", "Brad Keller"]

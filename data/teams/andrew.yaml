@@ -3,14 +3,14 @@ starters:
   2B: "Jose Altuve"
   SS: "Jorge Polanco"
   3B: "Rafael Devers"
-  C: "Wilson Ramos"
+  C: "Mike Zunino"
   OF:
     - "George Springer"
     - "Michael Brantley"
-    - "Aaron Hicks"
+    - "Enrique Hernandez"
   DH: "Franmil Reyes"
 bench:
-  - ["3B", "Josh Donaldson"]
+  - ["3B", "Wilson Ramos"]
   - ["3B", "Kyle Seager"]
   - ["OF", "Kyle Lewis"]
   - ["OF", "Adam Eaton"]
@@ -20,13 +20,13 @@ rotation:
   - "Lance Lynn"
   - "Andrew Heaney"
   - "Sean Manaea"
-  - "Jose Quintana"
-  - "Chris Archer"
-  - "J.A. Happ"
+  - "Alex Cobb"
+  - "Peter Fairbanks"
+  - "Chris Flexen"
   - "Garrett Crochet"
 minors:
   - ["SS", "Andrelton Simmons"]
-  - ["SS", "Jose Iglesias"]
-  - ["P", "Alex Cobb"]
-  - ["P", "Chris Flexen"]
-  - ["P", "Jake Diekman"]
+  - ["OF", "Aaron Hicks"]
+  - ["P", "Jose Quintana"]
+  - ["P", "J.A. Happ"]
+  - ["P", "Chris Archer"]
