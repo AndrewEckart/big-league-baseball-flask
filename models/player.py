@@ -50,10 +50,10 @@ class Player:
         )
         self.team = data.get("current_team")
         self.team = team_abbreviations.get(self.team, self.team)
-        stats = data.get("stats", [])
-        current_season = [s for s in stats if int(s["season"]) == self.year]
+        results = data.get("stats", [])
+        stats = [s["stats"] for s in results if int(s["season"]) == self.year]
         if stats:
-            self.stats = current_season[-1]["stats"]
+            self.stats = max(stats, key=lambda s: s["gamesPlayed"])
 
 
 class Hitter(Player):
@@ -244,10 +244,12 @@ team_abbreviations = {
 
 
 if __name__ == "__main__":
-    pitcher = Pitcher("Shane Bieber")
+    season = Season(year=2021)
+
+    pitcher = Pitcher("Shane Bieber", season)
     pitcher.fetch_stats()
     print(pitcher.stats)
 
-    hitter = Hitter("Albert Pujols (2019)", Position.FIRST_BASE)
+    hitter = Hitter("Albert Pujols", Position.FIRST_BASE, season)
     hitter.fetch_stats()
     print(hitter.stats)
