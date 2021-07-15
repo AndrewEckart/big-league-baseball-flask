@@ -7,26 +7,26 @@ starters:
   OF:
     - "J.D. Martinez"
     - "Mark Canha"
-    - "Andrew Benintendi"
+    - "Alex Verdugo"
   DH: "Jorge Soler"
 bench:
   - ["SS", "Elvis Andrus"]
   - ["2B", "Freddy Galvis"]
-  - ["1B", "Mitch Moreland"]
-  - ["OF", "Alex Verdugo"]
-  - ["OF", "Dexter Fowler"]
+  - ["OF", "Manuel Margot"]
+  - ["OF", "Andrew Benintendi"]
+  - ["OF", "Robbie Grossman"]
 rotation:
   - "Shane Bieber"
   - "Zack Greinke"
   - "Brady Singer"
   - "Eduardo Rodriguez"
   - "Michael Pineda"
-  - "Rafael Montero"
+  - "Jordan Lyles"
   - "Diego Castillo"
   - "Alex Colome"
 minors:
-  - ["OF", "Manuel Margot"]
-  - ["OF", "Robbie Grossman"]
+  - ["1B", "Mitch Moreland"]
+  - ["OF", "Dexter Fowler"]
   - ["1B", "Jake Bauers"]
   - ["P", "Griffin Canning"]
-  - ["P", "Jordan Lyles"]
+  - ["P", "Rafael Montero"]
