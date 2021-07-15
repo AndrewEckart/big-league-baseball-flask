@@ -20,12 +20,14 @@ class Player:
     stats_group: str
     stats: Dict[str, Any] = {}
     all_players: pd.DataFrame
+    multiplier = 1
 
     def __init__(self, name: str, position: Position, season: Season):
         match = re.match(r"^(.*)\s\((\d{4})\)$", name)
         if match is not None:
             name, year = match.groups()
             self.year = int(year)
+            self.multiplier = 0.7 * season.progress
 
         self.name = name
         self.position = position
@@ -39,9 +41,12 @@ class Player:
 
     @property
     def notes(self) -> str:
+        notes = ""
+        if self.multiplier != 1:
+            notes += f"{round(self.multiplier * 100)}%"
         if self.year != self.season.year:
-            return f"({self.year})"
-        return ""
+            notes += f" of {self.year}"
+        return notes
 
     def fetch_stats(self):
         stats_type = "season" if self.year == 2021 else "yearByYear"
@@ -63,6 +68,12 @@ class Hitter(Player):
     def __init__(self, name: str, position: Position, season: Season):
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
+
+        match = re.match(r"^(.*)\s\(90\%\)$", name)
+        if match is not None:
+            name = match.groups()[0]
+            self.multiplier = 0.9
+
         super().__init__(name, position, season)
 
     @property
@@ -99,11 +110,11 @@ class Hitter(Player):
 
     def fetch_stats(self):
         super().fetch_stats()
-        if self.year != 2021:
+        if self.multiplier != 1:
             for key in ["atBats", "runs", "hits", "homeRuns", "rbi", "stolenBases"]:
                 if key not in self.stats:
                     continue
-                self.stats[key] = round(0.7 * self.stats[key] * self.season.progress)
+                self.stats[key] = round(self.multiplier * self.stats[key])
 
 
 def format_batting_average(average: float) -> str:
@@ -181,10 +192,11 @@ class Pitcher(Player):
             self.stats["inningsPitched"] = f"{whole}.{fraction}"
             er = round(self.stats.get("earnedRuns", 0)*0.8*1.3*self.season.progress)
             self.stats["earnedRuns"] = er
+        if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
                 if key not in self.stats:
                     continue
-                self.stats[key] = round(0.7 * self.stats[key] * self.season.progress)
+                self.stats[key] = round(self.multiplier * self.stats[key])
 
 
 def format_innings_pitched(innings_pitched: float) -> str:

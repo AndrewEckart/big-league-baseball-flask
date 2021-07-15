@@ -12,7 +12,7 @@ starters:
 bench:
   - ["OF", "Clint Frazier"]
   - ["3B", "Nick Solak"]
-  - ["OF", "Leody Taveras"]
+  - ["3B", "Maikel Franco"]
   - ["OF", "Nomar Mazara"]
   - ["1B", "Rowdy Tellez"]
 rotation:
@@ -20,13 +20,13 @@ rotation:
   - "Zach Plesac"
   - "Marco Gonzales"
   - "Cristian Javier"
-  - "Justus Sheffield"
+  - "Dane Dunning"
   - "Josh Fleming"
-  - "Jorge Alcala"
+  - "Jonathan Loaisiga"
   - "Liam Hendriks"
 minors:
-  - ["3B", "Maikel Franco"]
+  - ["OF", "Leody Taveras"]
   - ["C", "Samuel Huff"]
   - ["P", "Kohei Arihara"]
-  - ["P", "Dane Dunning"]
-  - ["P", "Jonathan Loaisiga"]
+  - ["P", "Justus Sheffield"]
+  - ["P", "Jorge Alcala"]
