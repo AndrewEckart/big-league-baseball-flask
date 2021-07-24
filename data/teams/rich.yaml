@@ -2,7 +2,7 @@ starters:
   1B: "Trey Mancini"
   2B: "Brandon Lowe"
   SS: "Xander Bogaerts"
-  3B: "Miguel Sano"
+  3B: "Ty France"
   C: "Isiah Kiner-Falefa"
   OF:
     - "Kyle Tucker"
@@ -11,7 +11,7 @@ starters:
   DH: "Randal Grichuk"
 bench:
   - ["3B", "Giovanny Urshela"]
-  - ["2B", "Ty France"]
+  - ["3B", "Miguel Sano"]
   - ["SS", "Jose Iglesias"]
   - ["DH", "Renato Nunez (2019)"]
   - ["SS", "Willi Castro"]
