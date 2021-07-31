@@ -6,13 +6,13 @@ starters:
   C: "Mike Zunino"
   OF:
     - "George Springer"
-    - "Michael Brantley"
+    - "Franmil Reyes"
     - "Enrique Hernandez"
-  DH: "Franmil Reyes"
+  DH: "Kyle Seager"
 bench:
   - ["3B", "Wilson Ramos"]
-  - ["3B", "Kyle Seager"]
-  - ["OF", "Kyle Lewis"]
+  - ["OF", "Michael Brantley"]
+  - ["SS", "Andrelton Simmons"]
   - ["OF", "Adam Eaton"]
   - ["SS", "J.P. Crawford"]
 rotation:
@@ -25,7 +25,7 @@ rotation:
   - "Chris Flexen"
   - "Garrett Crochet"
 minors:
-  - ["SS", "Andrelton Simmons"]
+  - ["OF", "Kyle Lewis"]
   - ["OF", "Aaron Hicks"]
   - ["P", "Jose Quintana"]
   - ["P", "J.A. Happ"]
