@@ -1,20 +1,20 @@
 starters:
   1B: "Jared Walsh"
-  2B: "Miguel Andujar (90%)"
+  2B: "Andres Gimenez"
   SS: "Carlos Correa"
   3B: "Vladimir Guerrero Jr."
   C: "Gary Sanchez"
   OF:
     - "Aaron Judge"
     - "Hunter Renfroe"
-    - "Austin Hays"
+    - "Luis Robert"
   DH: "Giancarlo Stanton"
 bench:
   - ["1B", "Miguel Cabrera"]
   - ["1B", "Andrew Vaughn"]
   - ["SS", "Wander Franco"]
   - ["OF", "Hunter Dozier"]
-  - ["OF", "Brett Gardner"]
+  - ["OF", "Austin Hays"]
 rotation:
   - "Gerrit Cole"
   - "Aroldis Chapman"
@@ -25,8 +25,8 @@ rotation:
   - "Steven Matz"
   - "Michael Kopech"
 minors:
-  - ["2B", "Andres Gimenez"]
-  - ["OF", "Luis Robert" ]
+  - ["3B", "Miguel Andujar"]
+  - ["OF", "Brett Gardner"]
   - ["P", "Mike Foltynewicz"]
   - ["P", "Luis Severino"]
   - ["P", "Nate Pearson"]
