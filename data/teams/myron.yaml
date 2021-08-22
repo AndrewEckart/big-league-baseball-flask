@@ -1,7 +1,7 @@
 starters:
   1B: "Jose Abreu"
   2B: "David Fletcher"
-  SS: "Adalberto Mondesi"
+  SS: "Willy Adames"
   3B: "Jose Ramirez"
   C: "Salvador Perez"
   OF:
@@ -14,7 +14,7 @@ bench:
   - ["3B", "Josh Donaldson"]
   - ["1B", "Ji-Man Choi"]
   - ["2B", "Joey Wendle"]
-  - ["SS", "Willy Adames"]
+  - ["SS", "Adalberto Mondesi (2019)"]
 rotation:
   - "Kenta Maeda"
   - "James Paxton (2019)"

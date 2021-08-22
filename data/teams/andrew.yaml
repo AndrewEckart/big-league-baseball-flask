@@ -5,15 +5,15 @@ starters:
   3B: "Rafael Devers"
   C: "Mike Zunino"
   OF:
-    - "George Springer"
+    - "George Springer (2019)"
     - "Franmil Reyes"
     - "Enrique Hernandez"
   DH: "Kyle Seager"
 bench:
-  - ["3B", "Wilson Ramos"]
+  - ["3B", "Wilson Ramos (2019)"]
   - ["OF", "Michael Brantley"]
   - ["SS", "Andrelton Simmons"]
-  - ["OF", "Adam Eaton"]
+  - ["OF", "Adam Eaton (2019)"]
   - ["SS", "J.P. Crawford"]
 rotation:
   - "Hyun-Jin Ryu"
