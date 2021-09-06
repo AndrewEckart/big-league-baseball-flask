@@ -8,13 +8,13 @@ starters:
     - "Whit Merrifield"
     - "Mitch Haniger"
     - "Teoscar Hernandez"
-  DH: "Mike Trout"
+  DH: "Mike Trout (2019)"
 bench:
   - ["OF", "Justin Upton"]
   - ["1B", "Jeimer Candelario"]
   - ["SS", "Amed Rosario"]
-  - ["1B", "Albert Pujols"]
-  - ["OF", "Willie Calhoun"]
+  - ["1B", "Albert Pujols (2019)"]
+  - ["OF", "Willie Calhoun (2019)"]
 rotation:
   - "Matthew Boyd"
   - "Dallas Keuchel"

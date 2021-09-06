@@ -1,19 +1,19 @@
 starters:
   1B: "Bobby Dalbec"
-  2B: "Cavan Biggio"
-  SS: "Anthony Rendon"
+  2B: "Nick Solak"
+  SS: "Anthony Rendon (2019)"
   3B: "Bo Bichette"
   C: "Sean Murphy"
   OF:
-    - "Eddie Rosario"
+    - "Eddie Rosario (2019)"
     - "Anthony Santander"
     - "Ryan Mountcastle"
   DH: "Shohei Ohtani"
 bench:
-  - ["OF", "Clint Frazier"]
-  - ["3B", "Nick Solak"]
+  - ["OF", "Clint Frazier (2019)"]
+  - ["2B", "Cavan Biggio (2019)"]
   - ["3B", "Maikel Franco"]
-  - ["OF", "Nomar Mazara"]
+  - ["OF", "Nomar Mazara (2019)"]
   - ["1B", "Rowdy Tellez"]
 rotation:
   - "Lucas Giolito"

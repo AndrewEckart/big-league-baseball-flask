@@ -1,20 +1,20 @@
 starters:
   1B: "Jared Walsh"
-  2B: "Andres Gimenez"
+  2B: "Wander Franco (90%)"
   SS: "Carlos Correa"
   3B: "Vladimir Guerrero Jr."
   C: "Gary Sanchez"
   OF:
     - "Aaron Judge"
     - "Hunter Renfroe"
-    - "Luis Robert"
+    - "Austin Hays"
   DH: "Giancarlo Stanton"
 bench:
   - ["1B", "Miguel Cabrera"]
   - ["1B", "Andrew Vaughn"]
-  - ["SS", "Wander Franco"]
+  - ["2B", "Andres Gimenez"]
   - ["OF", "Hunter Dozier"]
-  - ["OF", "Austin Hays"]
+  - ["OF", "Luis Robert"]
 rotation:
   - "Gerrit Cole"
   - "Aroldis Chapman"

@@ -1,20 +1,20 @@
 starters:
-  1B: "Luke Voit"
-  2B: "Gleyber Torres"
-  SS: "Alex Bregman"
+  1B: "Nate Lowe"
+  2B: "Gleyber Torres (2019)"
+  SS: "Alex Bregman (2019)"
   3B: "Yoan Moncada"
-  C: "Mitch Garver"
+  C: "Mitch Garver (2019)"
   OF:
-    - "Max Kepler"
-    - "Byron Buxton"
-    - "Dylan Moore"
+    - "Max Kepler (2019)"
+    - "Kevin Kiermaier (2019)"
+    - "David Dahl (2019)"
   DH: "Yordan Alvarez"
 bench:
-  - ["OF", "Kevin Kiermaier"]
-  - ["OF", "David Dahl"]
-  - ["1B", "Nate Lowe"]
-  - ["3B", "Marwin Gonzalez"]
-  - ["2B", "Rougned Odor"]
+  - ["OF", "Byron Buxton (2019)"]
+  - ["OF", "Dylan Moore"]
+  - ["1B", "Luke Voit (2019)"]
+  - ["3B", "Marwin Gonzalez (2019)"]
+  - ["2B", "Rougned Odor (2019)"]
 rotation:
   - "Tyler Glasnow"
   - "Chris Bassitt"
