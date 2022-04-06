@@ -12,10 +12,13 @@
       </tr>
     </thead>
     <tbody>
+    {% if not teams %}
+      <tr><td colspan="100%" style="text-align: center">No data!</td></tr>
+    {% endif %}
     {% for team in teams %}
       <tr>
         <th scope="row">
-          <a href="/teams/{{ team.manager.lower() }}">
+          <a href="/{{ team.season.year }}/{{ team.manager.lower() }}">
             {{ team.manager }}
           </a>
         </th>

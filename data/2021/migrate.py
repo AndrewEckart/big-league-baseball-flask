@@ -4,16 +4,14 @@ import pandas as pd
 
 if __name__ == "__main__":
     id_map = pd.read_csv(
-        "data/sfbb-player-id-map.csv",
-        index_col="IDFANGRAPHS",
-        dtype={"MLBID": "Int32"}
+        "data/sfbb-player-id-map.csv", index_col="IDFANGRAPHS", dtype={"MLBID": "Int32"}
     )
     # print(id_map)
 
     prefix = "data/"
     for (infile, outfile) in [
         ("drafted_hitters.csv", "hitters.csv"),
-        ("drafted_pitchers.csv", "pitchers.csv")
+        ("drafted_pitchers.csv", "pitchers.csv"),
     ]:
         drafted_players = pd.read_csv(
             prefix + infile, index_col="FanGraphs ID", dtype={"Rd": "Int8"}

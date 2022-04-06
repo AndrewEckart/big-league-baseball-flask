@@ -8,6 +8,6 @@
       <h4 class="col-auto">Standings</h4>
       <sm class="col-auto">after {{ season.avg_games_played }} games</sm>
     </div>
-    {{ standings_table(teams) }}
+    {{ standings_table(season.standings) }}
   </div>
 {% endblock %}

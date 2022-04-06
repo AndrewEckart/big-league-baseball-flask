@@ -36,6 +36,7 @@ class cached_property(object):
         del instance._cache[<property name>]
 
     """
+
     def __init__(self, ttl=300):
         self.ttl = ttl
 
