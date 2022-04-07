@@ -1,0 +1,29 @@
+starters:
+  1B: "Vladimir Guerrero Jr."
+  2B: "Enrique Hernandez"
+  SS: "Trevor Story"
+  3B: "Eugenio Suarez"
+  C: "Salvador Perez"
+  OF:
+    - "Adolis Garcia"
+    - "Akil Baddoo"
+    - "Manuel Margot"
+  DH: "Trey Mancini"
+bench:
+  - ["OF", "Gavin Sheets"]
+  - ["OF", "Michael A. Taylor"]
+  - ["2B", "Matt Duffy"]
+  - ["SS", "Jorge Mateo"]
+rotation:
+  - "Jose Berrios"
+  - "Alek Manoah"
+  - "John Means"
+  - "Chris Flexen"
+  - "Michael Pineda"
+  - "Cole Irvin"
+  - "Chad Green"
+minors:
+  - ["3B", "Santiago Espinal"]
+  - ["OF", "Bradley Zimmer"]
+  - ["P", "Tyler Wells"]
+  - ["P", "Drew Steckenrider"]

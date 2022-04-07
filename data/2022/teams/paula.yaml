@@ -1,0 +1,29 @@
+starters:
+  1B: "Ryan Mountcastle"
+  2B: "Marcus Semien"
+  SS: "Carlos Correa"
+  3B: "DJ LeMahieu"
+  C: "Mike Zunino"
+  OF:
+    - "Joey Gallo"
+    - "Myles Straw"
+    - "Robbie Grossman"
+  DH: "Austin Meadows"
+bench:
+  - ["OF", "Kole Calhoun"]
+  - ["OF", "Brandon Marsh"]
+  - ["SS", "Elvis Andrus"]
+  - ["OF", "Justin Upton"]
+rotation:
+  - "Kevin Gausman"
+  - "Shane McClanahan"
+  - "Jordan Montgomery"
+  - "Cal Quantrill"
+  - "Kris Bubic"
+  - "Jordan Romano"
+  - "Scott Barlow"
+minors:
+  - ["OF", "Kevin Kiermaier"]
+  - ["1B", "Bobby Bradley"]
+  - ["P", "Dane Dunning"]
+  - ["P", "Carlos Hernandez"]

@@ -1,0 +1,29 @@
+starters:
+  1B: "Jose Abreu"
+  2B: "Marwin Gonzalez"
+  SS: "Bo Bichette"
+  3B: "Bobby Witt Jr."
+  C: "Christian Vazquez"
+  OF:
+    - "Whit Merrifield"
+    - "Giancarlo Stanton"
+    - "AJ Pollock"
+  DH: "Anthony Santander"
+bench:
+  - ["3B", "Abraham Toro"]
+  - ["SS", "Tim Anderson"]
+  - ["SS", "J.P. Crawford"]
+  - ["OF", "Chas McCormick"]
+rotation:
+  - "Lucas Giolito"
+  - "Dylan Cease"
+  - "Jose Urquidy"
+  - "Cristian Javier"
+  - "Yusei Kikuchi"
+  - "Emmanuel Clase"
+  - "Jonathan Loaisiga"
+minors:
+  - ["OF", "Stephen Piscotty"]
+  - ["3B", "Tyler Wade"]
+  - ["P", "Kendall Graveman"]
+  - ["P", "Michael Wacha"]

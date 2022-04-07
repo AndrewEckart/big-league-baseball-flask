@@ -1,0 +1,28 @@
+starters:
+  1B: "Anthony Rizzo"
+  2B: "Adam Frazier"
+  SS: "Wander Franco"
+  3B: "Josh Donaldson"
+  C: "Max Stassi"
+  OF:
+    - "Aaron Judge"
+    - "Luis Robert"
+    - "Eloy Jimenez"
+  DH: "Michael Brantley"
+bench:
+  - ["OF", "Andrew Vaughn"]
+  - ["1B", "Miguel Cabrera"]
+  - ["3B", "Josh Harrison"]
+  - ["2B", "Christian Arroyo"]
+rotation:
+  - "Shohei Ohtani"
+  - "Noah Syndergaard"
+  - "Luis Severino"
+  - "Jon Gray"
+  - "Corey Kluber"
+  - "Aroldis Chapman"
+  - "Chris Sale"
+minors:
+  - ["3B", "Miguel Andujar"]
+  - ["P", "Gregory Soto"]
+  - ["P", "Deivi Garcia"]

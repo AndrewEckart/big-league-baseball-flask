@@ -1,0 +1,29 @@
+starters:
+  1B: "Spencer Torkelson"
+  2B: "Jose Altuve"
+  SS: "Xander Bogaerts"
+  3B: "Rafael Devers"
+  C: "Kyle Higashioka"
+  OF:
+    - "Alex Verdugo"
+    - "Seth Brown"
+    - "Hunter Dozier"
+  DH: "Mitch Haniger"
+bench:
+  - ["SS", "Isiah Kiner-Falefa"]
+  - ["2B", "Ramon Urias"]
+  - ["C", "Adley Rutschman"]
+  - ["1B", "Bobby Dalbec"]
+rotation:
+  - "Frankie Montas"
+  - "Marco Gonzales"
+  - "Luis Garcia"
+  - "Bailey Ober"
+  - "James Kaprielian"
+  - "Tyler Alexander"
+  - "Liam Hendriks"
+minors:
+  - ["OF", "Jackie Bradley Jr."]
+  - ["C", "Eric Haase"]
+  - ["P", "Brad Keller"]
+  - ["P", "Jake Odorizzi"]

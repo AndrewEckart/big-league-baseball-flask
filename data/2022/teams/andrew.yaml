@@ -1,0 +1,29 @@
+starters:
+  1B: "Nate Lowe"
+  2B: "Luis Arraez"
+  SS: "Nicky Lopez"
+  3B: "Matt Chapman"
+  C: "Mitch Garver"
+  OF:
+    - "George Springer"
+    - "J.D. Martinez"
+    - "Austin Hays"
+  DH: "Franmil Reyes"
+bench:
+  - ["3B", "Jeimer Candelario"]
+  - ["1B", "Ji-Man Choi"]
+  - ["SS", "Jeremy Pena"]
+  - ["OF", "Tony Kemp"]
+rotation:
+  - "Gerrit Cole"
+  - "Robbie Ray"
+  - "Nathan Eovaldi"
+  - "Hyun-Jin Ryu"
+  - "Logan Gilbert"
+  - "Lou Trivino"
+  - "Garrett Whitlock"
+minors:
+  - ["C", "Luis Torrens"]
+  - ["1B", "Eric Thames"]
+  - ["P", "Lance McCullers"]
+  - ["P", "Jose Suarez"]

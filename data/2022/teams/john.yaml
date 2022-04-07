@@ -1,0 +1,29 @@
+starters:
+  1B: "Yuli Gurriel"
+  2B: "Brandon Lowe"
+  SS: "Jorge Polanco"
+  3B: "Anthony Rendon"
+  C: "Sean Murphy"
+  OF:
+    - "Teoscar Hernandez"
+    - "Jesse Winker"
+    - "Andrew Benintendi"
+  DH: "Ty France"
+bench:
+  - ["1B", "Carlos Santana"]
+  - ["OF", "Jarred Kelenic"]
+  - ["OF", "Brad Miller"]
+  - ["2B", "Leury Garcia"]
+rotation:
+  - "Aaron Civale"
+  - "Joe Ryan"
+  - "Nestor Cortes"
+  - "Drew Rasmussen"
+  - "Tanner Houck"
+  - "Andrew Kittredge"
+  - "Paul Sewald"
+minors:
+  - ["C", "Danny Jansen"]
+  - ["OF", "Raimel Tapia"]
+  - ["P", "Nick Pivetta"]
+  - ["P", "Michael Lorenzen"]

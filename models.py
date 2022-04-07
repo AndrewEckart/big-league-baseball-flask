@@ -16,13 +16,28 @@ from constants import Position, Role, INFIELD_POSITIONS, TEAM_ABBREVIATIONS
 
 
 @dataclass
+class Rules:
+    num_reserve_hitters: int
+    num_pitchers: int
+
+
+@dataclass
 class Season:
     year: int
     managers: list[str]
+    rules: Rules
     teams: dict[str, "Team"] = field(init=False)
     league_id: int = 103  # Defaults to American League
+    all_hitters: pd.DataFrame = field(init=False)
+    all_pitchers: pd.DataFrame = field(init=False)
 
     def __post_init__(self):
+        self.all_hitters = pd.read_csv(
+            f"data/{self.year}/hitters.csv", index_col="Name"
+        )
+        self.all_pitchers = pd.read_csv(
+            f"data/{self.year}/pitchers.csv", index_col="Name"
+        )
         self.teams = {manager.lower(): Team(manager, self) for manager in self.managers}
 
     def fetch_all_stats(self):
@@ -108,20 +123,26 @@ class Team:
         dh = infielders.pop(Position.DESIGNATED_HITTER)
         return HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER)
 
-    def parse_bench(self, data: List[List[str]]) -> "HitterList":
-        if not len(data) == 5:
-            raise ValueError("Expected 5 bench hitters")
+    def parse_bench(self, data: list[list[str]]) -> "HitterList":
+        num_players_expected = self.season.rules.num_reserve_hitters
+        if not len(data) == num_players_expected:
+            raise ValueError(
+                f"Expected {num_players_expected} bench hitters, not {len(data)}"
+            )
         return HitterList(
             (Hitter(name, Position(pos), self.season) for pos, name in data),
             role=Role.BENCH,
         )
 
-    def parse_rotation(self, data: List[str]) -> "PitcherList":
-        if not len(data) == 8:
-            raise ValueError("Expected 8 pitchers")
+    def parse_rotation(self, data: list[str]) -> "PitcherList":
+        num_players_expected = self.season.rules.num_pitchers
+        if not len(data) == num_players_expected:
+            raise ValueError(
+                f"Expected {self.season.rules.num_pitchers} pitchers, not {len(data)}"
+            )
         return PitcherList(Pitcher(name, self.season) for name in data)
 
-    def parse_minors(self, data: List[List[str]]) -> tuple["HitterList", "PitcherList"]:
+    def parse_minors(self, data: list[list[str]]) -> tuple["HitterList", "PitcherList"]:
         if len(data) > 5:
             raise ValueError("Must have at most 5 players in minors")
         hitters, pitchers = HitterList(role=Role.MINORS), PitcherList()
@@ -194,14 +215,14 @@ class Player:
     position: Position
     mlb_id: int
     team: str
-    year: int = 2021
+    year: int
     season: Season
     stats_group: str
     stats: Dict[str, Any] = {}
-    all_players: pd.DataFrame
     multiplier: float = 1
 
     def __init__(self, name: str, position: Position, season: Season):
+        self.year = season.year
         match = re.match(r"^(.*)\s\((\d{4})\)$", name)
         if match is not None:
             name, year = match.groups()
@@ -211,7 +232,6 @@ class Player:
         self.name = name
         self.position = position
         self.season = season
-        self.mlb_id = self.all_players.loc[name, "MLBID"]
 
     def __repr__(self):
         attrs = ["name", "position", "mlb_id"]
@@ -241,7 +261,6 @@ class Player:
 
 class Hitter(Player):
     stats_group = "hitting"
-    all_players = pd.read_csv("data/2021/hitters.csv", index_col="Name")
 
     def __init__(self, name: str, position: Position, season: Season):
         if position == Position.PITCHER:
@@ -253,6 +272,7 @@ class Hitter(Player):
             self.multiplier = 0.9
 
         super().__init__(name, position, season)
+        self.mlb_id = season.all_hitters.loc[self.name, "MLBID"]
 
     @property
     def ab(self) -> int:
@@ -318,10 +338,10 @@ class HitterList(List[Hitter]):
 
 class Pitcher(Player):
     stats_group = "pitching"
-    all_players = pd.read_csv("data/2021/pitchers.csv", index_col="Name")
 
     def __init__(self, name: str, season: Season):
         super().__init__(name, Position.PITCHER, season)
+        self.mlb_id = season.all_pitchers.loc[self.name, "MLBID"]
 
     @property
     def ip(self) -> float:

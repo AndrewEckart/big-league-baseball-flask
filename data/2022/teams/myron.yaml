@@ -1,0 +1,29 @@
+starters:
+  1B: "Jonathan Schoop"
+  2B: "Rougned Odor"
+  SS: "Corey Seager"
+  3B: "Jose Ramirez"
+  C: "Gary Sanchez"
+  OF:
+    - "Cedric Mullins"
+    - "Lourdes Gurriel Jr."
+    - "Aaron Hicks"
+  DH: "Alex Kirilloff"
+bench:
+  - ["3B", "Gio Urshela"]
+  - ["2B", "Jed Lowrie"]
+  - ["SS", "Adalberto Mondesi"]
+  - ["OF", "Kyle Lewis"]
+rotation:
+  - "Justin Verlander"
+  - "Lance Lynn"
+  - "Tarik Skubal"
+  - "Triston McKenzie"
+  - "Zach Plesac"
+  - "Shane Baz"
+  - "Raisel Iglesias"
+minors:
+  - ["OF", "Dylan Moore"]
+  - ["2B", "Willi Castro"]
+  - ["P", "Joe Barlow"]
+  - ["P", "Nate Pearson"]
