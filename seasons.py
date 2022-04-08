@@ -18,12 +18,22 @@ seasons: list[Season] = [
             "Ron",
             "Justin",
         ],
-        rules=Rules(num_reserve_hitters=4, num_pitchers=7),
+        rules=Rules(
+            num_reserve_hitters=4,
+            num_pitchers=7,
+            injured_pitcher_innings_multiplier=0.7,
+            injured_pitcher_era_multiplier=1.15,
+        ),
     ),
     Season(
         year=2021,
         managers=["Andrew", "Evans", "Jeff", "John", "Myron", "Paula", "Rich", "Scott"],
-        rules=Rules(num_reserve_hitters=5, num_pitchers=8),
+        rules=Rules(
+            num_reserve_hitters=5,
+            num_pitchers=8,
+            injured_pitcher_innings_multiplier=0.8,
+            injured_pitcher_era_multiplier=1.3,
+        ),
     ),
 ]
 

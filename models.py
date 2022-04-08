@@ -19,6 +19,8 @@ from constants import Position, Role, INFIELD_POSITIONS, TEAM_ABBREVIATIONS
 class Rules:
     num_reserve_hitters: int
     num_pitchers: int
+    injured_pitcher_innings_multiplier: float
+    injured_pitcher_era_multiplier: float
 
 
 @dataclass
@@ -384,19 +386,26 @@ class Pitcher(Player):
 
     def fetch_stats(self):
         super().fetch_stats()
-        if self.year != 2021:
-            outs = round(self.stats.get("outs", 0) * 0.8 * self.season.progress)
+        season, stats = self.season, self.stats
+        if self.year != season.year:
+            rules = season.rules
+            ip_multiplier = rules.injured_pitcher_innings_multiplier
+            er_multiplier = rules.injured_pitcher_era_multiplier
+            outs = round(stats.get("outs", 0) * ip_multiplier * season.progress)
             whole, fraction = divmod(outs, 3)
-            self.stats["inningsPitched"] = f"{whole}.{fraction}"
+            stats["inningsPitched"] = f"{whole}.{fraction}"
             er = round(
-                self.stats.get("earnedRuns", 0) * 0.8 * 1.3 * self.season.progress
+                stats.get("earnedRuns", 0)
+                * ip_multiplier
+                * er_multiplier
+                * season.progress
             )
-            self.stats["earnedRuns"] = er
+            stats["earnedRuns"] = er
         if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
-                if key not in self.stats:
+                if key not in stats:
                     continue
-                self.stats[key] = round(self.multiplier * self.stats[key])
+                stats[key] = round(self.multiplier * stats[key])
 
 
 def format_innings_pitched(innings_pitched: float) -> str:
@@ -431,7 +440,13 @@ if __name__ == "__main__":
         "Rich",
         "Scott",
     ]
-    szn = Season(year=2021, managers=managers)
+    rules_2021 = Rules(
+        num_reserve_hitters=5,
+        num_pitchers=8,
+        injured_pitcher_innings_multiplier=0.8,
+        injured_pitcher_era_multiplier=1.3,
+    )
+    szn = Season(year=2021, managers=managers, rules=rules_2021)
     andrew = Team("Andrew", szn)
 
     bieber = Pitcher("Shane Bieber", szn)
