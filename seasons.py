@@ -21,6 +21,7 @@ seasons: list[Season] = [
         rules=Rules(
             num_reserve_hitters=4,
             num_pitchers=7,
+            team_innings_threshold=900,
             injured_pitcher_innings_multiplier=0.7,
             injured_pitcher_era_multiplier=1.15,
         ),
@@ -31,6 +32,7 @@ seasons: list[Season] = [
         rules=Rules(
             num_reserve_hitters=5,
             num_pitchers=8,
+            team_innings_threshold=1000,
             injured_pitcher_innings_multiplier=0.8,
             injured_pitcher_era_multiplier=1.3,
         ),

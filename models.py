@@ -19,6 +19,7 @@ from constants import Position, Role, INFIELD_POSITIONS, TEAM_ABBREVIATIONS
 class Rules:
     num_reserve_hitters: int
     num_pitchers: int
+    team_innings_threshold: int
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
 
@@ -197,7 +198,8 @@ class Team:
     @property
     def innings_bonus_or_penalty(self) -> float:
         stats = self.rotation.get_summary_stats()
-        innings_delta = stats.ip - (1000 * self.season.progress)
+        rules = self.season.rules
+        innings_delta = stats.ip - (rules.team_innings_threshold * self.season.progress)
         if innings_delta >= 0:
             return innings_delta / 5
         else:
@@ -443,6 +445,7 @@ if __name__ == "__main__":
     rules_2021 = Rules(
         num_reserve_hitters=5,
         num_pitchers=8,
+        team_innings_threshold=1000,
         injured_pitcher_innings_multiplier=0.8,
         injured_pitcher_era_multiplier=1.3,
     )
