@@ -1,9 +1,9 @@
 starters:
-  1B: "Miguel Sano"
-  2B: "David Fletcher"
+  1B: "Miguel Sano (2021)"
+  2B: "David Fletcher (2021)"
   SS: "Gleyber Torres"
   3B: "Alex Bregman"
-  C: "Yasmani Grandal"
+  C: "Yasmani Grandal (2021)"
   OF:
     - "Mike Trout"
     - "Julio Rodriguez"
@@ -17,7 +17,7 @@ bench:
 rotation:
   - "Eduardo Rodriguez"
   - "Michael Kopech"
-  - "Casey Mize"
+  - "Casey Mize (2021)"
   - "Zack Greinke"
   - "Brady Singer"
   - "Taylor Rogers"
