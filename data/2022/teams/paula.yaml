@@ -3,17 +3,17 @@ starters:
   2B: "Marcus Semien"
   SS: "Carlos Correa"
   3B: "DJ LeMahieu"
-  C: "Mike Zunino"
+  C: "Mike Zunino (2021)"
   OF:
     - "Joey Gallo"
     - "Myles Straw"
     - "Robbie Grossman"
-  DH: "Austin Meadows"
+  DH: "Austin Meadows (2021)"
 bench:
   - ["OF", "Kole Calhoun"]
   - ["OF", "Brandon Marsh"]
   - ["SS", "Elvis Andrus"]
-  - ["OF", "Justin Upton"]
+  - ["OF", "Justin Upton (2021)"]
 rotation:
   - "Kevin Gausman"
   - "Shane McClanahan"
