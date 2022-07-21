@@ -1,8 +1,8 @@
 starters:
   1B: "Yuli Gurriel"
-  2B: "Brandon Lowe"
+  2B: "Brandon Lowe (2021)"
   SS: "Jorge Polanco"
-  3B: "Anthony Rendon"
+  3B: "Santiago Espinal"
   C: "Sean Murphy"
   OF:
     - "Teoscar Hernandez"
@@ -11,19 +11,19 @@ starters:
   DH: "Ty France"
 bench:
   - ["1B", "Carlos Santana"]
-  - ["OF", "Jarred Kelenic"]
+  - ["OF", "Jarred Kelenic (2021)"]
   - ["OF", "Brad Miller"]
   - ["2B", "Leury Garcia"]
 rotation:
-  - "Aaron Civale"
+  - "Nick Pivetta"
   - "Joe Ryan"
   - "Nestor Cortes"
   - "Drew Rasmussen"
   - "Tanner Houck"
-  - "Andrew Kittredge"
+  - "Andrew Kittredge (2021)"
   - "Paul Sewald"
 minors:
   - ["C", "Danny Jansen"]
-  - ["OF", "Raimel Tapia"]
-  - ["P", "Nick Pivetta"]
+  - ["3B", "Anthony Rendon"]
+  - ["P", "Aaron Civale"]
   - ["P", "Michael Lorenzen"]

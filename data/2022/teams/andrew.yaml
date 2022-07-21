@@ -1,29 +1,30 @@
 starters:
   1B: "Nate Lowe"
   2B: "Luis Arraez"
-  SS: "Nicky Lopez"
+  SS: "Jeremy Pena"
   3B: "Matt Chapman"
-  C: "Mitch Garver"
+  C: "Eric Haase"
   OF:
     - "George Springer"
     - "J.D. Martinez"
     - "Austin Hays"
   DH: "Franmil Reyes"
 bench:
-  - ["3B", "Jeimer Candelario"]
+  - ["OF", "Jackie Bradley Jr."]
   - ["1B", "Ji-Man Choi"]
-  - ["SS", "Jeremy Pena"]
-  - ["OF", "Tony Kemp"]
+  - ["SS", "Nicky Lopez"]
+  - ["OF", "Ramon Laureano"]
 rotation:
   - "Gerrit Cole"
   - "Robbie Ray"
   - "Nathan Eovaldi"
   - "Hyun-Jin Ryu (2021)"
   - "Logan Gilbert"
-  - "Lou Trivino"
+  - "Taylor Rogers"
   - "Garrett Whitlock"
 minors:
   - ["C", "Luis Torrens"]
   - ["1B", "Eric Thames"]
-  - ["P", "Lance McCullers (2021)"]
+  - ["C", "Mitch Garver"]
+  - ["P", "Lou Trivino"]
   - ["P", "Jose Suarez"]

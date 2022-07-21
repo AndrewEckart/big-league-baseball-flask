@@ -2,16 +2,16 @@ starters:
   1B: "Jared Walsh"
   2B: "Javier Baez"
   SS: "Amed Rosario"
-  3B: "Yoan Moncada"
+  3B: "Yoan Moncada (2021)"
   C: "Alejandro Kirk"
   OF:
     - "Kyle Tucker"
     - "Randy Arozarena"
     - "Max Kepler"
-  DH: "Willie Calhoun"
+  DH: "Yandy Diaz"
 bench:
   - ["3B", "Cavan Biggio"]
-  - ["2B", "Nick Solak"]
+  - ["2B", "Nick Solak (2021)"]
   - ["OF", "Jo Adell"]
   - ["OF", "Chad Pinder"]
 rotation:
@@ -19,7 +19,7 @@ rotation:
   - "Framber Valdez"
   - "Sonny Gray"
   - "Patrick Sandoval"
-  - "Jameson Taillon"
+  - "Brady Singer"
   - "Ryan Pressly"
   - "Luis Patino"
 minors:

@@ -1,6 +1,6 @@
 starters:
-  1B: "Miguel Sano (2021)"
-  2B: "David Fletcher (2021)"
+  1B: "Josh Naylor"
+  2B: "Andres Gimenez"
   SS: "Gleyber Torres"
   3B: "Alex Bregman"
   C: "Yasmani Grandal (2021)"
@@ -10,20 +10,20 @@ starters:
     - "Byron Buxton"
   DH: "Yordan Alvarez"
 bench:
-  - ["OF", "Ramon Laureano"]
-  - ["3B", "Yandy Diaz"]
-  - ["1B", "Josh Naylor"]
-  - ["2B", "Andres Gimenez"]
+  - ["OF", "Tony Kemp"]
+  - ["OF", "Cristian Pache"]
+  - ["1B", "Miguel Sano (2021)"]
+  - ["2B", "David Fletcher (2021)"]
 rotation:
   - "Eduardo Rodriguez"
   - "Michael Kopech"
   - "Casey Mize (2021)"
   - "Zack Greinke"
-  - "Brady Singer"
-  - "Taylor Rogers"
-  - "Matt Barnes"
+  - "Jameson Taillon"
+  - "Lance McCullers (2021)"
+  - "Dylan Bundy"
 minors:
   - ["DH", "Andy Ibanez"]
   - ["OF", "Jake Meyers"]
   - ["P", "Aaron Bummer"]
-  - ["P", "Dylan Bundy"]
+  - ["P", "Matt Barnes"]

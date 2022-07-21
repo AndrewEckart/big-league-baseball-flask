@@ -1,5 +1,5 @@
 starters:
-  1B: "Jonathan Schoop"
+  1B: "Alex Kirilloff"
   2B: "Rougned Odor"
   SS: "Corey Seager"
   3B: "Jose Ramirez"
@@ -8,22 +8,22 @@ starters:
     - "Cedric Mullins"
     - "Lourdes Gurriel Jr."
     - "Aaron Hicks"
-  DH: "Alex Kirilloff"
+  DH: "Gio Urshela"
 bench:
-  - ["3B", "Gio Urshela"]
+  - ["3B", "Tyler Wade"]
   - ["2B", "Jed Lowrie (2021)"]
-  - ["SS", "Adalberto Mondesi"]
-  - ["OF", "Kyle Lewis"]
+  - ["1B", "Jonathan Schoop"]
+  - ["OF", "Dylan Moore"]
 rotation:
   - "Justin Verlander"
   - "Lance Lynn (2021)"
   - "Tarik Skubal"
   - "Triston McKenzie"
   - "Zach Plesac"
-  - "Shane Baz"
+  - "Joe Barlow"
   - "Raisel Iglesias"
 minors:
-  - ["OF", "Dylan Moore"]
-  - ["2B", "Willi Castro"]
-  - ["P", "Joe Barlow"]
+  - ["OF", "Kyle Lewis"]
+  - ["SS", "Adalberto Mondesi"]
+  - ["P", "Shane Baz"]
   - ["P", "Nate Pearson"]
