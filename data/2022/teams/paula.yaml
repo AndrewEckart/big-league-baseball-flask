@@ -5,25 +5,25 @@ starters:
   3B: "DJ LeMahieu"
   C: "Mike Zunino (2021)"
   OF:
-    - "Joey Gallo"
+    - "Kole Calhoun"
     - "Myles Straw"
-    - "Robbie Grossman"
+    - "Brandon Marsh"
   DH: "Austin Meadows (2021)"
 bench:
-  - ["OF", "Kole Calhoun"]
-  - ["OF", "Brandon Marsh"]
+  - ["OF", "Joey Gallo"]
+  - ["OF", "Robbie Grossman"]
   - ["SS", "Elvis Andrus"]
-  - ["OF", "Justin Upton (2021)"]
+  - ["OF", "Kevin Kiermaier"]
 rotation:
   - "Kevin Gausman"
   - "Shane McClanahan"
   - "Jordan Montgomery"
   - "Cal Quantrill"
-  - "Kris Bubic"
+  - "Dane Dunning"
   - "Jordan Romano"
   - "Scott Barlow"
 minors:
-  - ["OF", "Kevin Kiermaier"]
+  - ["OF", "Justin Upton (2021)"]
   - ["1B", "Bobby Bradley"]
-  - ["P", "Dane Dunning"]
+  - ["P", "Kris Bubic"]
   - ["P", "Carlos Hernandez"]
