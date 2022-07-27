@@ -11,7 +11,7 @@ starters:
   DH: "Yordan Alvarez"
 bench:
   - ["OF", "Tony Kemp"]
-  - ["OF", "Cristian Pache"]
+  - ["OF", "Jake Meyers"]
   - ["1B", "Miguel Sano (2021)"]
   - ["2B", "David Fletcher (2021)"]
 rotation:
@@ -24,6 +24,6 @@ rotation:
   - "Dylan Bundy"
 minors:
   - ["DH", "Andy Ibanez"]
-  - ["OF", "Jake Meyers"]
+  - ["OF", "Cristian Pache"]
   - ["P", "Aaron Bummer"]
   - ["P", "Matt Barnes"]

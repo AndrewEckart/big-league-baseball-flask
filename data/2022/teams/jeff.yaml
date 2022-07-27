@@ -1,29 +1,29 @@
 starters:
   1B: "Vladimir Guerrero Jr."
-  2B: "Enrique Hernandez"
+  2B: "Enrique Hernandez (2021)"
   SS: "Trevor Story"
   3B: "Eugenio Suarez"
-  C: "Salvador Perez"
+  C: "Salvador Perez (2021)"
   OF:
     - "Adolis Garcia"
-    - "Akil Baddoo"
-    - "Manuel Margot"
+    - "Raimel Tapia"
+    - "Michael A. Taylor"
   DH: "Trey Mancini"
 bench:
   - ["OF", "Gavin Sheets"]
-  - ["OF", "Michael A. Taylor"]
-  - ["2B", "Matt Duffy"]
+  - ["OF", "Manuel Margot"]
+  - ["OF", "Akil Baddoo (2021)"]
   - ["SS", "Jorge Mateo"]
 rotation:
-  - "Jose Berrios"
+  - "Tyler Wells"
   - "Alek Manoah"
   - "John Means (2021)"
   - "Chris Flexen"
-  - "Michael Pineda"
+  - "Drew Steckenrider (2021)"
   - "Cole Irvin"
   - "Chad Green (2021)"
 minors:
-  - ["3B", "Santiago Espinal"]
+  - ["2B", "Matt Duffy"]
   - ["OF", "Bradley Zimmer"]
-  - ["P", "Tyler Wells"]
-  - ["P", "Drew Steckenrider"]
+  - ["P", "Jose Berrios"]
+  - ["P", "Michael Pineda"]
