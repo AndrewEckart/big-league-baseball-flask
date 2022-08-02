@@ -7,11 +7,11 @@ starters:
   OF:
     - "Whit Merrifield"
     - "Giancarlo Stanton"
-    - "AJ Pollock"
-  DH: "Anthony Santander"
+    - "Anthony Santander"
+  DH: "Tim Anderson"
 bench:
-  - ["3B", "Abraham Toro"]
-  - ["SS", "Tim Anderson"]
+  - ["2B", "Willi Castro"]
+  - ["OF", "AJ Pollock"]
   - ["SS", "J.P. Crawford"]
   - ["OF", "Chas McCormick"]
 rotation:
@@ -24,6 +24,6 @@ rotation:
   - "Kendall Graveman"
 minors:
   - ["OF", "Stephen Piscotty"]
-  - ["2B", "Willi Castro"]
+  - ["3B", "Abraham Toro"]
   - ["P", "Jonathan Loaisiga"]
   - ["P", "Yusei Kikuchi"]

@@ -3,27 +3,26 @@ starters:
   2B: "Jose Altuve"
   SS: "Xander Bogaerts"
   3B: "Rafael Devers"
-  C: "Kyle Higashioka"
+  C: "Adley Rutschman"
   OF:
     - "Alex Verdugo"
     - "Seth Brown"
     - "Hunter Dozier"
-  DH: "Mitch Haniger (2021)"
+  DH: "Isiah Kiner-Falefa"
 bench:
-  - ["SS", "Isiah Kiner-Falefa"]
+  - ["OF", "Mitch Haniger (2021)"]
   - ["2B", "Ramon Urias"]
-  - ["C", "Adley Rutschman"]
+  - ["3B", "Jeimer Candelario"]
   - ["1B", "Bobby Dalbec"]
 rotation:
   - "Frankie Montas"
   - "Marco Gonzales"
   - "Luis Garcia"
-  - "Bailey Ober"
+  - "Brad Keller"
   - "James Kaprielian"
-  - "Tyler Alexander"
+  - "Jake Odorizzi"
   - "Liam Hendriks"
 minors:
-  - ["OF", "Jackie Bradley Jr."]
-  - ["C", "Eric Haase"]
-  - ["P", "Brad Keller"]
-  - ["P", "Jake Odorizzi"]
+  - ["C", "Kyle Higashioka"]
+  - ["P", "Bailey Ober"]
+  - ["P", "Tyler Alexander"]
