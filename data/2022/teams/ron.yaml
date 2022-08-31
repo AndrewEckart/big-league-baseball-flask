@@ -1,6 +1,6 @@
 starters:
   1B: "Jose Abreu"
-  2B: "Marwin Gonzalez"
+  2B: "J.P. Crawford"
   SS: "Bo Bichette"
   3B: "Bobby Witt Jr."
   C: "Christian Vazquez"
@@ -8,11 +8,11 @@ starters:
     - "Whit Merrifield"
     - "Giancarlo Stanton"
     - "Anthony Santander"
-  DH: "Tim Anderson"
+  DH: "Tim Anderson (2021)"
 bench:
   - ["2B", "Willi Castro"]
   - ["OF", "AJ Pollock"]
-  - ["SS", "J.P. Crawford"]
+  - ["2B", "Marwin Gonzalez (2021)"]
   - ["OF", "Chas McCormick"]
 rotation:
   - "Lucas Giolito"

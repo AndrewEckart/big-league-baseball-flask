@@ -1,5 +1,5 @@
 starters:
-  1B: "Alex Kirilloff"
+  1B: "Jonathan Schoop"
   2B: "Rougned Odor"
   SS: "Corey Seager"
   3B: "Jose Ramirez"
@@ -12,7 +12,7 @@ starters:
 bench:
   - ["3B", "Tyler Wade"]
   - ["2B", "Jed Lowrie (2021)"]
-  - ["1B", "Jonathan Schoop"]
+  - ["1B", "Alex Kirilloff"]
   - ["OF", "Dylan Moore"]
 rotation:
   - "Justin Verlander"

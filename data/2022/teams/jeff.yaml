@@ -1,6 +1,6 @@
 starters:
   1B: "Vladimir Guerrero Jr."
-  2B: "Enrique Hernandez (2021)"
+  2B: "Jorge Mateo"
   SS: "Trevor Story"
   3B: "Eugenio Suarez"
   C: "Salvador Perez (2021)"
@@ -13,7 +13,7 @@ bench:
   - ["OF", "Gavin Sheets"]
   - ["OF", "Manuel Margot"]
   - ["OF", "Akil Baddoo (2021)"]
-  - ["SS", "Jorge Mateo"]
+  - ["2B", "Enrique Hernandez (2021)"]
 rotation:
   - "Jose Berrios"
   - "Alek Manoah"
