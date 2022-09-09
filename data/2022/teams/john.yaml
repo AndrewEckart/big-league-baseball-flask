@@ -12,8 +12,8 @@ starters:
 bench:
   - ["1B", "Carlos Santana"]
   - ["C", "Danny Jansen"]
-  - ["OF", "Brad Miller"]
-  - ["2B", "Leury Garcia"]
+  - ["OF", "Brad Miller (2021)"]
+  - ["2B", "Leury Garcia (2021)"]
 rotation:
   - "Nick Pivetta"
   - "Joe Ryan"
