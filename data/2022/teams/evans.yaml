@@ -7,11 +7,11 @@ starters:
   OF:
     - "Aaron Judge"
     - "Luis Robert"
-    - "Eloy Jimenez"
-  DH: "Michael Brantley"
+    - "Andrew Vaughn"
+  DH: "Miguel Cabrera"
 bench:
-  - ["OF", "Andrew Vaughn"]
-  - ["1B", "Miguel Cabrera"]
+  - ["OF", "Eloy Jimenez"]
+  - ["DH", "Michael Brantley (2021)"]
   - ["3B", "Josh Harrison"]
   - ["2B", "Christian Arroyo"]
 rotation:

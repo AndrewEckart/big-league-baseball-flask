@@ -1,5 +1,5 @@
 starters:
-  1B: "Spencer Torkelson"
+  1B: "Mitch Haniger (2021)"
   2B: "Jose Altuve"
   SS: "Xander Bogaerts"
   3B: "Rafael Devers"
@@ -10,7 +10,7 @@ starters:
     - "Hunter Dozier"
   DH: "Isiah Kiner-Falefa"
 bench:
-  - ["OF", "Mitch Haniger (2021)"]
+  - ["1B", "Spencer Torkelson"]
   - ["2B", "Ramon Urias"]
   - ["3B", "Jeimer Candelario"]
   - ["1B", "Bobby Dalbec"]
