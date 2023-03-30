@@ -1,0 +1,29 @@
+starters:
+  1B: "Vladimir Guerrero Jr."
+  2B: "Brandon Lowe"
+  SS: "Corey Seager"
+  3B: "Matt Chapman"
+  C: "Alejandro Kirk"
+  OF:
+    - "Anthony Santander"
+    - "Austin Hays"
+    - "Oscar Colas"
+  DH: "Giancarlo Stanton"
+bench:
+  - ["OF", "Esteury Ruiz"]
+  - ["2B", "Nick Gordon"]
+  - ["2B", "Nick Maton"]
+  - ["C", "Logan O'Hoppe"]
+rotation:
+  - "Cristian Javier"
+  - "Jeffrey Springs"
+  - "Reid Detmers"
+  - "Eduardo Rodriguez"
+  - "Shintaro Fujinami"
+  - "Garrett Whitlock"
+  - "Andres Munoz"
+minors:
+  - ["OF", "Michael Brantley"]
+  - ["OF", "Kerry Carpenter"]
+  - ["P", "Kyle Bradish"]
+  - ["P", "Jorge Lopez"]

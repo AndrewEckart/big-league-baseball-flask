@@ -1,0 +1,29 @@
+starters:
+  1B: "Jose Abreu"
+  2B: "Kolten Wong"
+  SS: "Jeremy Pena"
+  3B: "Justin Turner"
+  C: "Adley Rutschman"
+  OF:
+    - "Mike Trout"
+    - "Enrique Hernandez"
+    - "Joey Gallo"
+  DH: "Jesus Aguilar"
+bench:
+  - ["SS", "J.P. Crawford"]
+  - ["OF", "AJ Pollock"]
+  - ["2B", "Aledmys Diaz"]
+  - ["2B", "Jose Altuve"]
+rotation:
+  - "Shane Bieber"
+  - "Drew Rasmussen"
+  - "Patrick Sandoval"
+  - "Jose Urquidy"
+  - "Jose Suarez"
+  - "Jhoan Duran"
+  - "Jason Adam"
+minors:
+  - ["OF", "Gavin Sheets"]
+  - ["SS", "Isiah Kiner-Falefa"]
+  - ["P", "Michael Lorenzen"]
+  - ["P", "Yusei Kikuchi"]

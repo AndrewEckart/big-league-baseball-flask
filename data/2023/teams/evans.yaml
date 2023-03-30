@@ -1,0 +1,28 @@
+starters:
+  1B: "Andrew Vaughn"
+  2B: "Jorge Polanco"
+  SS: "Wander Franco"
+  3B: "Anthony Rendon"
+  C: "Danny Jansen"
+  OF:
+    - "Julio Rodriguez"
+    - "Adam Duvall"
+    - "Luis Robert Jr."
+  DH: "Eloy Jimenez"
+bench:
+  - ["SS", "Anthony Volpe"]
+  - ["1B", "Triston Casas"]
+  - ["3B", "Josh Donaldson"]
+  - ["OF", "Oswaldo Cabrera"]
+rotation:
+  - "Gerrit Cole"
+  - "Tyler Glasnow"
+  - "Carlos Rodon"
+  - "Clarke Schmidt"
+  - "Matthew Boyd"
+  - "Michael King"
+  - "Bailey Ober"
+minors:
+  - ["SS", "Oswald Peraza"]
+  - ["2B", "Cavan Biggio"]
+  - ["P", "Grayson Rodriguez"]

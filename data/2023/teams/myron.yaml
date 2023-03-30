@@ -1,0 +1,29 @@
+starters:
+  1B: "Brandon Belt"
+  2B: "Gleyber Torres"
+  SS: "Elvis Andrus"
+  3B: "Gunnar Henderson"
+  C: "MJ Melendez"
+  OF:
+    - "Kyle Tucker"
+    - "George Springer"
+    - "Hunter Renfroe"
+  DH: "Shea Langeliers"
+bench:
+  - ["SS", "Jorge Mateo"]
+  - ["1B", "Jared Walsh"]
+  - ["2B", "Adam Frazier"]
+  - ["1B", "Ryan Noda"]
+rotation:
+  - "Alek Manoah"
+  - "Robbie Ray"
+  - "Martin Perez"
+  - "Lance Lynn"
+  - "Tyler Mahle"
+  - "Jordan Romano"
+  - "Scott Barlow"
+minors:
+  - ["C", "Mike Zunino"]
+  - ["DH", "Franmil Reyes"]
+  - ["P", "Zack Greinke"]
+  - ["P", "Brad Keller"]

@@ -1,0 +1,29 @@
+starters:
+  1B: "Seth Brown"
+  2B: "Whit Merrifield"
+  SS: "Tim Anderson"
+  3B: "Eugenio Suarez"
+  C: "Jose Trevino"
+  OF:
+    - "Adolis Garcia"
+    - "Randy Arozarena"
+    - "Jose Siri"
+  DH: "Josh Bell"
+bench:
+  - ["1B", "Harold Ramirez"]
+  - ["C", "Mitch Garver"]
+  - ["SS", "Kyle Farmer"]
+  - ["OF", "Bubba Thompson"]
+rotation:
+  - "Dylan Cease"
+  - "Nestor Cortes"
+  - "Brady Singer"
+  - "Cole Irvin"
+  - "James Kaprielian"
+  - "Zach Eflin"
+  - "Emmanuel Clase"
+minors:
+  - ["C", "Reese McGuire"]
+  - ["OF", "Leody Taveras"]
+  - ["P", "Tyler Wells"]
+  - ["P", "Ken Waldichuk"]

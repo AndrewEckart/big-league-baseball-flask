@@ -1,0 +1,29 @@
+starters:
+  1B: "Vinnie Pasquantino"
+  2B: "Ramon Urias"
+  SS: "Bobby Witt Jr."
+  3B: "Josh Jung"
+  C: "Salvador Perez"
+  OF:
+    - "Teoscar Hernandez"
+    - "Riley Greene"
+    - "Masataka Yoshida"
+  DH: "Josh Naylor"
+bench:
+  - ["DH", "Shohei Ohtani"]
+  - ["OF", "Jarred Kelenic"]
+  - ["C", "Eric Haase"]
+  - ["3B", "Gio Urshela"]
+rotation:
+  - "Kevin Gausman"
+  - "Tyler Anderson"
+  - "Cal Quantrill"
+  - "Michael Kopech"
+  - "Kenta Maeda"
+  - "Brayan Bello"
+  - "Jose Leclerc"
+minors:
+  - ["OF", "Kyle Stowers"]
+  - ["DH", "David Hensley"]
+  - ["P", "Chris Flexen"]
+  - ["P", "Adam Cimber"]

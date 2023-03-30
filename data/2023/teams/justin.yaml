@@ -1,0 +1,29 @@
+starters:
+  1B: "Ty France"
+  2B: "Andres Gimenez"
+  SS: "Carlos Correa"
+  3B: "Rafael Devers"
+  C: "Cal Raleigh"
+  OF:
+    - "Ramon Laureano"
+    - "Oscar Gonzalez"
+    - "Max Kepler"
+  DH: "Aaron Judge"
+bench:
+  - ["OF", "Myles Straw"]
+  - ["OF", "Alex Kirilloff"]
+  - ["1B", "Spencer Torkelson"]
+  - ["2B", "Luis Rengifo"]
+rotation:
+  - "Luis Castillo"
+  - "Chris Bassitt"
+  - "Marco Gonzales"
+  - "Lucas Giolito"
+  - "Jose Berrios"
+  - "Kyle Gibson"
+  - "Felix Bautista"
+minors:
+  - ["2B", "Michael Massey"]
+  - ["OF", "Akil Baddoo"]
+  - ["P", "Triston McKenzie"]
+  - ["P", "Luis Severino"]

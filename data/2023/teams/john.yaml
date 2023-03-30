@@ -1,0 +1,29 @@
+starters:
+  1B: "Anthony Rizzo"
+  2B: "Marcus Semien"
+  SS: "Amed Rosario"
+  3B: "Yandy Diaz"
+  C: "Yasmani Grandal"
+  OF:
+    - "Steven Kwan"
+    - "Austin Meadows"
+    - "Andrew Benintendi"
+  DH: "Jose Ramirez"
+bench:
+  - ["2B", "Christian Arroyo"]
+  - ["3B", "Jace Peterson"]
+  - ["OF", "Kevin Kiermaier"]
+  - ["2B", "Tony Kemp"]
+rotation:
+  - "Jacob deGrom"
+  - "Chris Sale"
+  - "Joe Ryan"
+  - "Dean Kremer"
+  - "Corey Kluber"
+  - "Mike Clevinger"
+  - "Ryan Pressly"
+minors:
+  - ["C", "Christian Vazquez"]
+  - ["DH", "Miguel Cabrera"]
+  - ["P", "Matt Manning"]
+  - ["P", "Lance McCullers Jr."]

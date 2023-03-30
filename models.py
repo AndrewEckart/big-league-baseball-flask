@@ -20,6 +20,8 @@ class Rules:
     num_reserve_hitters: int
     num_pitchers: int
     team_innings_threshold: int
+    innings_deficit_multiplier: float
+    innings_surplus_multiplier: float
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
 
@@ -201,9 +203,9 @@ class Team:
         rules = self.season.rules
         innings_delta = stats.ip - (rules.team_innings_threshold * self.season.progress)
         if innings_delta >= 0:
-            return innings_delta / 5
+            return innings_delta * rules.innings_surplus_multiplier
         else:
-            return innings_delta / 3
+            return innings_delta * rules.innings_deficit_multiplier
 
     @property
     def pitching(self) -> float:
@@ -432,30 +434,22 @@ class PitcherList(List[Pitcher]):
 
 
 if __name__ == "__main__":
-    managers = [
-        "Andrew",
-        "Evans",
-        "Jeff",
-        "John",
-        "Myron",
-        "Paula",
-        "Rich",
-        "Scott",
-    ]
-    rules_2021 = Rules(
-        num_reserve_hitters=5,
-        num_pitchers=8,
-        team_innings_threshold=1000,
+    rules = Rules(
+        num_reserve_hitters=4,
+        num_pitchers=7,
+        team_innings_threshold=900,
+        innings_deficit_multiplier=1/3,
+        innings_surplus_multiplier=0,
         injured_pitcher_innings_multiplier=0.8,
         injured_pitcher_era_multiplier=1.3,
     )
-    szn = Season(year=2021, managers=managers, rules=rules_2021)
+    szn = Season(year=2023, managers=["Andrew"], rules=rules)
     andrew = Team("Andrew", szn)
 
-    bieber = Pitcher("Shane Bieber", szn)
-    bieber.fetch_stats()
-    print(bieber.stats)
+    pitcher = Pitcher("Shane Bieber", szn)
+    pitcher.fetch_stats()
+    print(pitcher.stats)
 
-    pujols = Hitter("Albert Pujols", Position.FIRST_BASE, szn)
-    pujols.fetch_stats()
-    print(pujols.stats)
+    hitter = Hitter("Aaron Judge", Position.OUTFIELD, szn)
+    hitter.fetch_stats()
+    print(hitter.stats)
