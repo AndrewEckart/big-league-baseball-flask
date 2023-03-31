@@ -1,12 +1,10 @@
 import logging
 
 from flask import Flask, render_template, abort, redirect
-from flask_bootstrap import Bootstrap
 
 from seasons import CURRENT_SEASON, ALL_SEASONS
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
 
 
 @app.context_processor

@@ -1,24 +1,40 @@
-{% from 'bootstrap/table.html' import render_table %}
+{% macro hitter_table(hitters) %}
 
-{% macro hitter_table(hitters, summary_label) %}
-  {% set summary_label = summary_label | default("Total") %}
-  {{ render_table(
-      hitters + [hitters.get_summary_stats(label=summary_label)],
-      titles=[
-        ("name", "Name"),
-        ("team", "Team"),
-        ("position", "Pos"),
-        ("ab", "AB"),
-        ("runs", "Runs"),
-        ("hits", "Hits"),
-        ("hr", "HR"),
-        ("rbi", "RBI"),
-        ("sb", "SB"),
-        ("formatted_avg", "AVG"),
-        ("notes", "Notes")
-      ],
-      table_classes="table-sm",
-      responsive=True
-    )
-  }}
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Team</th>
+        <th scope="col">Pos</th>
+        <th scope="col">AB</th>
+        <th scope="col">Runs</th>
+        <th scope="col">Hits</th>
+        <th scope="col">HR</th>
+        <th scope="col">RBI</th>
+        <th scope="col">SB</th>
+        <th scope="col">AVG</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for hitter in hitters + [hitters.get_summary_stats(label=summary_label)] %}
+      <tr>
+        <td>{{ hitter.name }}</td>
+        <td>{{ hitter.team }}</td>
+        <td>{{ hitter.position }}</td>
+        <td>{{ hitter.ab }}</td>
+        <td>{{ hitter.runs }}</td>
+        <td>{{ hitter.hits }}</td>
+        <td>{{ hitter.hr }}</td>
+        <td>{{ hitter.rbi }}</td>
+        <td>{{ hitter.sb }}</td>
+        <td>{{ hitter.formatted_avg }}</td>
+        <td>{{ hitter.notes }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
 {% endmacro %}

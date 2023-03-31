@@ -1,23 +1,40 @@
-{% from 'bootstrap/table.html' import render_table %}
-
 {% macro pitcher_table(pitchers) %}
-  {{ render_table(
-      pitchers + [pitchers.get_summary_stats()],
-      titles=[
-        ("name", "Name"),
-        ("team", "Team"),
-        ("position", "Pos"),
-        ("formatted_ip", "IP"),
-        ("er", "ER"),
-        ("wins", "W"),
-        ("saves", "SV"),
-        ("strikeouts", "K"),
-        ("walks", "BB"),
-        ("formatted_era", "ERA"),
-        ("notes", "Notes")
-      ],
-      table_classes="table-sm",
-      responsive=True
-    )
-  }}
+
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Team</th>
+        <th scope="col">Pos</th>
+        <th scope="col">IP</th>
+        <th scope="col">ER</th>
+        <th scope="col">W</th>
+        <th scope="col">SV</th>
+        <th scope="col">K</th>
+        <th scope="col">BB</th>
+        <th scope="col">ERA</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for pitcher in pitchers + [pitchers.get_summary_stats()] %}
+      <tr>
+        <td>{{ pitcher.name }}</td>
+        <td>{{ pitcher.team }}</td>
+        <td>{{ pitcher.position }}</td>
+        <td>{{ pitcher.formatted_ip }}</td>
+        <td>{{ pitcher.er }}</td>
+        <td>{{ pitcher.wins }}</td>
+        <td>{{ pitcher.saves }}</td>
+        <td>{{ pitcher.strikeouts }}</td>
+        <td>{{ pitcher.walks }}</td>
+        <td>{{ pitcher.formatted_era }}</td>
+        <td>{{ pitcher.notes }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
 {% endmacro %}
