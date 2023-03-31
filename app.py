@@ -39,6 +39,12 @@ def team_stats(year: int, manager: str):
     return render_template("team.html", team=team)
 
 
+@app.template_filter('pluralize')
+def pluralize(number: int, singular='', plural='s') -> str:
+    # Ref: https://stackoverflow.com/a/22336061/8534196
+    return singular if number == 1 else plural
+
+
 if __name__ == "__main__":
     logging.basicConfig(format="%(levelname)-7s %(message)s", level=logging.INFO)
     app.run()

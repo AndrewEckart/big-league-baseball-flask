@@ -6,7 +6,7 @@
   <div class="content-section">
     <div class="row justify-content-between align-items-center mb-2">
       <h4 class="col-auto">Standings</h4>
-      <sm class="col-auto">after {{ season.avg_games_played }} games</sm>
+      <sm class="col-auto">after {{ season.avg_games_played }} game{{ season.avg_games_played|pluralize }}</sm>
     </div>
     {{ standings_table(season.standings) }}
   </div>
