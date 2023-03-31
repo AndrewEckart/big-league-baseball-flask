@@ -18,9 +18,14 @@
       </tr>
     </thead>
     <tbody>
-    {% for hitter in hitters + [hitters.get_summary_stats(label=summary_label)] %}
+    {% for hitter in hitters + [hitters.get_summary_stats()] %}
       <tr>
-        <td>{{ hitter.name }}</td>
+        <td>
+          {% if hitter.mlb_profile_url is defined %}
+            <a href="{{ hitter.mlb_profile_url }}">{{ hitter.name }}</a></td>
+          {% else %}
+            {{ hitter.name }}
+          {% endif %}
         <td>{{ hitter.team }}</td>
         <td>{{ hitter.position }}</td>
         <td>{{ hitter.ab }}</td>

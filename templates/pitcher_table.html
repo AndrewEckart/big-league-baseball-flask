@@ -20,7 +20,13 @@
     <tbody>
     {% for pitcher in pitchers + [pitchers.get_summary_stats()] %}
       <tr>
-        <td>{{ pitcher.name }}</td>
+        <td>
+          {% if pitcher.mlb_profile_url is defined %}
+            <a href="{{ pitcher.mlb_profile_url }}">{{ pitcher.name }}</a></td>
+          {% else %}
+            {{ pitcher.name }}
+          {% endif %}
+        </td>
         <td>{{ pitcher.team }}</td>
         <td>{{ pitcher.position }}</td>
         <td>{{ pitcher.formatted_ip }}</td>

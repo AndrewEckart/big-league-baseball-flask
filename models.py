@@ -245,6 +245,10 @@ class Player:
         return f"{self.__class__.__name__}({values})"
 
     @property
+    def mlb_profile_url(self) -> str:
+        return f"https://www.mlb.com/player/{self.mlb_id}"
+
+    @property
     def notes(self) -> str:
         notes = ""
         if self.multiplier != 1:
@@ -330,7 +334,7 @@ class HitterList(List[Hitter]):
         super().__init__(*args)
         self.role = role
 
-    def get_summary_stats(self, label=None):
+    def get_summary_stats(self, label="Total"):
         stats = SimpleNamespace(ab=0, runs=0, hits=0, hr=0, rbi=0, sb=0)
         for hitter in self:
             for attr in vars(stats):
@@ -453,3 +457,4 @@ if __name__ == "__main__":
     hitter = Hitter("Aaron Judge", Position.OUTFIELD, szn)
     hitter.fetch_stats()
     print(hitter.stats)
+    print(HitterList([hitter], role=Role.STARTER).get_summary_stats().mlb_profile_url)
