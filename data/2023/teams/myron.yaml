@@ -12,7 +12,7 @@ starters:
 bench:
   - ["SS", "Jorge Mateo"]
   - ["1B", "Jared Walsh"]
-  - ["2B", "Adam Frazier"]
+  - ["DH", "Franmil Reyes"]
   - ["1B", "Ryan Noda"]
 rotation:
   - "Alek Manoah"
@@ -21,9 +21,8 @@ rotation:
   - "Lance Lynn"
   - "Tyler Mahle"
   - "Jordan Romano"
-  - "Scott Barlow"
+  - "Jom Gray"
 minors:
   - ["C", "Mike Zunino"]
-  - ["DH", "Franmil Reyes"]
   - ["P", "Zack Greinke"]
   - ["P", "Brad Keller"]
