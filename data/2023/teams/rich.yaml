@@ -7,23 +7,23 @@ starters:
   OF:
     - "Anthony Santander"
     - "Austin Hays"
-    - "Oscar Colas"
+    - "Teoscar Hernandez"
   DH: "Giancarlo Stanton"
 bench:
   - ["OF", "Esteury Ruiz"]
   - ["2B", "Nick Gordon"]
-  - ["2B", "Nick Maton"]
-  - ["C", "Logan O'Hoppe"]
+  - ["3B", "Gio Urshela"]
+  - ["OF", "Kerry Carpenter"]
 rotation:
   - "Cristian Javier"
   - "Jeffrey Springs"
   - "Reid Detmers"
   - "Eduardo Rodriguez"
-  - "Shintaro Fujinami"
+  - "Cal Quantrill"
   - "Garrett Whitlock"
   - "Andres Munoz"
 minors:
-  - ["OF", "Michael Brantley"]
-  - ["OF", "Kerry Carpenter"]
-  - ["P", "Kyle Bradish"]
+  - ["OF", "Oscar Colas"]
+  - ["C", "Logan O'Hoppe"]
+  - ["P", "Shintaro Fujinami"]
   - ["P", "Jorge Lopez"]
