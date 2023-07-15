@@ -1,29 +1,29 @@
 starters:
   1B: "Ryan Mountcastle"
-  2B: "Jonathan Schoop"
+  2B: "Isaac Paredes"
   SS: "Bo Bichette"
   3B: "Alex Bregman"
-  C: "Daulton Varsho"
+  C: "Jonah Heim"
   OF:
     - "Cedric Mullins"
     - "Taylor Ward"
-    - "Manuel Margot"
-  DH: "Jose Miranda"
+    - "Steven Kwan"
+  DH: "Adam Frazier"
 bench:
-  - ["3B", "Yoan Moncada"]
-  - ["2B", "Isaac Paredes"]
-  - ["OF", "Hunter Dozier"]
+  - ["DH", "Jose Miranda"]
+  - ["C", "Daulton Varsho"]
+  - ["OF", "Harrison Bader"]
   - ["OF", "Robbie Grossman"]
 rotation:
   - "Framber Valdez"
   - "George Kirby"
   - "Pablo Lopez"
-  - "Jon Gray"
   - "Nathan Eovaldi"
+  - "Scott Barlow"
   - "Paul Sewald"
   - "Kenley Jansen"
 minors:
-  - ["C", "Jonah Heim"]
-  - ["OF", "Harrison Bader"]
-  - ["P", "Hunter Brown"]
-  - ["P", "Brock Burke"]
+  - ["2B", "Jonathan Schoop"]
+  - ["3B", "Yoan Moncada"]
+  - ["OF", "Hunter Dozier"]
+
