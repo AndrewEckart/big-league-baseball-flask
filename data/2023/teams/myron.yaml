@@ -1,7 +1,7 @@
 starters:
-  1B: "Brandon Belt"
+  1B: "Ryan Noda"
   2B: "Gleyber Torres"
-  SS: "Elvis Andrus"
+  SS: "Jorge Mateo"
   3B: "Gunnar Henderson"
   C: "MJ Melendez"
   OF:
@@ -10,19 +10,21 @@ starters:
     - "Hunter Renfroe"
   DH: "Shea Langeliers"
 bench:
-  - ["SS", "Jorge Mateo"]
+  - ["SS", "Elvis Andrus"]
   - ["1B", "Jared Walsh"]
   - ["DH", "Franmil Reyes"]
-  - ["1B", "Ryan Noda"]
+  - ["1B", "Brandon Belt"]
 rotation:
   - "Alek Manoah"
-  - "Robbie Ray"
+  - "Robbie Ray (2022)"
   - "Martin Perez"
   - "Lance Lynn"
-  - "Tyler Mahle"
+  - "Brock Burke"
   - "Jordan Romano"
   - "Jon Gray"
 minors:
   - ["C", "Mike Zunino"]
   - ["P", "Zack Greinke"]
   - ["P", "Brad Keller"]
+  - ["P", "Tyler Mahle"]
+
