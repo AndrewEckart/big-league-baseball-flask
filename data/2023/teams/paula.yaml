@@ -7,17 +7,17 @@ starters:
   OF:
     - "Yordan Alvarez"
     - "Alex Verdugo"
-    - "Chas McCormick"
+    - "Michael A. Taylor"
   DH: "Byron Buxton"
 bench:
-  - ["OF", "Michael A. Taylor"]
+  - ["OF", "Chas McCormick"]
   - ["OF", "Matt Vierling"]
   - ["2B", "Santiago Espinal"]
   - ["OF", "Aaron Hicks"]
 rotation:
   - "Shane McClanahan"
   - "Logan Gilbert"
-  - "Luis Garcia"
+  - "Aaron Civale"
   - "Sonny Gray"
   - "Andrew Heaney"
   - "Clay Holmes"
@@ -25,5 +25,5 @@ rotation:
 minors:
   - ["OF", "Kyle Isbel"]
   - ["OF", "Edward Olivares"]
-  - ["P", "Aaron Civale"]
+  - ["P", "Luis Garcia"]
   - ["P", "Spencer Turnbull"]
