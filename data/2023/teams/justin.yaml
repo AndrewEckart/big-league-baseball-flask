@@ -5,19 +5,19 @@ starters:
   3B: "Rafael Devers"
   C: "Cal Raleigh"
   OF:
-    - "Ramon Laureano"
+    - "Aaron Judge"
     - "Oscar Gonzalez"
     - "Max Kepler"
-  DH: "Aaron Judge"
+  DH: "Spencer Torkelson"
 bench:
   - ["OF", "Myles Straw"]
   - ["OF", "Alex Kirilloff"]
-  - ["1B", "Spencer Torkelson"]
+  - ["OF", "Ramon Laureano"]
   - ["2B", "Luis Rengifo"]
 rotation:
   - "Luis Castillo"
   - "Chris Bassitt"
-  - "Marco Gonzales"
+  - "Triston McKenzie"
   - "Lucas Giolito"
   - "Jose Berrios"
   - "Kyle Gibson"
@@ -25,5 +25,5 @@ rotation:
 minors:
   - ["2B", "Michael Massey"]
   - ["OF", "Akil Baddoo"]
-  - ["P", "Triston McKenzie"]
+  - ["P", "Marco Gonzales"]
   - ["P", "Luis Severino"]
