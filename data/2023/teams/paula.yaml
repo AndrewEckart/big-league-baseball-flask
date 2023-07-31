@@ -7,10 +7,10 @@ starters:
   OF:
     - "Yordan Alvarez"
     - "Alex Verdugo"
-    - "Michael A. Taylor"
+    - "Chas McCormick"
   DH: "Byron Buxton"
 bench:
-  - ["OF", "Chas McCormick"]
+  - ["OF", "Michael A. Taylor"]
   - ["OF", "Matt Vierling"]
   - ["2B", "Santiago Espinal"]
   - ["OF", "Aaron Hicks"]
