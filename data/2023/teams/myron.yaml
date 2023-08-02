@@ -11,11 +11,11 @@ starters:
   DH: "Shea Langeliers"
 bench:
   - ["SS", "Elvis Andrus"]
-  - ["1B", "Jared Walsh"]
-  - ["DH", "Franmil Reyes"]
+  - ["1B", "Jared Walsh (2022)"]
+  - ["DH", "Franmil Reyes (2022)"]
   - ["1B", "Brandon Belt"]
 rotation:
-  - "Alek Manoah"
+  - "Zack Greinke"
   - "Robbie Ray (2022)"
   - "Martin Perez"
   - "Lance Lynn"
@@ -24,7 +24,7 @@ rotation:
   - "Jon Gray"
 minors:
   - ["C", "Mike Zunino"]
-  - ["P", "Zack Greinke"]
+  - ["P", "Alek Manoah"]
   - ["P", "Brad Keller"]
   - ["P", "Tyler Mahle"]
 
