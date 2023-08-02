@@ -12,18 +12,18 @@ starters:
 bench:
   - ["SS", "Anthony Volpe"]
   - ["1B", "Triston Casas"]
-  - ["3B", "Josh Donaldson"]
+  - ["2B", "Cavan Biggio"]
   - ["OF", "Oswaldo Cabrera"]
 rotation:
   - "Gerrit Cole"
   - "Tyler Glasnow"
   - "Carlos Rodon"
   - "Clarke Schmidt"
-  - "Matthew Boyd"
+  - "Grayson Rodriguez"
   - "Michael King"
   - "Bailey Ober"
 minors:
   - ["SS", "Oswald Peraza"]
-  - ["2B", "Cavan Biggio"]
+  - ["3B", "Josh Donaldson"]
   - ["SS", "Adalberto Mondesi"]
-  - ["P", "Grayson Rodriguez"]
+  - ["P", "Matthew Boyd"]
