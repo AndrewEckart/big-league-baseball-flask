@@ -3,7 +3,7 @@ starters:
   2B: "Whit Merrifield"
   SS: "Isiah Kiner-Falefa"
   3B: "Eugenio Suarez"
-  C: "Jose Trevino"
+  C: "Jose Trevino (2022)"
   OF:
     - "Adolis Garcia"
     - "Randy Arozarena"
@@ -18,13 +18,13 @@ rotation:
   - "Dylan Cease"
   - "Nestor Cortes"
   - "Michael Lorenzen"
-  - "Cole Irvin"
+  - "Brady Singer"
   - "Tyler Wells"
   - "Zach Eflin"
   - "Emmanuel Clase"
 minors:
   - ["C", "Reese McGuire"]
-  - ["P", "Brady Singer"]
+  - ["P", "Cole Irvin"]
   - ["P", "James Kaprielian"]
   - ["P", "Ken Waldichuk"]
   - ["OF", "Bubba Thompson"]
