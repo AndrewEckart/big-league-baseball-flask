@@ -5,25 +5,25 @@ starters:
   3B: "Rafael Devers"
   C: "Cal Raleigh"
   OF:
-    - "Aaron Judge"
-    - "Oscar Gonzalez"
+    - "Aaron Judge (2022)"
+    - "Myles Straw"
     - "Max Kepler"
   DH: "Spencer Torkelson"
 bench:
-  - ["OF", "Myles Straw"]
+  - ["2B", "Michael Massey"]
   - ["OF", "Alex Kirilloff"]
   - ["OF", "Ramon Laureano"]
   - ["2B", "Luis Rengifo"]
 rotation:
   - "Luis Castillo"
   - "Chris Bassitt"
-  - "Triston McKenzie"
+  - "Triston McKenzie (2022)"
   - "Lucas Giolito"
   - "Jose Berrios"
   - "Kyle Gibson"
   - "Felix Bautista"
 minors:
-  - ["2B", "Michael Massey"]
+  - ["OF", "Oscar Gonzalez"]
   - ["OF", "Akil Baddoo"]
   - ["P", "Marco Gonzales"]
   - ["P", "Luis Severino"]
