@@ -3,7 +3,7 @@ starters:
   2B: "Whit Merrifield"
   SS: "Isiah Kiner-Falefa"
   3B: "Eugenio Suarez"
-  C: "Jose Trevino (2022)"
+  C: "Mitch Garver"
   OF:
     - "Adolis Garcia"
     - "Randy Arozarena"
@@ -11,12 +11,12 @@ starters:
   DH: "Josh Bell"
 bench:
   - ["1B", "Seth Brown"]
-  - ["C", "Mitch Garver"]
+  - ["C", "Jose Trevino (2022)"]
   - ["SS", "Tim Anderson"]
   - ["OF", "Kyle Farmer"]
 rotation:
   - "Dylan Cease"
-  - "Nestor Cortes"
+  - "Nestor Cortes (2022)"
   - "Michael Lorenzen"
   - "Brady Singer"
   - "Tyler Wells"
