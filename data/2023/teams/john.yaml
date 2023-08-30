@@ -1,5 +1,5 @@
 starters:
-  1B: "Anthony Rizzo"
+  1B: "Anthony Rizzo (2022)"
   2B: "Marcus Semien"
   SS: "Amed Rosario"
   3B: "Yandy Diaz"
@@ -12,8 +12,8 @@ starters:
 bench:
   - ["2B", "Christian Arroyo"]
   - ["3B", "Jace Peterson"]
-  - ["C", "Christian Vazquez"]
-  - ["2B", "Tony Kemp"]
+  - ["C", "Christian Vazquez (2022)"]
+  - ["2B", "Tony Kemp (2022)"]
 rotation:
   - "Hunter Brown"
   - "Chris Sale"
