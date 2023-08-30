@@ -11,7 +11,7 @@ starters:
   DH: "Giancarlo Stanton"
 bench:
   - ["OF", "Esteury Ruiz"]
-  - ["2B", "Nick Gordon"]
+  - ["2B", "Nick Gordon (2022)"]
   - ["3B", "Gio Urshela (2022)"]
   - ["OF", "Kerry Carpenter"]
 rotation:
@@ -19,7 +19,7 @@ rotation:
   - "Jeffrey Springs (2022)"
   - "Reid Detmers"
   - "Eduardo Rodriguez"
-  - "Cal Quantrill"
+  - "Cal Quantrill (2022)"
   - "Garrett Whitlock"
   - "Andres Munoz"
 minors:
