@@ -2,7 +2,7 @@ starters:
   1B: "Nathaniel Lowe"
   2B: "DJ LeMahieu"
   SS: "Javier Baez"
-  3B: "Brandon Drury"
+  3B: "Brandon Drury (2022)"
   C: "Martin Maldonado"
   OF:
     - "Yordan Alvarez"
@@ -12,8 +12,8 @@ starters:
 bench:
   - ["OF", "Michael A. Taylor"]
   - ["OF", "Matt Vierling"]
-  - ["2B", "Santiago Espinal"]
-  - ["OF", "Aaron Hicks"]
+  - ["2B", "Santiago Espinal (2022)"]
+  - ["OF", "Aaron Hicks (2022)"]
 rotation:
   - "Shane McClanahan"
   - "Logan Gilbert"
