@@ -1,24 +1,24 @@
 starters:
   1B: "Jose Abreu"
-  2B: "Jose Altuve"
+  2B: "J.P. Crawford"
   SS: "Jeremy Pena"
   3B: "Justin Turner"
   C: "Adley Rutschman"
   OF:
-    - "Mike Trout"
+    - "Mike Trout (2022)"
     - "Enrique Hernandez"
     - "Joey Gallo"
   DH: "Leody Taveras"
 bench:
-  - ["SS", "J.P. Crawford"]
-  - ["OF", "AJ Pollock"]
+  - ["2B", "Jose Altuve"]
+  - ["OF", "AJ Pollock (2022)"]
   - ["OF", "Gavin Sheets"]
-  - ["2B", "Kolten Wong"]
+  - ["2B", "Kolten Wong (2022)"]
 rotation:
   - "Shane Bieber"
   - "Drew Rasmussen (2022)"
   - "Patrick Sandoval"
-  - "Jose Urquidy"
+  - "Jose Urquidy (2022)"
   - "Yusei Kikuchi"
   - "Jhoan Duran"
   - "Jason Adam"
