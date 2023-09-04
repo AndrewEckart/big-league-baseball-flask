@@ -11,8 +11,8 @@ starters:
   DH: "Shohei Ohtani"
 bench:
   - ["1B", "Vinnie Pasquantino"]
-  - ["OF", "Michael Brantley"]
-  - ["C", "Eric Haase"]
+  - ["OF", "Michael Brantley (2022)"]
+  - ["C", "Eric Haase (2022)"]
   - ["2B", "Nick Maton"]
 rotation:
   - "Kevin Gausman"
