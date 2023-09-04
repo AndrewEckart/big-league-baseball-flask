@@ -1,7 +1,7 @@
 starters:
   1B: "Harold Ramirez"
   2B: "Whit Merrifield"
-  SS: "Isiah Kiner-Falefa"
+  SS: "Tim Anderson"
   3B: "Eugenio Suarez"
   C: "Mitch Garver"
   OF:
@@ -10,10 +10,10 @@ starters:
     - "Jose Siri"
   DH: "Josh Bell"
 bench:
-  - ["1B", "Seth Brown"]
+  - ["1B", "Seth Brown (2022)"]
   - ["C", "Jose Trevino (2022)"]
-  - ["SS", "Tim Anderson"]
-  - ["OF", "Kyle Farmer"]
+  - ["SS", "Isiah Kiner-Falefa"]
+  - ["OF", "Kyle Farmer (2022)"]
 rotation:
   - "Dylan Cease"
   - "Nestor Cortes (2022)"
