@@ -2,7 +2,7 @@ starters:
   1B: "Andrew Vaughn"
   2B: "Jorge Polanco"
   SS: "Wander Franco"
-  3B: "Anthony Rendon"
+  3B: "Anthony Volpe"
   C: "Danny Jansen"
   OF:
     - "Julio Rodriguez"
@@ -10,14 +10,14 @@ starters:
     - "Luis Robert Jr."
   DH: "Eloy Jimenez"
 bench:
-  - ["SS", "Anthony Volpe"]
+  - ["3B", "Anthony Rendon"]
   - ["1B", "Triston Casas"]
   - ["2B", "Cavan Biggio"]
   - ["OF", "Oswaldo Cabrera"]
 rotation:
   - "Gerrit Cole"
   - "Tyler Glasnow"
-  - "Carlos Rodon"
+  - "Carlos Rodon (2022)"
   - "Clarke Schmidt"
   - "Grayson Rodriguez"
   - "Michael King"
