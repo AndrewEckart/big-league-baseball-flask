@@ -21,7 +21,7 @@ class Rules:
     num_pitchers: int
     team_innings_threshold: int
     innings_deficit_multiplier: float
-    innings_surplus_multiplier: float
+    inings_surplus_multiplier: float
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
 
@@ -458,3 +458,4 @@ if __name__ == "__main__":
     hitter.fetch_stats()
     print(hitter.stats)
     print(HitterList([hitter], role=Role.STARTER).get_summary_stats().mlb_profile_url)
+
