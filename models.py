@@ -21,7 +21,7 @@ class Rules:
     num_pitchers: int
     team_innings_threshold: int
     innings_deficit_multiplier: float
-    inings_surplus_multiplier: float
+    innings_surplus_multiplier: float
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
 
