@@ -22,10 +22,10 @@
             {{ team.manager }}
           </a>
         </th>
-        <td>{{ "%.1f"|format(team.offense) }}</td>
-        <td>{{ "%.1f"|format(team.pitching) }}</td>
-        <td>{{ "%.1f"|format(team.innings_bonus_or_penalty) }}</td>
-        <td>{{ "%.1f"|format(team.rating) }}</td>
+        <td>{{ "%.3f"|format(team.offense) }}</td>
+        <td>{{ "%.3f"|format(team.pitching) }}</td>
+        <td>{{ "%.3f"|format(team.innings_bonus_or_penalty) }}</td>
+        <td>{{ "%.3f"|format(team.rating) }}</td>
       </tr>
     {% endfor %}
     </tbody>
