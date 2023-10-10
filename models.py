@@ -355,8 +355,7 @@ class Pitcher(Player):
 
     @property
     def ip(self) -> float:
-        whole, fraction = divmod(float(self.stats.get("inningsPitched", 0.0)), 1)
-        return whole + fraction * 10 / 3
+        return self.stats.get("outs", 0) / 3
 
     @property
     def formatted_ip(self) -> str:
@@ -399,14 +398,12 @@ class Pitcher(Player):
             rules = season.rules
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
-            outs = stats.get("outs", 0) * ip_multiplier * season.progress
-            stats["inningsPitched"] = f"{outs / 3:.2f}"
-            er = (stats.get("earnedRuns", 0)
+            stats["outs"] = stats.get("outs", 0) * ip_multiplier * season.progress
+            stats["earnedRuns"] = (stats.get("earnedRuns", 0)
                 * ip_multiplier
                 * er_multiplier
                 * season.progress
             )
-            stats["earnedRuns"] = er
         if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
                 if key not in stats:
