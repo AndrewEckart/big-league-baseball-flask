@@ -322,7 +322,7 @@ class Hitter(Player):
             for key in ["atBats", "runs", "hits", "homeRuns", "rbi", "stolenBases"]:
                 if key not in self.stats:
                     continue
-                self.stats[key] = round(self.multiplier * self.stats[key])
+                self.stats[key] = self.multiplier * self.stats[key]
 
 
 def format_batting_average(average: float) -> str:
@@ -399,21 +399,19 @@ class Pitcher(Player):
             rules = season.rules
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
-            outs = round(stats.get("outs", 0) * ip_multiplier * season.progress)
+            outs = stats.get("outs", 0) * ip_multiplier * season.progress
             whole, fraction = divmod(outs, 3)
             stats["inningsPitched"] = f"{whole}.{fraction}"
-            er = round(
-                stats.get("earnedRuns", 0)
+            er = stats.get("earnedRuns", 0)
                 * ip_multiplier
                 * er_multiplier
                 * season.progress
-            )
             stats["earnedRuns"] = er
         if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
                 if key not in stats:
                     continue
-                stats[key] = round(self.multiplier * stats[key])
+                stats[key] = self.multiplier * stats[key]
 
 
 def format_innings_pitched(innings_pitched: float) -> str:
