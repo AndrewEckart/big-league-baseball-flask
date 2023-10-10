@@ -363,24 +363,24 @@ class Pitcher(Player):
         return format_innings_pitched(self.ip)
 
     @property
-    def er(self) -> int:
-        return int(self.stats.get("earnedRuns", 0))
+    def er(self) -> float:
+        return self.stats.get("earnedRuns", 0)
 
     @property
-    def wins(self) -> int:
-        return int(self.stats.get("wins", 0))
+    def wins(self) -> float:
+        return self.stats.get("wins", 0)
 
     @property
-    def saves(self) -> int:
-        return int(self.stats.get("saves", 0))
+    def saves(self) -> float:
+        return self.stats.get("saves", 0)
 
     @property
-    def strikeouts(self) -> int:
-        return int(self.stats.get("strikeOuts", 0))
+    def strikeouts(self) -> float:
+        return self.stats.get("strikeOuts", 0)
 
     @property
-    def walks(self) -> int:
-        return int(self.stats.get("baseOnBalls", 0))
+    def walks(self) -> float:
+        return self.stats.get("baseOnBalls", 0)
 
     @property
     def earned_run_average(self) -> float:
