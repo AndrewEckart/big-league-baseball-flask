@@ -402,10 +402,11 @@ class Pitcher(Player):
             outs = stats.get("outs", 0) * ip_multiplier * season.progress
             whole, fraction = divmod(outs, 3)
             stats["inningsPitched"] = f"{whole}.{fraction}"
-            er = stats.get("earnedRuns", 0)
+            er = (stats.get("earnedRuns", 0)
                 * ip_multiplier
                 * er_multiplier
                 * season.progress
+            )
             stats["earnedRuns"] = er
         if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
