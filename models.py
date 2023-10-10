@@ -399,7 +399,7 @@ class Pitcher(Player):
             rules = season.rules
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
-            outs = stats.get("outs", 0) * ip_multiplier * season.progress
+            outs = round(stats.get("outs", 0) * ip_multiplier * season.progress)
             whole, fraction = divmod(outs, 3)
             stats["inningsPitched"] = f"{whole}.{fraction}"
             er = (stats.get("earnedRuns", 0)
