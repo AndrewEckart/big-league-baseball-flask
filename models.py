@@ -57,7 +57,7 @@ class Season:
         return sorted(self.teams.values(), key=lambda t: t.rating, reverse=True)
 
     @cached_property(ttl=10800)
-    def avg_games_played(self) -> int:
+    def avg_games_played(self) -> float:
         standings_data = statsapi.standings_data(self.league_id, season=self.year)
         total_games = 0
         teams = 0
@@ -66,7 +66,7 @@ class Season:
                 teams += 1
                 total_games += team.get("w", 0)
                 total_games += team.get("l", 0)
-        result = round(total_games / teams)
+        result = total_games / teams
         logging.info(f"Computed average games played: {result}")
         return result
 
