@@ -285,28 +285,28 @@ class Hitter(Player):
         self.mlb_id = season.all_hitters.loc[self.name, "MLBID"]
 
     @property
-    def ab(self) -> int:
-        return int(self.stats.get("atBats", 0))
+    def ab(self) -> float:
+        return self.stats.get("atBats", 0)
 
     @property
-    def runs(self) -> int:
-        return int(self.stats.get("runs", 0))
+    def runs(self) -> float:
+        return self.stats.get("runs", 0)
 
     @property
-    def hits(self) -> int:
-        return int(self.stats.get("hits", 0))
+    def hits(self) -> float:
+        return self.stats.get("hits", 0)
 
     @property
-    def hr(self) -> int:
-        return int(self.stats.get("homeRuns", 0))
+    def hr(self) -> float:
+        return self.stats.get("homeRuns", 0)
 
     @property
-    def rbi(self) -> int:
-        return int(self.stats.get("rbi", 0))
+    def rbi(self) -> float:
+        return self.stats.get("rbi", 0)
 
     @property
-    def sb(self) -> int:
-        return int(self.stats.get("stolenBases", 0))
+    def sb(self) -> float:
+        return self.stats.get("stolenBases", 0)
 
     @property
     def avg(self) -> float:
