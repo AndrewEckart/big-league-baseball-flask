@@ -161,7 +161,7 @@ class Team:
         return hitters, pitchers
 
     @property
-    def players(self) -> List["Player"]:
+    def players(self) -> list["Player"]:
         return [
             *self.starters,
             *self.bench,
@@ -442,7 +442,7 @@ if __name__ == "__main__":
         injured_pitcher_innings_multiplier=0.8,
         injured_pitcher_era_multiplier=1.3,
     )
-    szn = Season(year=2023, managers=["Andrew"], rules=rules)
+    szn = Season(year=2024, managers=["Andrew"], rules=rules)
     andrew = Team("Andrew", szn)
 
     pitcher = Pitcher("Shane Bieber", szn)
@@ -452,5 +452,5 @@ if __name__ == "__main__":
     hitter = Hitter("Aaron Judge", Position.OUTFIELD, szn)
     hitter.fetch_stats()
     print(hitter.stats)
-    print(HitterList([hitter], role=Role.STARTER).get_summary_stats().mlb_profile_url)
+    print(HitterList([hitter], role=Role.STARTER).get_summary_stats())
 

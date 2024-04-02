@@ -1,0 +1,30 @@
+starters:
+  1B: "Anthony Rizzo"
+  2B: "Colt Keith"
+  SS: "Bo Bichette"
+  3B: "Josh Jung"
+  C: "Austin Wells"
+  OF:
+    - "Mike Trout"
+    - "Eloy Jiménez"
+    - "Wyatt Langford"
+  DH: "Vladimir Guerrero Jr."
+bench:
+  - ["SS", "Jackson Holliday"]
+  - ["3B", "Junior Caminero"]
+  - ["OF", "Oswaldo Cabrera"]
+  - ["3B", "Jon Berti"]
+rotation:
+  - "Joe Ryan"
+  - "Carlos Rodón"
+  - "Marcus Stroman"
+  - "Triston McKenzie"
+  - "Nestor Cortes"
+  - "Jon Gray"
+  - "Chris Paddack"
+minors:
+  - ["C", "Danny Jansen"]
+  - ["C", "Jake Rogers"]
+  - ["OF", "Jasson Domínguez"]
+  - ["P", "Gerrit Cole"]
+  - ["P", "Max Scherzer"]

@@ -1,0 +1,30 @@
+starters:
+  1B: "Carlos Santana"
+  2B: "Edouard Julien"
+  SS: "Anthony Volpe"
+  3B: "Alex Bregman"
+  C: "Cal Raleigh"
+  OF:
+    - "George Springer"
+    - "Andrew Benintendi"
+    - "MJ Melendez"
+  DH: "Masataka Yoshida"
+bench:
+  - ["OF", "Mark Canha"]
+  - ["OF", "Esteury Ruiz"]
+  - ["3B", "Isiah Kiner-Falefa"]
+  - ["3B", "Matt Vierling"]
+rotation:
+  - "Pablo López"
+  - "Chris Bassitt"
+  - "Cristian Javier"
+  - "Logan Allen"
+  - "JP Sears"
+  - "Clay Holmes"
+  - "Alex Lange"
+minors:
+  - ["C", "Jose Trevino"]
+  - ["2B", "Nicky Lopez"]
+  - ["P", "Paul Blackburn"]
+  - ["P", "Jason Foley"]
+  - ["P", "Ben Lively"]

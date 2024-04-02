@@ -1,0 +1,28 @@
+starters:
+  1B: "Triston Casas"
+  2B: "Zack Gelof"
+  SS: "Trevor Story"
+  3B: "Royce Lewis"
+  C: "Bo Naylor"
+  OF:
+    - "Juan Soto"
+    - "Luis Robert Jr."
+    - "Chas McCormick"
+  DH: "Byron Buxton"
+bench:
+  - ["OF", "Parker Meadows"]
+  - ["2B", "Davis Schneider"]
+  - ["DH", "Nelson Velázquez"]
+  - ["OF", "JJ Bleday"]
+rotation:
+  - "Luis Castillo"
+  - "Grayson Rodriguez"
+  - "Hunter Brown"
+  - "Mason Miller"
+  - "Ryan Pepiot"
+  - "Kenta Maeda"
+  - "José Leclerc"
+minors:
+  - ["P", "Shane Baz"]
+  - ["P", "Jhoan Duran"]
+  - ["P", "Kirby Yates"]

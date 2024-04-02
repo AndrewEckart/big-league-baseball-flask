@@ -1,0 +1,30 @@
+starters:
+  1B: "Ryan Mountcastle"
+  2B: "Jose Altuve"
+  SS: "Jeremy Peña"
+  3B: "Rafael Devers"
+  C: "Jonah Heim"
+  OF:
+    - "Yordan Alvarez"
+    - "Josh Lowe"
+    - "Max Kepler"
+  DH: "Harold Ramírez"
+bench:
+  - ["1B", "Andrew Vaughn"]
+  - ["OF", "Jarren Duran"]
+  - ["1B", "Cavan Biggio"]
+  - ["1B", "Ryan O'Hearn"]
+rotation:
+  - "Tanner Bibee"
+  - "Justin Verlander"
+  - "Bryce Miller"
+  - "Michael Wacha"
+  - "John Means"
+  - "Bryan Abreu"
+  - "Chris Martin"
+minors:
+  - ["SS", "Ezequiel Duran"]
+  - ["SS", "Paul DeJong"]
+  - ["P", "Joe Boyle"]
+  - ["P", "Ross Stripling"]
+  - ["P", "Tyler Anderson"]

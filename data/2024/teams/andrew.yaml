@@ -1,0 +1,30 @@
+starters:
+  1B: "Ryan Noda"
+  2B: "Andrés Giménez"
+  SS: "Bobby Witt Jr."
+  3B: "Isaac Paredes"
+  C: "Alejandro Kirk"
+  OF:
+    - "Cedric Mullins"
+    - "Austin Hays"
+    - "Leody Taveras"
+  DH: "Adley Rutschman"
+bench:
+  - ["1B", "Nolan Schanuel"]
+  - ["2B", "Brandon Lowe"]
+  - ["OF", "Jose Siri"]
+  - ["2B", "Mauricio Dubón"]
+rotation:
+  - "Logan Gilbert"
+  - "Shane Bieber"
+  - "Nick Pivetta"
+  - "Kutter Crawford"
+  - "Griffin Canning"
+  - "Yennier Cano"
+  - "Jordan Romano"
+minors:
+  - ["OF", "Ramón Laureano"]
+  - ["OF", "Dominic Canzone"]
+  - ["P", "Reese Olson"]
+  - ["P", "Chase Silseth"]
+  - ["P", "Jason Adam"]

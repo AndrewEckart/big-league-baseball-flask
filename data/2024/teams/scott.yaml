@@ -1,0 +1,30 @@
+starters:
+  1B: "Ty France"
+  2B: "Jorge Polanco"
+  SS: "Amed Rosario"
+  3B: "Jordan Westburg"
+  C: "Shea Langeliers"
+  OF:
+    - "Kyle Tucker"
+    - "Alex Verdugo"
+    - "Tyler O'Neill"
+  DH: "Giancarlo Stanton"
+bench:
+  - ["1B", "José Abreu"]
+  - ["OF", "Ceddanne Rafaela"]
+  - ["SS", "Vaughn Grissom"]
+  - ["2B", "Adam Frazier"]
+rotation:
+  - "Corbin Burnes"
+  - "George Kirby"
+  - "Kevin Gausman"
+  - "Garrett Crochet"
+  - "Dane Dunning"
+  - "Pete Fairbanks"
+  - "Louie Varland"
+minors:
+  - ["P", "Patrick Sandoval"]
+  - ["P", "Alex Wood"]
+  - ["P", "Tyler Alexander"]
+  - ["C", "Ryan Jeffers"]
+  - ["1B", "Kyle Manzardo"]

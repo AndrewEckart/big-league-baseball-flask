@@ -1,0 +1,30 @@
+starters:
+  1B: "Nathaniel Lowe"
+  2B: "Brandon Drury"
+  SS: "Yoán Moncada"
+  3B: "Gunnar Henderson"
+  C: "Logan O'Hoppe"
+  OF:
+    - "Julio Rodríguez"
+    - "Hunter Renfroe"
+    - "Evan Carter"
+  DH: "Joey Votto"
+bench:
+  - ["3B", "Gio Urshela"]
+  - ["1B", "Alex Kirilloff"]
+  - ["C", "David Fry"]
+  - ["OF", "Trent Grisham"]
+rotation:
+  - "Tarik Skubal"
+  - "Cole Ragans"
+  - "Nathan Eovaldi"
+  - "Cody Bradford"
+  - "Ronel Blanco"
+  - "Tanner Houck"
+  - "Emmanuel Clase"
+minors:
+  - ["OF", "Aaron Hicks"]
+  - ["OF", "Dominic Fletcher"]
+  - ["P", "Bryan Woo"]
+  - ["P", "Michael Soroka"]
+  - ["P", "Garrett Whitlock"]

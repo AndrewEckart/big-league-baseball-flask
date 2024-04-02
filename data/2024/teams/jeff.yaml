@@ -1,0 +1,30 @@
+starters:
+  1B: "Yandy Díaz"
+  2B: "Marcus Semien"
+  SS: "J.P. Crawford"
+  3B: "J.D. Davis"
+  C: "Yainer Diaz"
+  OF:
+    - "Anthony Santander"
+    - "Steven Kwan"
+    - "Mitch Haniger"
+  DH: "Justin Turner"
+bench:
+  - ["OF", "Brent Rooker"]
+  - ["SS", "José Caballero"]
+  - ["2B", "Tyler Freeman"]
+  - ["OF", "Willi Castro"]
+rotation:
+  - "Seth Lugo"
+  - "Brayan Bello"
+  - "Kyle Bradish"
+  - "Zack Littell"
+  - "J.P. France"
+  - "Andrew Heaney"
+  - "Clarke Schmidt"
+minors:
+  - ["OF", "Kevin Kiermaier"]
+  - ["OF", "Jake Meyers"]
+  - ["3B", "Kyle Farmer"]
+  - ["P", "Gavin Williams"]
+  - ["P", "Cole Irvin"]

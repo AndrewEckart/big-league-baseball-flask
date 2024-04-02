@@ -1,0 +1,30 @@
+starters:
+  1B: "Josh Naylor"
+  2B: "Luis Rengifo"
+  SS: "Corey Seager"
+  3B: "José Ramírez"
+  C: "Mitch Garver"
+  OF:
+    - "Randy Arozarena"
+    - "Riley Greene"
+    - "Taylor Ward"
+  DH: "Vinnie Pasquantino"
+bench:
+  - ["SS", "Zach Neto"]
+  - ["1B", "DJ LeMahieu"]
+  - ["OF", "Matt Wallner"]
+  - ["3B", "Anthony Rendon"]
+rotation:
+  - "Zach Eflin"
+  - "José Berríos"
+  - "Bailey Ober"
+  - "Yusei Kikuchi"
+  - "Jack Flaherty"
+  - "Andrés Muñoz"
+  - "Craig Kimbrel"
+minors:
+  - ["P", "Brady Singer"]
+  - ["P", "Casey Mize"]
+  - ["P", "Griffin Jax"]
+  - ["OF", "Mickey Moniak"]
+  - ["OF", "Chase DeLauter"]

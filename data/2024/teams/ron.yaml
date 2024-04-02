@@ -1,0 +1,30 @@
+starters:
+  1B: "Spencer Torkelson"
+  2B: "Gleyber Torres"
+  SS: "Carlos Correa"
+  3B: "Maikel Garcia"
+  C: "Salvador Perez"
+  OF:
+    - "Adolis García"
+    - "Daulton Varsho"
+    - "Aaron Judge"
+  DH: "Kerry Carpenter"
+bench:
+  - ["SS", "Javier Báez"]
+  - ["1B", "Luke Raley"]
+  - ["OF", "Seth Brown"]
+  - ["OF", "Will Brennan"]
+rotation:
+  - "Framber Valdez"
+  - "Aaron Civale"
+  - "Dean Kremer"
+  - "Tyler Wells"
+  - "Reid Detmers"
+  - "Josh Hader"
+  - "Ryan Pressly"
+minors:
+  - ["OF", "Colton Cowser"]
+  - ["SS", "Brayan Rocchio"]
+  - ["OF", "Kyle Isbel"]
+  - ["P", "Michael Lorenzen"]
+  - ["P", "Luis Gil"]
