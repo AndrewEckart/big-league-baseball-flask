@@ -12,7 +12,7 @@ starters:
 bench:
   - ["1B", "Andrew Vaughn"]
   - ["OF", "Max Kepler"]
-  - ["1B", "Cavan Biggio"]
+  - ["OF", "JJ Bleday"]
   - ["DH", "Harold Ramírez"]
 rotation:
   - "Tanner Bibee"
@@ -24,7 +24,7 @@ rotation:
   - "Tyler Anderson"
 minors:
   - ["SS", "Ezequiel Duran"]
-  - ["SS", "Paul DeJong"]
+  - ["1B", "Cavan Biggio"]
   - ["P", "Joe Boyle"]
   - ["P", "Ross Stripling"]
   - ["P", "Chris Martin"]
