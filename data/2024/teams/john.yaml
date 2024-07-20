@@ -6,14 +6,14 @@ starters:
   C: "Jonah Heim"
   OF:
     - "Yordan Alvarez"
-    - "Josh Lowe"
-    - "Max Kepler"
-  DH: "Harold Ramírez"
+    - "Ryan O'Hearn"
+    - "Jarren Duran"
+  DH: "Josh Lowe"
 bench:
   - ["1B", "Andrew Vaughn"]
-  - ["OF", "Jarren Duran"]
+  - ["OF", "Max Kepler"]
   - ["1B", "Cavan Biggio"]
-  - ["1B", "Ryan O'Hearn"]
+  - ["DH", "Harold Ramírez"]
 rotation:
   - "Tanner Bibee"
   - "Justin Verlander"
@@ -21,10 +21,10 @@ rotation:
   - "Michael Wacha"
   - "John Means"
   - "Bryan Abreu"
-  - "Chris Martin"
+  - "Tyler Anderson"
 minors:
   - ["SS", "Ezequiel Duran"]
   - ["SS", "Paul DeJong"]
   - ["P", "Joe Boyle"]
   - ["P", "Ross Stripling"]
-  - ["P", "Tyler Anderson"]
+  - ["P", "Chris Martin"]
