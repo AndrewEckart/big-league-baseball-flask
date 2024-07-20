@@ -1,18 +1,18 @@
 starters:
   1B: "Ty France"
-  2B: "Jorge Polanco"
-  SS: "Amed Rosario"
-  3B: "Jordan Westburg"
+  2B: "Jordan Westburg"
+  SS: "Zach Neto"
+  3B: "Matt Vierling"
   C: "Shea Langeliers"
   OF:
     - "Kyle Tucker"
-    - "Alex Verdugo"
+    - "Ceddanne Rafaela"
     - "Tyler O'Neill"
   DH: "Giancarlo Stanton"
 bench:
-  - ["1B", "José Abreu"]
-  - ["OF", "Ceddanne Rafaela"]
-  - ["SS", "Vaughn Grissom"]
+  - ["SS", "Amed Rosario"]
+  - ["OF", "Mickey Moniak"]
+  - ["2B", "Jorge Polanco"]
   - ["2B", "Adam Frazier"]
 rotation:
   - "Corbin Burnes"
@@ -21,10 +21,10 @@ rotation:
   - "Garrett Crochet"
   - "Dane Dunning"
   - "Pete Fairbanks"
-  - "Louie Varland"
+  - "Griffin Jax"
 minors:
   - ["P", "Patrick Sandoval"]
-  - ["P", "Alex Wood"]
+  - ["P", "Louie Varland"]
   - ["P", "Tyler Alexander"]
-  - ["C", "Ryan Jeffers"]
+  - ["SS", "Vaughn Grissom"]
   - ["1B", "Kyle Manzardo"]
