@@ -1,30 +1,30 @@
 starters:
   1B: "Nathaniel Lowe"
-  2B: "Brandon Drury"
-  SS: "Yoán Moncada"
+  2B: "Brandon Drury (2023)"
+  SS: "Gio Urshela"
   3B: "Gunnar Henderson"
   C: "Logan O'Hoppe"
   OF:
     - "Julio Rodríguez"
     - "Hunter Renfroe"
-    - "Evan Carter"
-  DH: "Joey Votto"
+    - "Trent Grisham (2023)"
+  DH: "David Fry"
 bench:
-  - ["3B", "Gio Urshela"]
+  - ["3B", "Yoán Moncada (2023)"]
   - ["1B", "Alex Kirilloff"]
-  - ["C", "David Fry"]
-  - ["OF", "Trent Grisham"]
+  - ["DH", "Joey Votto (2023)"]
+  - ["OF", "Evan Carter"]
 rotation:
   - "Tarik Skubal"
   - "Cole Ragans"
-  - "Nathan Eovaldi"
-  - "Cody Bradford"
+  - "Bryan Woo"
+  - "Garrett Whitlock"
   - "Ronel Blanco"
   - "Tanner Houck"
   - "Emmanuel Clase"
 minors:
   - ["OF", "Aaron Hicks"]
   - ["OF", "Dominic Fletcher"]
-  - ["P", "Bryan Woo"]
+  - ["P", "Nathan Eovaldi"]
   - ["P", "Michael Soroka"]
-  - ["P", "Garrett Whitlock"]
+  - ["P", "Cody Bradford"]
