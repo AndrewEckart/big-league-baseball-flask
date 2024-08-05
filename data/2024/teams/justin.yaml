@@ -1,28 +1,28 @@
 starters:
-  1B: "Triston Casas"
+  1B: "Triston Casas (2023)"
   2B: "Zack Gelof"
-  SS: "Trevor Story"
+  SS: "Paul DeJong"
   3B: "Royce Lewis"
   C: "Bo Naylor"
   OF:
     - "Juan Soto"
-    - "Luis Robert Jr."
-    - "Chas McCormick"
+    - "Luis Robert Jr. (2023)"
+    - "Chas McCormick (2023)"
   DH: "Byron Buxton"
 bench:
   - ["OF", "Parker Meadows"]
   - ["2B", "Davis Schneider"]
-  - ["DH", "Nelson Velázquez"]
-  - ["OF", "JJ Bleday"]
+  - ["DH", "Nelson Velázquez (2023)"]
+  - ["OF", "Seth Brown"]
 rotation:
   - "Luis Castillo"
   - "Grayson Rodriguez"
   - "Hunter Brown"
   - "Mason Miller"
   - "Ryan Pepiot"
-  - "Kenta Maeda"
-  - "José Leclerc"
+  - "Shane Baz"
+  - "Kirby Yates"
 minors:
-  - ["P", "Shane Baz"]
+  - ["P", "Kenta Maeda"]
   - ["P", "Jhoan Duran"]
-  - ["P", "Kirby Yates"]
+  - ["P", "José Leclerc"]
