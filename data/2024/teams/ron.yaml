@@ -8,18 +8,18 @@ starters:
     - "Adolis García"
     - "Daulton Varsho"
     - "Aaron Judge"
-  DH: "Kerry Carpenter"
+  DH: "Isiah Kiner-Falefa"
 bench:
   - ["SS", "Javier Báez"]
   - ["1B", "Luke Raley"]
-  - ["OF", "Seth Brown"]
+  - ["DH", "Kerry Carpenter"]
   - ["OF", "Will Brennan"]
 rotation:
   - "Framber Valdez"
-  - "Aaron Civale"
+  - "Mike Lorenzen"
   - "Dean Kremer"
-  - "Tyler Wells"
-  - "Reid Detmers"
+  - "Jhoan Duran"
+  - "Luis Gil"
   - "Josh Hader"
   - "Ryan Pressly"
 minors:
@@ -27,4 +27,4 @@ minors:
   - ["SS", "Brayan Rocchio"]
   - ["OF", "Kyle Isbel"]
   - ["P", "Michael Lorenzen"]
-  - ["P", "Luis Gil"]
+  - ["P", "Reid Detmers"]
