@@ -2,29 +2,29 @@ starters:
   1B: "Yandy Díaz"
   2B: "Marcus Semien"
   SS: "J.P. Crawford"
-  3B: "J.D. Davis"
+  3B: "Willi Castro"
   C: "Yainer Diaz"
   OF:
     - "Anthony Santander"
     - "Steven Kwan"
-    - "Mitch Haniger"
+    - "Brent Rooker"
   DH: "Justin Turner"
 bench:
-  - ["OF", "Brent Rooker"]
+  - ["OF", "Jake Meyers"]
   - ["SS", "José Caballero"]
   - ["2B", "Tyler Freeman"]
-  - ["OF", "Willi Castro"]
+  - ["3B", "J.D. Davis (2023)"]
 rotation:
   - "Seth Lugo"
   - "Brayan Bello"
-  - "Kyle Bradish"
+  - "Kyle Bradish (2023)"
   - "Zack Littell"
-  - "J.P. France"
+  - "Gavin Williams"
   - "Andrew Heaney"
   - "Clarke Schmidt"
 minors:
   - ["OF", "Kevin Kiermaier"]
-  - ["OF", "Jake Meyers"]
+  - ["OF", "Mitch Haniger"]
   - ["3B", "Kyle Farmer"]
-  - ["P", "Gavin Williams"]
+  - ["P", "J.P. France"]
   - ["P", "Cole Irvin"]
