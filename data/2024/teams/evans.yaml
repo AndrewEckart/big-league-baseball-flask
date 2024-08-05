@@ -13,7 +13,7 @@ bench:
   - ["SS", "Jackson Holliday"]
   - ["3B", "Junior Caminero"]
   - ["OF", "Oswaldo Cabrera"]
-  - ["3B", "Jon Berti"]
+  - ["C", "Danny Jansen"]
 rotation:
   - "Joe Ryan"
   - "Carlos Rodón"
@@ -23,7 +23,7 @@ rotation:
   - "Jon Gray"
   - "Max Scherzer"
 minors:
-  - ["C", "Danny Jansen"]
+  - ["3B", "Jon Berti"]
   - ["C", "Jake Rogers"]
   - ["OF", "Jasson Domínguez"]
   - ["P", "Triston McKenzie"]
