@@ -1,12 +1,12 @@
 starters:
   1B: "Anthony Rizzo"
   2B: "Colt Keith"
-  SS: "Bo Bichette"
-  3B: "Josh Jung"
+  SS: "Bo Bichette (2023)"
+  3B: "Josh Jung (2023)"
   C: "Austin Wells"
   OF:
-    - "Mike Trout"
-    - "Eloy Jiménez"
+    - "Mike Trout (2023)"
+    - "Eloy Jiménez (2023)"
     - "Wyatt Langford"
   DH: "Vladimir Guerrero Jr."
 bench:
@@ -18,13 +18,13 @@ rotation:
   - "Joe Ryan"
   - "Carlos Rodón"
   - "Marcus Stroman"
-  - "Triston McKenzie"
+  - "Gerrit Cole"
   - "Nestor Cortes"
   - "Jon Gray"
-  - "Chris Paddack"
+  - "Max Scherzer"
 minors:
   - ["C", "Danny Jansen"]
   - ["C", "Jake Rogers"]
   - ["OF", "Jasson Domínguez"]
-  - ["P", "Gerrit Cole"]
-  - ["P", "Max Scherzer"]
+  - ["P", "Triston McKenzie"]
+  - ["P", "Chris Paddack"]
