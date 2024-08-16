@@ -6,17 +6,17 @@ starters:
   C: "Jonah Heim"
   OF:
     - "Yordan Alvarez"
-    - "Ryan O'Hearn"
+    - "JJ Bleday"
     - "Jarren Duran"
-  DH: "Josh Lowe"
+  DH: "Ryan O'Hearn"
 bench:
   - ["1B", "Andrew Vaughn"]
   - ["OF", "Max Kepler"]
-  - ["OF", "JJ Bleday"]
-  - ["DH", "Harold Ramírez"]
+  - ["OF", "Josh Lowe (2023)"]
+  - ["DH", "Harold Ramírez (2023)"]
 rotation:
   - "Tanner Bibee"
-  - "Justin Verlander"
+  - "Justin Verlander (2023)"
   - "Bryce Miller"
   - "Michael Wacha"
   - "John Means"
