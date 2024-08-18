@@ -6,14 +6,14 @@ starters:
   C: "Cal Raleigh"
   OF:
     - "George Springer"
-    - "Andrew Benintendi"
-    - "MJ Melendez"
+    - "Alex Verdugo"
+    - "Colton Cowser"
   DH: "Mark Canha"
 bench:
   - ["OF", "Masataka Yoshida"]
   - ["SS", "Brayan Rocchio"]
-  - ["3B", "Isiah Kiner-Falefa"]
-  - ["3B", "Matt Vierling"]
+  - ["OF", "MJ Melendez"]
+  - ["OF", "Andrew Benintendi"]
 rotation:
   - "Pablo López"
   - "Chris Bassitt"
