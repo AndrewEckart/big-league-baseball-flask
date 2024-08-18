@@ -8,9 +8,9 @@ starters:
     - "George Springer"
     - "Andrew Benintendi"
     - "MJ Melendez"
-  DH: "Masataka Yoshida"
+  DH: "Mark Canha"
 bench:
-  - ["OF", "Mark Canha"]
+  - ["OF", "Masataka Yoshida"]
   - ["OF", "Esteury Ruiz"]
   - ["3B", "Isiah Kiner-Falefa"]
   - ["3B", "Matt Vierling"]
@@ -18,13 +18,13 @@ rotation:
   - "Pablo López"
   - "Chris Bassitt"
   - "Cristian Javier"
-  - "Logan Allen"
+  - "Ben Lively"
   - "JP Sears"
   - "Clay Holmes"
-  - "Alex Lange"
+  - "Jason Foley"
 minors:
   - ["C", "Jose Trevino"]
   - ["2B", "Nicky Lopez"]
   - ["P", "Paul Blackburn"]
-  - ["P", "Jason Foley"]
-  - ["P", "Ben Lively"]
+  - ["P", "Alex Lange"]
+  - ["P", "Logan Allen"]
