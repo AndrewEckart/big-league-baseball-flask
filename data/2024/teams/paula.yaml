@@ -1,6 +1,6 @@
 starters:
   1B: "Carlos Santana"
-  2B: "Edouard Julien"
+  2B: "Edouard Julien (2023)"
   SS: "Anthony Volpe"
   3B: "Alex Bregman"
   C: "Cal Raleigh"
@@ -10,7 +10,7 @@ starters:
     - "Colton Cowser"
   DH: "Mark Canha"
 bench:
-  - ["OF", "Masataka Yoshida"]
+  - ["OF", "Masataka Yoshida (2023)"]
   - ["SS", "Brayan Rocchio"]
   - ["OF", "MJ Melendez"]
   - ["OF", "Andrew Benintendi"]
