@@ -1,5 +1,5 @@
 starters:
-  1B: "Spencer Torkelson"
+  1B: "Spencer Torkelson (2023)"
   2B: "Gleyber Torres"
   SS: "Carlos Correa"
   3B: "Maikel Garcia"
@@ -10,7 +10,7 @@ starters:
     - "Aaron Judge"
   DH: "Isiah Kiner-Falefa"
 bench:
-  - ["SS", "Javier Báez"]
+  - ["SS", "Javier Báez (2023)"]
   - ["1B", "Luke Raley"]
   - ["DH", "Kerry Carpenter"]
   - ["OF", "Will Brennan"]
