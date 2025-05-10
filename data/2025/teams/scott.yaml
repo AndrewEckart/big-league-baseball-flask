@@ -1,0 +1,30 @@
+starters:
+  1B: 691016 # Tyler Soderstrom
+  2B: 676059 # Jordan Westburg
+  SS: 677951 # Bobby Witt Jr.
+  3B: 608324 # Alex Bregman
+  C: 681351 # Logan O'Hoppe
+  OF:
+    - 671732 # Lawrence Butler
+    - 657041 # Lane Thomas
+    - 662139 # Daulton Varsho
+  DH: 666624 # Christopher Morel
+bench:
+  - ["2B", 692225] # Kristian Campbell
+  - ["OF", 666134] # Nolan Jones
+  - ["3B", 663837] # Matt Vierling
+  - ["C", 666310] # Bo Naylor
+rotation:
+  - 608331 # Max Fried
+  - 686752 # Ryan Pepiot
+  - 669358 # Shane Baz
+  - 656876 # Drew Rasmussen
+  - 663554 # Casey Mize
+  - 681343 # Shane Smith
+  - 661403 # Emmanuel Clase
+minors:
+  - ["OF", 664056] # Harrison Bader
+  - ["2B", 669208] # Ryan Bliss
+  - ["P", 680573] # Simeon Woods Richardson
+  - ["P", 686799] # Jack Kochanowicz
+  - ["P", 669211] # Keegan Akin
