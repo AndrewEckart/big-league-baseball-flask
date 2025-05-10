@@ -1,0 +1,30 @@
+starters:
+  1B: 669394 # Jake Burger
+  2B: 665926 # Andres Gimenez
+  SS: 683002 # Gunnar Henderson
+  3B: 665862 # Jazz Chisholm Jr.
+  C: 672386 # Alejandro Kirk
+  OF:
+    - 681297 # Colton Cowser
+    - 670242 # Matt Wallner
+    - 668709 # JJ Bleday
+  DH: 663616 # Trevor Larnach
+bench:
+  - ["SS", 677587] # Brayan Rocchio 
+  - ["1B", 666018] # Jonathan Aranda
+  - ["2B", 663898] # Brendan Rogers
+  - ["OF", 665750] # Leody Taveras
+rotation:
+  - 676979 # Garrett Crochet
+  - 641927 # Bailey Ober
+  - 592332 # Kevin Gausman
+  - 547179 # Michael Lorenzen
+  - 695549 # Jackson Jobe
+  - 453286 # Max Scherzer
+  - 663947 # Tyler Holton
+minors:
+  - ["OF", 694497] # Evan Carter
+  - ["OF", 663757] # Trent Grisham
+  - ["DH", 807799] # Masataka Yoshida
+  - ["P", 676664] # JP Sears
+  - ["P", 527048] # Martin Perez
