@@ -1,0 +1,30 @@
+starters:
+  1B: 679529 # Spencer Torkelson
+  2B: 702616 # Jackson Holliday
+  SS: 666182 # Bo Bichette
+  3B: 673962 # Josh Jung
+  C: 669224 # Austin Wells
+  OF:
+    - 691176 # Jasson Dominguez
+    - 592450 # Aaron Judge
+    - 645302 # Victor Robles
+  DH: 668904 # Royce Lewis
+bench:
+  - ["1B", 660162] # Yoan Moncada
+  - ["OF", 700250] # Ben Rice
+  - ["SS", 677008] # Heston Kjerstad
+  - ["OF", 678009] # Parker Meadows
+rotation:
+  - 666142 # Cole Ragans
+  - 657746 # Joe Ryan
+  - 594798 # Jacob DeGrom
+  - 657376 # Clarke Schmidt
+  - 680732 # Sean Burke
+  - 642207 # Devin Williams
+  - 695243 # Mason Miller
+minors:
+  - ["3B", 690291] # Jace Jung
+  - ["2B", 641598] # Mitch Garver
+  - ["2B", 695657] # Colson Montgomery
+  - ["P", 663978] # Chris Paddack
+  - ["P", 596133] # Luke Weaver
