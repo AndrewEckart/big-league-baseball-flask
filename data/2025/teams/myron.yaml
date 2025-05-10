@@ -1,0 +1,30 @@
+starters:
+  1B: 663624 # Ryan Mountcastle
+  2B: 650402 # Gleyber Torres
+  SS: 678882 # Ceddane Raffaela
+  3B: 646240 # Rafael Devers
+  C: 521692 # Salvador Perez
+  OF:
+    - 666969 # Adolis Garcia
+    - 680757 # Steven Kwan
+    - 543807 # George Springer
+  DH: 680777 # Ryan Jeffers
+bench:
+  - ["2B", 695238] # Will Wagner
+  - ["1B", 642133] # Rowdy Tellez
+  - ["2B", 672820] # Lenyn Sosa
+  - ["1B", 643289] # Mauricio Dubon
+rotation:
+  - 669373 # Tarik Skubal
+  - 621111 # Walker Buehler
+  - 656557 # Tanner Houck
+  - 573186 # Marcus Stroman
+  - 450203 # Charlie Morton
+  - 543294 # Kyle Hendricks
+  - 642585 # Felix Bautista
+minors:
+  - ["P", 665152] # Dean Kremer
+  - ["P", 701542] # Will Warren
+  - ["P", 663474] # Triston McKenzie
+  - ["1B", 518934] # DJ LeMahieu
+  - ["SS", 670764] # Taylor Walls

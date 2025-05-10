@@ -7,7 +7,7 @@ seasons: list[Season] = [
     Season(
         year=2025,
         # fmt: off
-        managers=["Andrew", "Justin", "Ron"],
+        managers=["Andrew", "Justin", "Ron", "Myron"],
         # fmt: on
         rules=Rules(
             num_reserve_hitters=4,
