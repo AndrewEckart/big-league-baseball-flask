@@ -1,0 +1,30 @@
+starters:
+  1B: 502671 # Paul Goldschmidt
+  2B: 514888 # Jose Altuve
+  SS: 669701 # Josh Smith
+  3B: 669304 # Jose Miranda
+  C: 673237 # Yainer Diaz
+  OF:
+    - 673357 # Luis Robert Jr.
+    - 680776 # Jarren Duran
+    - 545361 # Mike Trout
+  DH: 670541 # Yordan Alvarez
+bench:
+  - ["DH", 592626] # Joc Pederson 
+  - ["OF", 701358] # Cam Smith
+  - ["2B", 664238] # Dylan Moore
+  - ["OF", 702176] # Alan Roden
+rotation:
+  - 622491 # Luis Castillo
+  - 607625 # Seth Lugo
+  - 681857 # Reese Olson
+  - 622663 # Luis Severino
+  - 594902 # Ben Lively
+  - 700249 # Cade Povich
+  - 671922 # Cade Smith
+minors:
+  - ["OF", 686823] # Will Brennan
+  - ["SS", 687263] # Zach Neto
+  - ["P", 502043] # Kyle Gibson
+  - ["P", 669713] # Hayden Wesneski
+  - ["OF", 672761] # Wenceel Perez
