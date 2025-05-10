@@ -1,0 +1,30 @@
+starters:
+  1B: 665489 # Vladimir Guerrero, Jr.
+  2B: 663697 # Jonathan India
+  SS: 665161 # Jeremy Pena
+  3B: 676391 # Ernie Clement
+  C: 663728 # Cal Raleigh
+  OF:
+    - 641355 # Cody Bellinger
+    - 656775 # Cedric Mullins
+    - 621439 # Byron Buxton
+  DH: 624585 # Jorge Soler
+bench:
+  - ["2B", 650489] # Willi Castro
+  - ["1B", 664034] # Ty France
+  - ["OF", 592669] # Hunter Renfroe
+  - ["3B", 570482] # Gio Urshela
+rotation:
+  - 656427 # Jack Flaherty
+  - 608379 # Michael Wacha
+  - 621244 # Jose Berrios
+  - 641793 # Zack Littell
+  - 667755 # Jose Soriano
+  - 683004 # Jack Leiter
+  - 643377 # Griffin Jax
+minors:
+  - ["OF", 678877] #  Johnkensky Noel
+  - ["SS", 672356] # Gabriel Arias
+  - ["P", 680570] # Grayson Rodriguez
+  - ["P", 471911] # Carlos Carrasco
+  - ["P", 547973] # Aroldis Chapman
