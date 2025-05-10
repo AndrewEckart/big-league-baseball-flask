@@ -1,0 +1,30 @@
+starters:
+  1B: 671213 # Triston Casas
+  2B: 690993 # Colt Keith
+  SS: 621043 # Carlos Correa
+  3B: 691406 # Junior Caminero
+  C: 657136 # Connor Wong
+  OF:
+    - 677594 # Julio Rodriguez
+    - 621493 # Taylor Ward
+    - 666139 # Josh Lowe
+  DH: 667670 # Brent Rooker
+bench:
+  - ["OF", 677800] # Wilyer Abreu
+  - ["2B", 686681] # Michael Massey
+  - ["OF", 669004] # MJ Melendez
+  - ["C", 668670] # Jake Rogers
+rotation:
+  - 676440 # Tanner Bibee
+  - 686613 # Hunter Brown
+  - 681293 # Spencer Arrighetti
+  - 671737 # Taj Bradley
+  - 670102 # Bowden Francis
+  - 605135 # Chris Bassitt
+  - 661395 # Jhoan Duran
+minors:
+  - ["OF", 666160] # Mickey Moniak
+  - ["2B", 686797] # Brooks Lee
+  - ["P", 677958] # Kumar Rocker
+  - ["P", 663460] # Kris Bubic
+  - ["P", 455119] # Chris Martin
