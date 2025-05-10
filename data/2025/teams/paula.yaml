@@ -1,0 +1,30 @@
+starters:
+  1B: 650490 # Yandy Diaz
+  2B: 543760 # Marcus Semien
+  SS: 683011 # Anthony Volpe
+  3B: 672580 # Maikel Garcia
+  C: 641680 # Jonah Heim
+  OF:
+    - 666176 # Jo Adell
+    - 623993 # Anthony Santander
+    - 694671 # Wyatt Langford
+  DH: 656811 # Ryan O'Hearn
+bench:
+  - ["OF", 676356] # Jonny DeLuca 
+  - ["3B", 665828] # Oswaldo Cabrera
+  - ["SS", 700242] # Trey Sweeney
+  - ["C", 596142] # Gary Sanchez
+rotation:
+  - 641154 # Pablo Lopez
+  - 607074 # Carlos Rodon
+  - 621107 # Zach Eflin
+  - 543135 # Nathan Eovaldi
+  - 608372 # Tomoyuki Sugano
+  - 623352 # Josh Hader
+  - 662253 # Andres Munoz
+minors:
+  - ["P", 605488] # Jeffrey Springs
+  - ["P", 641816] # Tyler Mahle
+  - ["P", 663436] # Davis Martin
+  - ["OF", 664913] # Seth Brown
+  - ["OF", 656716] # Zach McKinstry
