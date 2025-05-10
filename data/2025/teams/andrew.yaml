@@ -1,0 +1,30 @@
+starters:
+  1B: 686469 # Vinnie Pasquantino
+  2B: 664040 # Brandon Lowe
+  SS: 641487 # J.P. Crawford
+  3B: 670623 # Isaac Paredes
+  C: 668939 # Adley Rutschman
+  OF:
+    - 668227 # Randy Arozarena
+    - 682985 # Riley Greene
+    - 643217 # Andrew Benintendi
+  DH: 683734 # Andrew Vaughn
+bench:
+  - ["1B", 694384] # Nolan Schanuel 
+  - ["OF", 676694] # Jake Meyers
+  - ["SS", 805779] # Jacob Wilson
+  - ["OF", 664728] # Kyle Isbel
+rotation:
+  - 669302 # Logan Gilbert
+  - 664285 # Framber Valdez
+  - 669923 # George Kirby
+  - 579328 # Yusei Kikuchi
+  - 668909 # Gavin Williams
+  - 650556 # Bryan Abreu
+  - 668674 # Lucas Erceg
+minors:
+  - ["3B", 678246] # Miguel Vargas
+  - ["2B", 593871] # Jorge Polanco
+  - ["2B", 680869] # Zack Gelof
+  - ["P", 678394] # Brayan Bello
+  - ["P", 676710] # Kutter Crawford

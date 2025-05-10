@@ -13,6 +13,7 @@ import statsapi
 import yaml
 
 from constants import Position, Role, INFIELD_POSITIONS, TEAM_ABBREVIATIONS
+from player_id_map import MLBID_TO_NAME
 
 
 @dataclass
@@ -37,12 +38,9 @@ class Season:
     all_pitchers: pd.DataFrame = field(init=False)
 
     def __post_init__(self):
-        self.all_hitters = pd.read_csv(
-            f"data/{self.year}/hitters.csv", index_col="Name"
-        )
-        self.all_pitchers = pd.read_csv(
-            f"data/{self.year}/pitchers.csv", index_col="Name"
-        )
+        if self.year <= 2024:
+            self.all_hitters = pd.read_csv(f"data/{self.year}/hitters.csv", index_col="Name")
+            self.all_pitchers = pd.read_csv(f"data/{self.year}/pitchers.csv", index_col="Name")
         self.teams = {manager.lower(): Team(manager, self) for manager in self.managers}
 
     def fetch_all_stats(self):
@@ -76,6 +74,7 @@ class Season:
 
     @property
     def last_year(self) -> int:
+        # In 2021, we used 2019 for prior year stats due to the COVID-shortened 2020 season.
         if self.year == 2021:
             return 2019
         return self.year - 1
@@ -112,15 +111,30 @@ class Team:
         if not len(data) == 7:
             raise ValueError("Expected 7 starter positions")
 
-        outfielders = [
-            Hitter(name, Position.OUTFIELD, self.season) for name in data["OF"]
-        ]
+        if self.season.year <= 2024:
+            outfielders = [
+                Hitter.legacy_init(name, Position.OUTFIELD, self.season) for name in data["OF"]
+            ]
+        else:
+            outfielders = [
+                Hitter(mlb_id, Position.OUTFIELD, self.season)
+                for mlb_id in data["OF"]
+            ]
+
         if len(outfielders) != 3:
             raise ValueError("Expected 3 starting OF")
 
-        infielders = {
-            pos: Hitter(data[pos.value], pos, self.season) for pos in INFIELD_POSITIONS
-        }
+        if self.season.year <= 2024:
+            infielders = {
+                pos: Hitter.legacy_init(data[pos.value], pos, self.season)
+                for pos in INFIELD_POSITIONS
+            }
+        else:
+            infielders = {
+                pos: Hitter(mlb_id=data[pos.value], position=pos, season=self.season)
+                for pos in INFIELD_POSITIONS
+            }
+
         for p in INFIELD_POSITIONS:
             if not isinstance(infielders.get(p), Hitter):
                 raise ValueError(f"Expected exactly one starting {p.value}")
@@ -134,10 +148,17 @@ class Team:
             raise ValueError(
                 f"Expected {num_players_expected} bench hitters, not {len(data)}"
             )
-        return HitterList(
-            (Hitter(name, Position(pos), self.season) for pos, name in data),
-            role=Role.BENCH,
-        )
+        
+        if self.season.year <= 2024:
+            return HitterList(
+                (Hitter.legacy_init(name, Position(pos), self.season) for pos, name in data),
+                role=Role.BENCH,
+            )
+        else:
+            return HitterList(
+                (Hitter(mlb_id, Position(pos), self.season) for pos, mlb_id in data),
+                role=Role.BENCH,
+            )
 
     def parse_rotation(self, data: list[str]) -> "PitcherList":
         num_players_expected = self.season.rules.num_pitchers
@@ -145,17 +166,29 @@ class Team:
             raise ValueError(
                 f"Expected {self.season.rules.num_pitchers} pitchers, not {len(data)}"
             )
-        return PitcherList(Pitcher(name, self.season) for name in data)
+        if self.season.year <= 2024:
+            return PitcherList(Pitcher.legacy_init(name, self.season) for name in data)
+        else:
+            return PitcherList(Pitcher(mlb_id, self.season) for mlb_id in data)
 
     def parse_minors(self, data: list[list[str]]) -> tuple["HitterList", "PitcherList"]:
         if len(data) > 5:
             raise ValueError("Must have at most 5 players in minors")
         hitters, pitchers = HitterList(role=Role.MINORS), PitcherList()
-        for pos, name in data:
-            if pos == Position.PITCHER.value:
-                pitchers.append(Pitcher(name, self.season))
-            else:
-                hitters.append(Hitter(name, Position(pos), self.season))
+
+        if self.season.year <= 2024:
+            for pos, name in data:
+                if pos == Position.PITCHER.value:
+                    pitchers.append(Pitcher.legacy_init(name, self.season))
+                else:
+                    hitters.append(Hitter.legacy_init(name, Position(pos), self.season))
+        else:
+            for pos, mlb_id in data:
+                if pos == Position.PITCHER.value:
+                    pitchers.append(Pitcher(mlb_id, self.season))
+                else:
+                    hitters.append(Hitter(mlb_id, Position(pos), self.season))
+        
         # if len(pitchers) > 3:
         #     raise ValueError("Must have at most 3 pitchers in minors")
         return hitters, pitchers
@@ -217,27 +250,31 @@ class Team:
 
 
 class Player:
+    mlb_id: int
     name: str
     position: Position
-    mlb_id: int
-    team: str
-    year: int
     season: Season
+    stats_year: int
     stats_group: str
+    team: str = ""
     stats: Dict[str, Any] = {}
     multiplier: float = 1
 
-    def __init__(self, name: str, position: Position, season: Season):
-        self.year = season.year
-        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
-        if match is not None:
-            name, year = match.groups()
-            self.year = int(year)
-            self.multiplier = 0.7 * season.progress
-
+    def __init__(
+        self,
+        mlb_id: int,
+        name: str,
+        position: Position,
+        season: Season,
+        stats_year: int,
+        multiplier: float = 1,
+    ):
+        self.mlb_id = mlb_id
         self.name = name
         self.position = position
         self.season = season
+        self.stats_year = stats_year
+        self.multiplier = multiplier
 
     def __repr__(self):
         attrs = ["name", "position", "mlb_id"]
@@ -253,8 +290,8 @@ class Player:
         notes = ""
         if self.multiplier != 1:
             notes += f"{round(self.multiplier * 100)}%"
-        if self.year != self.season.year:
-            notes += f" of {self.year}"
+        if self.stats_year != self.season.year:
+            notes += f" of {self.stats_year}"
         return notes
 
     def fetch_stats(self):
@@ -264,7 +301,7 @@ class Player:
         self.team = data.get("current_team")
         self.team = TEAM_ABBREVIATIONS.get(self.team, self.team)
         results = data.get("stats", [])
-        stats = [s["stats"] for s in results if int(s["season"]) == self.year]
+        stats = [s["stats"] for s in results if int(s["season"]) == self.stats_year]
         if stats:
             self.stats = max(stats, key=lambda s: s["gamesPlayed"])
 
@@ -272,17 +309,58 @@ class Player:
 class Hitter(Player):
     stats_group = "hitting"
 
-    def __init__(self, name: str, position: Position, season: Season):
+    def __init__(
+        self,
+        mlb_id: int,
+        position: Position,
+        season: Season,
+        stats_year: int | None = None,
+        multiplier: float = 1,
+    ):
+        assert isinstance(mlb_id, int)
+        
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
+        
+        if stats_year is None:
+            stats_year = season.year # TODO: Support injury moves
 
+        super().__init__(
+            mlb_id=mlb_id,
+            name=MLBID_TO_NAME[mlb_id],
+            position=position,
+            season=season,
+            stats_year=stats_year,
+            multiplier=multiplier,
+        )
+
+    @classmethod
+    def legacy_init(cls, name: str, position: Position, season: Season) -> "Hitter":
+        multiplier = 1.0
+        stats_year = season.year
+
+        # Check for injured player pattern, e.g. "Aaron Judge (2022)"
+        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
+        if match is not None:
+            name, year = match.groups()
+            stats_year = int(year)
+            multiplier = 0.7 * season.progress
+
+        # Check for 90% stats pattern, e.g. "Aaron Judge (90%)"
         match = re.match(r"^(.*)\s\(90%\)$", name)
         if match is not None:
             name = match.groups()[0]
-            self.multiplier = 0.9
+            multiplier = 0.9
 
-        super().__init__(name, position, season)
-        self.mlb_id = season.all_hitters.loc[self.name, "MLBID"]
+        mlb_id = int(season.all_hitters.loc[name, "MLBID"])
+
+        return cls(
+            mlb_id=mlb_id,
+            position=position,
+            season=season,
+            stats_year=stats_year,
+            multiplier=multiplier,
+        )
 
     @property
     def ab(self) -> float:
@@ -349,9 +427,46 @@ class HitterList(List[Hitter]):
 class Pitcher(Player):
     stats_group = "pitching"
 
-    def __init__(self, name: str, season: Season):
-        super().__init__(name, Position.PITCHER, season)
-        self.mlb_id = season.all_pitchers.loc[self.name, "MLBID"]
+    def __init__(
+        self,
+        mlb_id: int,
+        season: Season,
+        stats_year: int | None = None,
+        multiplier: float = 1.0,
+    ):
+
+        if stats_year is None:
+            stats_year = season.year # TODO: Support injury moves
+
+        super().__init__(
+            mlb_id=mlb_id,
+            name=MLBID_TO_NAME[mlb_id],
+            position=Position.PITCHER,
+            season=season,
+            stats_year=stats_year,
+            multiplier=multiplier,
+        )
+    
+    @classmethod
+    def legacy_init(cls, name: str, season: Season) -> "Pitcher":
+        stats_year = season.year
+        multiplier = 1.0
+
+        # Check for injured player pattern, e.g. "Shane Bieber (2022)"
+        match = re.match(r"^(.*)\s\((\d{4})\)$", name)
+        if match is not None:
+            name, year = match.groups()
+            stats_year = int(year)
+            multiplier = 0.7 * season.progress
+
+        mlb_id = int(season.all_pitchers.loc[name, "MLBID"])
+
+        return cls(
+            mlb_id=mlb_id,
+            season=season,
+            stats_year=stats_year,
+            multiplier=multiplier,
+        )
 
     @property
     def ip(self) -> float:

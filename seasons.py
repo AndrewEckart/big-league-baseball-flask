@@ -5,6 +5,21 @@ from models import Rules, Season
 
 seasons: list[Season] = [
     Season(
+        year=2025,
+        # fmt: off
+        managers=["Andrew"],
+        # fmt: on
+        rules=Rules(
+            num_reserve_hitters=4,
+            num_pitchers=7,
+            team_innings_threshold=900,
+            innings_deficit_multiplier=1/3,
+            innings_surplus_multiplier=0,
+            injured_pitcher_innings_multiplier=0.7,
+            injured_pitcher_era_multiplier=1.15,
+        )
+    ),
+    Season(
         year=2024,
         # fmt: off
         managers=["Andrew", "Justin", "Rich", "Jeff", "Scott", "Evans", "Myron", "John", "Paula", "Ron"],

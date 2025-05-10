@@ -28,12 +28,12 @@
           {% endif %}
         <td>{{ hitter.team }}</td>
         <td>{{ hitter.position }}</td>
-        <td>{{ hitter.ab }}</td>
-        <td>{{ hitter.runs }}</td>
-        <td>{{ hitter.hits }}</td>
-        <td>{{ hitter.hr }}</td>
-        <td>{{ hitter.rbi }}</td>
-        <td>{{ hitter.sb }}</td>
+        <td>{{ hitter.ab | round(1) }}</td>
+        <td>{{ hitter.runs | round(1) }}</td>
+        <td>{{ hitter.hits | round(1) }}</td>
+        <td>{{ hitter.hr | round(1) }}</td>
+        <td>{{ hitter.rbi | round(1) }}</td>
+        <td>{{ hitter.sb | round(1) }}</td>
         <td>{{ hitter.formatted_avg }}</td>
         <td>{{ hitter.notes }}</td>
       </tr>
