@@ -1,0 +1,30 @@
+starters:
+  1B: 572233 # Christian Walker
+  2B: 650859 # Luis Rengifo
+  SS: 608369 # Corey Seager
+  3B: 608070 # Jose Ramirez
+  C: 669127 # Shea Langeliers
+  OF:
+    - 681481 # Kerry Carpenter
+    - 641933 # Tyler O'Neill
+    - 670042 # Luke Raley
+  DH: 700932 # Kyle Manzardo
+bench:
+  - ["SS", 596115] # Trevor Story
+  - ["1B", 467793] # Carlos Santana
+  - ["3B", 668942] # Josh Rojas
+  - ["OF", 609280] # Miguel Andujar
+rotation:
+  - 682243 # Bryce Miller
+  - 693433 # Bryan Woo
+  - 669854 # Ronel Blanco
+  - 663556 # Shane McClanahan
+  - 682847 # Luis L. Ortiz
+  - 656546 # Jeff Hoffman
+  - 670955 # Edwin Uceta
+minors:
+  - ["OF", 676801] # Chas McCormick
+  - ["OF", 643565] # Mike Tauchman
+  - ["P", 542881] # Tyler Anderson
+  - ["P", 690916] # Richard Fitts
+  - ["P", 674370] # Osvaldo Bido
