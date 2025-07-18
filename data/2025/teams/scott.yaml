@@ -1,30 +1,29 @@
 starters:
-  1B: 691016 # Tyler Soderstrom
-  2B: 676059 # Jordan Westburg
-  SS: 677951 # Bobby Witt Jr.
-  3B: 608324 # Alex Bregman
-  C: 681351 # Logan O'Hoppe
-  OF:
-    - 671732 # Lawrence Butler
-    - 657041 # Lane Thomas
-    - 662139 # Daulton Varsho
-  DH: 666624 # Christopher Morel
+  - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom"}
+  - {pos: "2B", mlb_id: 676059, name: "Jordan Westburg"}
+  - {pos: "SS", mlb_id: 677951, name: "Bobby Witt Jr."}
+  - {pos: "3B", mlb_id: 608324, name: "Alex Bregman"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "OF", mlb_id: 671732, name: "Lawrence Butler"}
+  - {pos: "OF", mlb_id: 657041, name: "Lane Thomas"}
+  - {pos: "OF", mlb_id: 662139, name: "Daulton Varsho"}
+  - {pos: "DH", mlb_id: 666624, name: "Christopher Morel"}
 bench:
-  - ["2B", 692225] # Kristian Campbell
-  - ["OF", 666134] # Nolan Jones
-  - ["3B", 663837] # Matt Vierling
-  - ["C", 666310] # Bo Naylor
+  - {pos: "2B", mlb_id: 692225, name: "Kristian Campbell"}
+  - {pos: "OF", mlb_id: 666134, name: "Nolan Jones"}
+  - {pos: "3B", mlb_id: 663837, name: "Matt Vierling"}
+  - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}
 rotation:
-  - 608331 # Max Fried
-  - 686752 # Ryan Pepiot
-  - 669358 # Shane Baz
-  - 656876 # Drew Rasmussen
-  - 663554 # Casey Mize
-  - 681343 # Shane Smith
-  - 661403 # Emmanuel Clase
+  - {pos: "P",  mlb_id: 608331, name: "Max Fried"}
+  - {pos: "P",  mlb_id: 686752, name: "Ryan Pepiot"}
+  - {pos: "P",  mlb_id: 669358, name: "Shane Baz"}
+  - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen"}
+  - {pos: "P",  mlb_id: 663554, name: "Casey Mize"}
+  - {pos: "P",  mlb_id: 681343, name: "Shane Smith"}
+  - {pos: "P",  mlb_id: 661403, name: "Emmanuel Clase"}
 minors:
-  - ["OF", 664056] # Harrison Bader
-  - ["2B", 669208] # Ryan Bliss
-  - ["P", 680573] # Simeon Woods Richardson
-  - ["P", 686799] # Jack Kochanowicz
-  - ["P", 669211] # Keegan Akin
+  - {pos: "OF", mlb_id: 664056, name: "Harrison Bader"}
+  - {pos: "2B", mlb_id: 669208, name: "Ryan Bliss"}
+  - {pos: "P",  mlb_id: 680573, name: "Simeon Woods Richardson"}
+  - {pos: "P",  mlb_id: 686799, name: "Jack Kochanowicz"}
+  - {pos: "P",  mlb_id: 669211, name: "Keegan Akin"}

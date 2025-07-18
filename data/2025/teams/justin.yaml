@@ -1,30 +1,29 @@
 starters:
-  1B: 502671 # Paul Goldschmidt
-  2B: 514888 # Jose Altuve
-  SS: 669701 # Josh Smith
-  3B: 669304 # Jose Miranda
-  C: 673237 # Yainer Diaz
-  OF:
-    - 673357 # Luis Robert Jr.
-    - 680776 # Jarren Duran
-    - 545361 # Mike Trout
-  DH: 670541 # Yordan Alvarez
+  - {pos: "1B", mlb_id: 502671, name: "Paul Goldschmidt"}
+  - {pos: "2B", mlb_id: 514888, name: "Jose Altuve"}
+  - {pos: "SS", mlb_id: 669701, name: "Josh Smith"}
+  - {pos: "3B", mlb_id: 669304, name: "Jose Miranda"}
+  - {pos: "C",  mlb_id: 673237, name: "Yainer Diaz"}
+  - {pos: "OF", mlb_id: 673357, name: "Luis Robert Jr."}
+  - {pos: "OF", mlb_id: 680776, name: "Jarren Duran"}
+  - {pos: "OF", mlb_id: 545361, name: "Mike Trout"}
+  - {pos: "DH", mlb_id: 670541, name: "Yordan Alvarez"}
 bench:
-  - ["DH", 592626] # Joc Pederson 
-  - ["OF", 701358] # Cam Smith
-  - ["2B", 664238] # Dylan Moore
-  - ["OF", 702176] # Alan Roden
+  - {pos: "DH", mlb_id: 592626, name: "Joc Pederson "}
+  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
+  - {pos: "2B", mlb_id: 664238, name: "Dylan Moore"}
+  - {pos: "OF", mlb_id: 702176, name: "Alan Roden"}
 rotation:
-  - 622491 # Luis Castillo
-  - 607625 # Seth Lugo
-  - 681857 # Reese Olson
-  - 622663 # Luis Severino
-  - 594902 # Ben Lively
-  - 700249 # Cade Povich
-  - 671922 # Cade Smith
+  - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
+  - {pos: "P",  mlb_id: 607625, name: "Seth Lugo"}
+  - {pos: "P",  mlb_id: 681857, name: "Reese Olson"}
+  - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
+  - {pos: "P",  mlb_id: 594902, name: "Ben Lively"}
+  - {pos: "P",  mlb_id: 700249, name: "Cade Povich"}
+  - {pos: "P",  mlb_id: 671922, name: "Cade Smith"}
 minors:
-  - ["OF", 686823] # Will Brennan
-  - ["SS", 687263] # Zach Neto
-  - ["P", 502043] # Kyle Gibson
-  - ["P", 669713] # Hayden Wesneski
-  - ["OF", 672761] # Wenceel Perez
+  - {pos: "OF", mlb_id: 686823, name: "Will Brennan"}
+  - {pos: "SS", mlb_id: 687263, name: "Zach Neto"}
+  - {pos: "P",  mlb_id: 502043, name: "Kyle Gibson"}
+  - {pos: "P",  mlb_id: 669713, name: "Hayden Wesneski"}
+  - {pos: "OF", mlb_id: 672761, name: "Wenceel Perez"}

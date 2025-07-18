@@ -1,30 +1,29 @@
 starters:
-  1B: 665489 # Vladimir Guerrero, Jr.
-  2B: 663697 # Jonathan India
-  SS: 665161 # Jeremy Pena
-  3B: 676391 # Ernie Clement
-  C: 663728 # Cal Raleigh
-  OF:
-    - 641355 # Cody Bellinger
-    - 656775 # Cedric Mullins
-    - 621439 # Byron Buxton
-  DH: 624585 # Jorge Soler
+  - {pos: "1B", mlb_id: 665489, name: "Vladimir Guerrero, Jr."}
+  - {pos: "2B", mlb_id: 663697, name: "Jonathan India"}
+  - {pos: "SS", mlb_id: 665161, name: "Jeremy Pena"}
+  - {pos: "3B", mlb_id: 676391, name: "Ernie Clement"}
+  - {pos: "C",  mlb_id: 663728, name: "Cal Raleigh"}
+  - {pos: "OF", mlb_id: 641355, name: "Cody Bellinger"}
+  - {pos: "OF", mlb_id: 656775, name: "Cedric Mullins"}
+  - {pos: "OF", mlb_id: 621439, name: "Byron Buxton"}
+  - {pos: "DH", mlb_id: 624585, name: "Jorge Soler"}
 bench:
-  - ["2B", 650489] # Willi Castro
-  - ["1B", 664034] # Ty France
-  - ["OF", 592669] # Hunter Renfroe
-  - ["3B", 570482] # Gio Urshela
+  - {pos: "2B", mlb_id: 650489, name: "Willi Castro"}
+  - {pos: "1B", mlb_id: 664034, name: "Ty France"}
+  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe"}
+  - {pos: "3B", mlb_id: 570482, name: "Gio Urshela"}
 rotation:
-  - 656427 # Jack Flaherty
-  - 608379 # Michael Wacha
-  - 621244 # Jose Berrios
-  - 641793 # Zack Littell
-  - 667755 # Jose Soriano
-  - 683004 # Jack Leiter
-  - 643377 # Griffin Jax
+  - {pos: "P",  mlb_id: 656427, name: "Jack Flaherty"}
+  - {pos: "P",  mlb_id: 608379, name: "Michael Wacha"}
+  - {pos: "P",  mlb_id: 621244, name: "Jose Berrios"}
+  - {pos: "P",  mlb_id: 641793, name: "Zack Littell"}
+  - {pos: "P",  mlb_id: 667755, name: "Jose Soriano"}
+  - {pos: "P",  mlb_id: 683004, name: "Jack Leiter"}
+  - {pos: "P",  mlb_id: 643377, name: "Griffin Jax"}
 minors:
-  - ["OF", 678877] #  Johnkensky Noel
-  - ["SS", 672356] # Gabriel Arias
-  - ["P", 680570] # Grayson Rodriguez
-  - ["P", 471911] # Carlos Carrasco
-  - ["P", 547973] # Aroldis Chapman
+  - {pos: "OF", mlb_id: 678877, name: " Johnkensky Noel"}
+  - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
+  - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
+  - {pos: "P",  mlb_id: 471911, name: "Carlos Carrasco"}
+  - {pos: "P",  mlb_id: 547973, name: "Aroldis Chapman"}

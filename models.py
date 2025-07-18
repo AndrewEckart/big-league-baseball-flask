@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
 from dataclasses import dataclass, field
 import logging
@@ -107,40 +108,49 @@ class Team:
     def __repr__(self):
         return f"{self.__class__.__name__}(manager='{self.manager}')"
 
-    def parse_starters(self, data: Dict[str, Any]) -> "HitterList":
-        if not len(data) == 7:
-            raise ValueError("Expected 7 starter positions")
-
+    def parse_starters(self, data: Dict[str, Any] | List[Dict[str, str]]) -> "HitterList":
         if self.season.year <= 2024:
+            if not len(data) == 7:
+                raise ValueError("Expected 7 starter positions")
+
             outfielders = [
                 Hitter.legacy_init(name, Position.OUTFIELD, self.season) for name in data["OF"]
             ]
-        else:
-            outfielders = [
-                Hitter(mlb_id, Position.OUTFIELD, self.season)
-                for mlb_id in data["OF"]
-            ]
 
-        if len(outfielders) != 3:
-            raise ValueError("Expected 3 starting OF")
+            if len(outfielders) != 3:
+                raise ValueError("Expected 3 starting OF")
 
-        if self.season.year <= 2024:
             infielders = {
                 pos: Hitter.legacy_init(data[pos.value], pos, self.season)
                 for pos in INFIELD_POSITIONS
             }
+
+            for p in INFIELD_POSITIONS:
+                if not isinstance(infielders.get(p), Hitter):
+                    raise ValueError(f"Expected exactly one starting {p.value}")
+
+            dh = infielders.pop(Position.DESIGNATED_HITTER)
+            result = HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER) 
         else:
-            infielders = {
-                pos: Hitter(mlb_id=data[pos.value], position=pos, season=self.season)
-                for pos in INFIELD_POSITIONS
-            }
+            if not len(data) == 9:
+                raise ValueError("Expected 9 starters")
+            
+            result = self.parse_hitters(data, role=Role.STARTER)
 
-        for p in INFIELD_POSITIONS:
-            if not isinstance(infielders.get(p), Hitter):
-                raise ValueError(f"Expected exactly one starting {p.value}")
+        position_counts = Counter(hitter.position for hitter in result)
+        assert position_counts == {
+            Position.FIRST_BASE: 1,
+            Position.SECOND_BASE: 1,
+            Position.SHORTSTOP: 1,
+            Position.THIRD_BASE: 1,
+            Position.CATCHER: 1,
+            Position.OUTFIELD: 3,
+            Position.DESIGNATED_HITTER: 1,
+        }, "Starter position counts failed validation!"
+        
+        return result
 
-        dh = infielders.pop(Position.DESIGNATED_HITTER)
-        return HitterList([*infielders.values(), *outfielders, dh], role=Role.STARTER)
+
 
     def parse_bench(self, data: list[list[str]]) -> "HitterList":
         num_players_expected = self.season.rules.num_reserve_hitters
@@ -149,27 +159,31 @@ class Team:
                 f"Expected {num_players_expected} bench hitters, not {len(data)}"
             )
         
+        return self.parse_hitters(data, role=Role.BENCH)
+
+    def parse_hitters(self, data, role: Role) -> "HitterList":
         if self.season.year <= 2024:
             return HitterList(
                 (Hitter.legacy_init(name, Position(pos), self.season) for pos, name in data),
-                role=Role.BENCH,
+                role=role,
             )
         else:
             return HitterList(
-                (Hitter(mlb_id, Position(pos), self.season) for pos, mlb_id in data),
-                role=Role.BENCH,
+                (Hitter.from_dict(hitter, self.season) for hitter in data),
+                role=role,
             )
 
     def parse_rotation(self, data: list[str]) -> "PitcherList":
         num_players_expected = self.season.rules.num_pitchers
-        if not len(data) == num_players_expected:
+        if len(data) != num_players_expected:
             raise ValueError(
                 f"Expected {self.season.rules.num_pitchers} pitchers, not {len(data)}"
             )
+        
         if self.season.year <= 2024:
             return PitcherList(Pitcher.legacy_init(name, self.season) for name in data)
         else:
-            return PitcherList(Pitcher(mlb_id, self.season) for mlb_id in data)
+            return PitcherList(Pitcher.from_dict(pitcher, self.season) for pitcher in data)
 
     def parse_minors(self, data: list[list[str]]) -> tuple["HitterList", "PitcherList"]:
         if len(data) > 5:
@@ -183,11 +197,11 @@ class Team:
                 else:
                     hitters.append(Hitter.legacy_init(name, Position(pos), self.season))
         else:
-            for pos, mlb_id in data:
-                if pos == Position.PITCHER.value:
-                    pitchers.append(Pitcher(mlb_id, self.season))
+            for player in data:
+                if player["pos"] == "P":
+                    pitchers.append(Pitcher.from_dict(player, self.season))
                 else:
-                    hitters.append(Hitter(mlb_id, Position(pos), self.season))
+                    hitters.append(Hitter.from_dict(player, self.season))
         
         # if len(pitchers) > 3:
         #     raise ValueError("Must have at most 3 pitchers in minors")
@@ -361,6 +375,16 @@ class Hitter(Player):
             stats_year=stats_year,
             multiplier=multiplier,
         )
+    
+    @classmethod
+    def from_dict(cls, data: dict[str, str], season: Season) -> "Hitter":
+        return cls(
+            mlb_id=data["mlb_id"],
+            position=Position(data["pos"]),
+            season=season,
+            stats_year=season.year, # TODO: Support injury moves
+            multiplier=1.0, # TODO: Support injury moves
+        )
 
     @property
     def ab(self) -> float:
@@ -466,6 +490,16 @@ class Pitcher(Player):
             season=season,
             stats_year=stats_year,
             multiplier=multiplier,
+        )
+    
+    @classmethod
+    def from_dict(cls, data: dict[str, str], season: Season) -> "Pitcher":
+        
+        return cls(
+            mlb_id=data["mlb_id"],
+            season=season,
+            stats_year=season.year, # TODO: Support injury moves
+            multiplier=1.0,
         )
 
     @property

@@ -1,30 +1,29 @@
 starters:
-  1B: 679529 # Spencer Torkelson
-  2B: 702616 # Jackson Holliday
-  SS: 666182 # Bo Bichette
-  3B: 673962 # Josh Jung
-  C: 669224 # Austin Wells
-  OF:
-    - 691176 # Jasson Dominguez
-    - 592450 # Aaron Judge
-    - 645302 # Victor Robles
-  DH: 668904 # Royce Lewis
+  - {pos: "1B", mlb_id: 679529, name: "Spencer Torkelson"}
+  - {pos: "2B", mlb_id: 702616, name: "Jackson Holliday"}
+  - {pos: "SS", mlb_id: 666182, name: "Bo Bichette"}
+  - {pos: "3B", mlb_id: 673962, name: "Josh Jung"}
+  - {pos: "C",  mlb_id: 669224, name: "Austin Wells"}
+  - {pos: "OF", mlb_id: 691176, name: "Jasson Dominguez"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
+  - {pos: "OF", mlb_id: 645302, name: "Victor Robles"}
+  - {pos: "DH", mlb_id: 668904, name: "Royce Lewis"}
 bench:
-  - ["1B", 660162] # Yoan Moncada
-  - ["OF", 700250] # Ben Rice
-  - ["SS", 677008] # Heston Kjerstad
-  - ["OF", 678009] # Parker Meadows
+  - {pos: "1B", mlb_id: 660162, name: "Yoan Moncada"}
+  - {pos: "OF", mlb_id: 700250, name: "Ben Rice"}
+  - {pos: "SS", mlb_id: 677008, name: "Heston Kjerstad"}
+  - {pos: "OF", mlb_id: 678009, name: "Parker Meadows"}
 rotation:
-  - 666142 # Cole Ragans
-  - 657746 # Joe Ryan
-  - 594798 # Jacob DeGrom
-  - 657376 # Clarke Schmidt
-  - 680732 # Sean Burke
-  - 642207 # Devin Williams
-  - 695243 # Mason Miller
+  - {pos: "P",  mlb_id: 666142, name: "Cole Ragans"}
+  - {pos: "P",  mlb_id: 657746, name: "Joe Ryan"}
+  - {pos: "P",  mlb_id: 594798, name: "Jacob DeGrom"}
+  - {pos: "P",  mlb_id: 657376, name: "Clarke Schmidt"}
+  - {pos: "P",  mlb_id: 680732, name: "Sean Burke"}
+  - {pos: "P",  mlb_id: 642207, name: "Devin Williams"}
+  - {pos: "P",  mlb_id: 695243, name: "Mason Miller"}
 minors:
-  - ["3B", 690291] # Jace Jung
-  - ["2B", 641598] # Mitch Garver
-  - ["2B", 695657] # Colson Montgomery
-  - ["P", 663978] # Chris Paddack
-  - ["P", 596133] # Luke Weaver
+  - {pos: "3B", mlb_id: 690291, name: "Jace Jung"}
+  - {pos: "2B", mlb_id: 641598, name: "Mitch Garver"}
+  - {pos: "2B", mlb_id: 695657, name: "Colson Montgomery"}
+  - {pos: "P",  mlb_id: 663978, name: "Chris Paddack"}
+  - {pos: "P",  mlb_id: 596133, name: "Luke Weaver"}

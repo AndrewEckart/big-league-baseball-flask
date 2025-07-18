@@ -1,30 +1,29 @@
 starters:
-  1B: 671213 # Triston Casas
-  2B: 690993 # Colt Keith
-  SS: 621043 # Carlos Correa
-  3B: 691406 # Junior Caminero
-  C: 657136 # Connor Wong
-  OF:
-    - 677594 # Julio Rodriguez
-    - 621493 # Taylor Ward
-    - 666139 # Josh Lowe
-  DH: 667670 # Brent Rooker
+  - {pos: "1B", mlb_id: 671213, name: "Triston Casas"}
+  - {pos: "2B", mlb_id: 690993, name: "Colt Keith"}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 691406, name: "Junior Caminero"}
+  - {pos: "C",  mlb_id: 657136, name: "Connor Wong"}
+  - {pos: "OF", mlb_id: 677594, name: "Julio Rodriguez"}
+  - {pos: "OF", mlb_id: 621493, name: "Taylor Ward"}
+  - {pos: "OF", mlb_id: 666139, name: "Josh Lowe"}
+  - {pos: "DH", mlb_id: 667670, name: "Brent Rooker"}
 bench:
-  - ["OF", 677800] # Wilyer Abreu
-  - ["2B", 686681] # Michael Massey
-  - ["OF", 669004] # MJ Melendez
-  - ["C", 668670] # Jake Rogers
+  - {pos: "OF", mlb_id: 677800, name: "Wilyer Abreu"}
+  - {pos: "2B", mlb_id: 686681, name: "Michael Massey"}
+  - {pos: "OF", mlb_id: 669004, name: "MJ Melendez"}
+  - {pos: "C",  mlb_id: 668670, name: "Jake Rogers"}
 rotation:
-  - 676440 # Tanner Bibee
-  - 686613 # Hunter Brown
-  - 681293 # Spencer Arrighetti
-  - 671737 # Taj Bradley
-  - 670102 # Bowden Francis
-  - 605135 # Chris Bassitt
-  - 661395 # Jhoan Duran
+  - {pos: "P",  mlb_id: 676440, name: "Tanner Bibee"}
+  - {pos: "P",  mlb_id: 686613, name: "Hunter Brown"}
+  - {pos: "P",  mlb_id: 681293, name: "Spencer Arrighetti"}
+  - {pos: "P",  mlb_id: 671737, name: "Taj Bradley"}
+  - {pos: "P",  mlb_id: 670102, name: "Bowden Francis"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 661395, name: "Jhoan Duran"}
 minors:
-  - ["OF", 666160] # Mickey Moniak
-  - ["2B", 686797] # Brooks Lee
-  - ["P", 677958] # Kumar Rocker
-  - ["P", 663460] # Kris Bubic
-  - ["P", 455119] # Chris Martin
+  - {pos: "OF", mlb_id: 666160, name: "Mickey Moniak"}
+  - {pos: "2B", mlb_id: 686797, name: "Brooks Lee"}
+  - {pos: "P",  mlb_id: 677958, name: "Kumar Rocker"}
+  - {pos: "P",  mlb_id: 663460, name: "Kris Bubic"}
+  - {pos: "P",  mlb_id: 455119, name: "Chris Martin"}

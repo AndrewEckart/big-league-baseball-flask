@@ -1,30 +1,29 @@
 starters:
-  1B: 686469 # Vinnie Pasquantino
-  2B: 664040 # Brandon Lowe
-  SS: 805779 # Jacob Wilson
-  3B: 670623 # Isaac Paredes
-  C: 668939 # Adley Rutschman
-  OF:
-    - 668227 # Randy Arozarena
-    - 682985 # Riley Greene
-    - 643217 # Andrew Benintendi
-  DH: 694384 # Nolan Schanuel
+  - {pos: "1B", mlb_id: 686469, name: "Vinnie Pasquantino"}
+  - {pos: "2B", mlb_id: 664040, name: "Brandon Lowe"}
+  - {pos: "SS", mlb_id: 805779, name: "Jacob Wilson"}
+  - {pos: "3B", mlb_id: 670623, name: "Isaac Paredes"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 668227, name: "Randy Arozarena"}
+  - {pos: "OF", mlb_id: 682985, name: "Riley Greene"}
+  - {pos: "OF", mlb_id: 643217, name: "Andrew Benintendi"}
+  - {pos: "DH", mlb_id: 694384, name: "Nolan Schanuel"}
 bench:
-  - ["OF", 701358] # Cam Smith
-  - ["OF", 676694] # Jake Meyers
-  - ["SS", 641487] # J.P. Crawford
-  - ["1B", 572233] # Christian Walker
+  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
+  - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
+  - {pos: "SS", mlb_id: 641487, name: "J.P. Crawford"}
+  - {pos: "1B", mlb_id: 572233, name: "Christian Walker"}
 rotation:
-  - 669302 # Logan Gilbert
-  - 664285 # Framber Valdez
-  - 669923 # George Kirby
-  - 579328 # Yusei Kikuchi
-  - 668909 # Gavin Williams
-  - 650556 # Bryan Abreu
-  - 668674 # Lucas Erceg
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 664285, name: "Framber Valdez"}
+  - {pos: "P",  mlb_id: 669923, name: "George Kirby"}
+  - {pos: "P",  mlb_id: 579328, name: "Yusei Kikuchi"}
+  - {pos: "P",  mlb_id: 668909, name: "Gavin Williams"}
+  - {pos: "P",  mlb_id: 650556, name: "Bryan Abreu"}
+  - {pos: "P",  mlb_id: 668674, name: "Lucas Erceg"}
 minors:
-  - ["OF", 664728] # Kyle Isbel
-  - ["DH", 683734] # Andrew Vaughn
-  - ["2B", 680869] # Zack Gelof
-  - ["P", 678394] # Brayan Bello
-  - ["P", 676710] # Kutter Crawford
+  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
+  - {pos: "DH", mlb_id: 683734, name: "Andrew Vaughn"}
+  - {pos: "2B", mlb_id: 680869, name: "Zack Gelof"}
+  - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
+  - {pos: "P",  mlb_id: 676710, name: "Kutter Crawford"}
