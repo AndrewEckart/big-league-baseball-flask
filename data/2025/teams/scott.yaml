@@ -14,7 +14,7 @@ bench:
   - {pos: "3B", mlb_id: 663837, name: "Matt Vierling"}
   - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}
 rotation:
-  - {pos: "P",  mlb_id: 608331, name: "Max Fried"}
+  - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
   - {pos: "P",  mlb_id: 686752, name: "Ryan Pepiot"}
   - {pos: "P",  mlb_id: 669358, name: "Shane Baz"}
   - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen"}

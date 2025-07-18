@@ -22,7 +22,7 @@ rotation:
   - {pos: "P",  mlb_id: 683004, name: "Jack Leiter"}
   - {pos: "P",  mlb_id: 643377, name: "Griffin Jax"}
 minors:
-  - {pos: "OF", mlb_id: 678877, name: " Johnkensky Noel"}
+  - {pos: "OF", mlb_id: 678877, name: "Johnkensky Noel"}
   - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
   - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
   - {pos: "P",  mlb_id: 471911, name: "Carlos Carrasco"}
