@@ -10,8 +10,8 @@ starters:
   - {pos: "DH", mlb_id: 667670, name: "Brent Rooker"}
 bench:
   - {pos: "OF", mlb_id: 677800, name: "Wilyer Abreu"}
-  - {pos: "2B", mlb_id: 686681, name: "Michael Massey"}
-  - {pos: "OF", mlb_id: 669004, name: "MJ Melendez"}
+  - {pos: "2B", mlb_id: 686681, name: "Michael Massey", injury_move: true}
+  - {pos: "OF", mlb_id: 669004, name: "MJ Melendez", injury_move: true}
   - {pos: "C",  mlb_id: 668670, name: "Jake Rogers"}
 rotation:
   - {pos: "P",  mlb_id: 676440, name: "Tanner Bibee"}

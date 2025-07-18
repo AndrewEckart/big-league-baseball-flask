@@ -179,7 +179,7 @@ class Team:
             raise ValueError(
                 f"Expected {self.season.rules.num_pitchers} pitchers, not {len(data)}"
             )
-        
+
         if self.season.year <= 2024:
             return PitcherList(Pitcher.legacy_init(name, self.season) for name in data)
         else:
@@ -328,16 +328,13 @@ class Hitter(Player):
         mlb_id: int,
         position: Position,
         season: Season,
-        stats_year: int | None = None,
+        stats_year: int,
         multiplier: float = 1,
     ):
         assert isinstance(mlb_id, int)
         
         if position == Position.PITCHER:
             raise ValueError("Pitchers cannot be position players!")
-        
-        if stats_year is None:
-            stats_year = season.year # TODO: Support injury moves
 
         super().__init__(
             mlb_id=mlb_id,
@@ -378,12 +375,19 @@ class Hitter(Player):
     
     @classmethod
     def from_dict(cls, data: dict[str, str], season: Season) -> "Hitter":
+
+        stats_year = season.year
+        multiplier = 1.0
+        if data.get("injury_move"):
+            stats_year = season.last_year
+            multiplier = 0.7 * season.progress
+
         return cls(
             mlb_id=data["mlb_id"],
             position=Position(data["pos"]),
             season=season,
-            stats_year=season.year, # TODO: Support injury moves
-            multiplier=1.0, # TODO: Support injury moves
+            stats_year=stats_year,
+            multiplier=multiplier,
         )
 
     @property
@@ -455,12 +459,9 @@ class Pitcher(Player):
         self,
         mlb_id: int,
         season: Season,
-        stats_year: int | None = None,
+        stats_year: int,
         multiplier: float = 1.0,
     ):
-
-        if stats_year is None:
-            stats_year = season.year # TODO: Support injury moves
 
         super().__init__(
             mlb_id=mlb_id,
@@ -495,11 +496,17 @@ class Pitcher(Player):
     @classmethod
     def from_dict(cls, data: dict[str, str], season: Season) -> "Pitcher":
         
+        stats_year = season.year
+        multiplier = 1.0
+        if data.get("injury_move"):
+            stats_year = season.last_year
+            multiplier = 0.7 * season.progress
+
         return cls(
             mlb_id=data["mlb_id"],
             season=season,
-            stats_year=season.year, # TODO: Support injury moves
-            multiplier=1.0,
+            stats_year=stats_year,
+            multiplier=multiplier,
         )
 
     @property
