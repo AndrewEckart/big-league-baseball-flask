@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 669394, name: "Jake Burger"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "SS", mlb_id: 683002, name: "Gunnar Henderson"}
+  - {pos: "3B", mlb_id: 665862, name: "Jazz Chisholm"}
+  - {pos: "C",  mlb_id: 672386, name: "Alejandro Kirk"}
+  - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
+  - {pos: "OF", mlb_id: 670242, name: "Matt Wallner"}
+  - {pos: "OF", mlb_id: 668709, name: "JJ Bleday"}
+  - {pos: "DH", mlb_id: 663616, name: "Trevor Larnach"}
+bench:
+  - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio"}
+  - {pos: "1B", mlb_id: 666018, name: "Jonathan Aranda"}
+  - {pos: "2B", mlb_id: 663898, name: "Brendan Rodgers"}
+  - {pos: "OF", mlb_id: 665750, name: "Leody Taveras"}
+rotation:
+  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
+  - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
+  - {pos: "P",  mlb_id: 592332, name: "Kevin Gausman"}
+  - {pos: "P",  mlb_id: 547179, name: "Michael Lorenzen"}
+  - {pos: "P",  mlb_id: 695549, name: "Jackson Jobe"}
+  - {pos: "P",  mlb_id: 453286, name: "Max Scherzer"}
+  - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
+minors:
+  - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
+  - {pos: "OF", mlb_id: 663757, name: "Trent Grisham"}
+  - {pos: "DH", mlb_id: 807799, name: "Masataka Yoshida"}
+  - {pos: "P",  mlb_id: 676664, name: "JP Sears"}
+  - {pos: "P",  mlb_id: 527048, name: "Martin Perez"}

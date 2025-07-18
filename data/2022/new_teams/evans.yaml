@@ -1,0 +1,27 @@
+starters:
+  - {pos: "1B", mlb_id: 519203, name: "Anthony Rizzo"}
+  - {pos: "2B", mlb_id: 624428, name: "Adam Frazier"}
+  - {pos: "SS", mlb_id: 677551, name: "Wander Franco"}
+  - {pos: "3B", mlb_id: 518626, name: "Josh Donaldson"}
+  - {pos: "C",  mlb_id: 545358, name: "Max Stassi"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
+  - {pos: "OF", mlb_id: 673357, name: "Luis Robert"}
+  - {pos: "OF", mlb_id: 683734, name: "Andrew Vaughn"}
+  - {pos: "DH", mlb_id: 408234, name: "Miguel Cabrera"}
+bench:
+  - {pos: "OF", mlb_id: 650391, name: "Eloy Jimenez"}
+  - {pos: "DH", mlb_id: 488726, name: "Michael Brantley", injury_move: true}
+  - {pos: "3B", mlb_id: 543281, name: "Josh Harrison"}
+  - {pos: "2B", mlb_id: 624414, name: "Christian Arroyo"}
+rotation:
+  - {pos: "P",  mlb_id: 660271, name: "Shohei Ohtani"}
+  - {pos: "P",  mlb_id: 592789, name: "Noah Syndergaard"}
+  - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
+  - {pos: "P",  mlb_id: 592351, name: "Jon Gray"}
+  - {pos: "P",  mlb_id: 446372, name: "Corey Kluber"}
+  - {pos: "P",  mlb_id: 547973, name: "Aroldis Chapman"}
+  - {pos: "P",  mlb_id: 642397, name: "Gregory Soto"}
+minors:
+  - {pos: "3B", mlb_id: 609280, name: "Miguel Andujar"}
+  - {pos: "P",  mlb_id: 519242, name: "Chris Sale"}
+  - {pos: "P",  mlb_id: 665620, name: "Deivi Garcia"}

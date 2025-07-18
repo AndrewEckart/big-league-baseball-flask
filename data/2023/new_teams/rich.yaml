@@ -1,0 +1,28 @@
+starters:
+  - {pos: "1B", mlb_id: 665489, name: "Vladimir Guerrero Jr."}
+  - {pos: "2B", mlb_id: 664040, name: "Brandon Lowe"}
+  - {pos: "SS", mlb_id: 608369, name: "Corey Seager"}
+  - {pos: "3B", mlb_id: 656305, name: "Matt Chapman"}
+  - {pos: "C",  mlb_id: 672386, name: "Alejandro Kirk"}
+  - {pos: "OF", mlb_id: 623993, name: "Anthony Santander"}
+  - {pos: "OF", mlb_id: 669720, name: "Austin Hays"}
+  - {pos: "OF", mlb_id: 606192, name: "Teoscar Hernandez"}
+  - {pos: "DH", mlb_id: 519317, name: "Giancarlo Stanton"}
+bench:
+  - {pos: "OF", mlb_id: 665923, name: "Esteury Ruiz"}
+  - {pos: "2B", mlb_id: 624503, name: "Nick Gordon", injury_move: true}
+  - {pos: "3B", mlb_id: 570482, name: "Giovanny Urshela", injury_move: true}
+  - {pos: "OF", mlb_id: 681481, name: "Kerry Carpenter"}
+rotation:
+  - {pos: "P",  mlb_id: 664299, name: "Cristian Javier"}
+  - {pos: "P",  mlb_id: 605488, name: "Jeffrey Springs", injury_move: true}
+  - {pos: "P",  mlb_id: 672282, name: "Reid Detmers"}
+  - {pos: "P",  mlb_id: 593958, name: "Eduardo Rodriguez"}
+  - {pos: "P",  mlb_id: 615698, name: "Cal Quantrill", injury_move: true}
+  - {pos: "P",  mlb_id: 676477, name: "Garrett Whitlock"}
+  - {pos: "P",  mlb_id: 662253, name: "Andres Munoz"}
+minors:
+  - {pos: "OF", mlb_id: 693049, name: "Oscar Colas"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "P",  mlb_id: 660261, name: "Shintaro Fujinami"}
+  - {pos: "P",  mlb_id: 605347, name: "Jorge Lopez"}

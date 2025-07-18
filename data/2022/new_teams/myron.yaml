@@ -1,0 +1,28 @@
+starters:
+  - {pos: "1B", mlb_id: 570731, name: "Jonathan Schoop"}
+  - {pos: "2B", mlb_id: 596059, name: "Rougned Odor"}
+  - {pos: "SS", mlb_id: 608369, name: "Corey Seager"}
+  - {pos: "3B", mlb_id: 608070, name: "Jose Ramirez"}
+  - {pos: "C",  mlb_id: 596142, name: "Gary Sanchez"}
+  - {pos: "OF", mlb_id: 656775, name: "Cedric Mullins"}
+  - {pos: "OF", mlb_id: 666971, name: "Lourdes Gurriel"}
+  - {pos: "OF", mlb_id: 543305, name: "Aaron Hicks"}
+  - {pos: "DH", mlb_id: 570482, name: "Giovanny Urshela"}
+bench:
+  - {pos: "3B", mlb_id: 642180, name: "Tyler Wade"}
+  - {pos: "2B", mlb_id: 476704, name: "Jed Lowrie", injury_move: true}
+  - {pos: "1B", mlb_id: 666135, name: "Alex Kirilloff", injury_move: true}
+  - {pos: "OF", mlb_id: 664238, name: "Dylan Moore", injury_move: true}
+rotation:
+  - {pos: "P",  mlb_id: 434378, name: "Justin Verlander"}
+  - {pos: "P",  mlb_id: 458681, name: "Lance Lynn"}
+  - {pos: "P",  mlb_id: 669373, name: "Tarik Skubal"}
+  - {pos: "P",  mlb_id: 663474, name: "Triston McKenzie"}
+  - {pos: "P",  mlb_id: 668676, name: "Zach Plesac"}
+  - {pos: "P",  mlb_id: 669618, name: "Joe Barlow"}
+  - {pos: "P",  mlb_id: 628452, name: "Raisel Iglesias"}
+minors:
+  - {pos: "OF", mlb_id: 641786, name: "Kyle Lewis"}
+  - {pos: "SS", mlb_id: 609275, name: "Adalberto Mondesi"}
+  - {pos: "P",  mlb_id: 669358, name: "Shane Baz"}
+  - {pos: "P",  mlb_id: 663878, name: "Nate Pearson"}

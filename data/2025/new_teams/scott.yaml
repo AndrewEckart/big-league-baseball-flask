@@ -1,0 +1,27 @@
+starters:
+  - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom"}
+  - {pos: "2B", mlb_id: 676059, name: "Jordan Westburg", injury_move: true}
+  - {pos: "SS", mlb_id: 677951, name: "Bobby Witt Jr."}
+  - {pos: "3B", mlb_id: 608324, name: "Alex Bregman"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "OF", mlb_id: 671732, name: "Lawrence Butler"}
+  - {pos: "OF", mlb_id: 663757, name: "Trent Grisham"}
+  - {pos: "OF", mlb_id: 662139, name: "Daulton Varsho"}
+  - {pos: "DH", mlb_id: 646240, name: "Rafael Devers"}
+bench:
+  - {pos: "SS", mlb_id: 687263, name: "Zach Neto"}
+  - {pos: "OF", mlb_id: 657041, name: "Lane Thomas", injury_move: true}
+  - {pos: "DH", mlb_id: 666624, name: "Christopher Morel"}
+  - {pos: "2B", mlb_id: 692225, name: "Kristian Campbell"}
+rotation:
+  - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
+  - {pos: "P",  mlb_id: 680573, name: "Simeon Woods Richardson"}
+  - {pos: "P",  mlb_id: 669358, name: "Shane Baz"}
+  - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen"}
+  - {pos: "P",  mlb_id: 663554, name: "Casey Mize"}
+  - {pos: "P",  mlb_id: 681343, name: "Shane Smith"}
+  - {pos: "P",  mlb_id: 661403, name: "Emmanuel Clase"}
+minors:
+  - {pos: "OF", mlb_id: 666134, name: "Nolan Jones"}
+  - {pos: "2B", mlb_id: 669208, name: "Ryan Bliss"}
+  - {pos: "P",  mlb_id: 686799, name: "Jack Kochanowicz"}

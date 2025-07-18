@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 679529, name: "Spencer Torkelson", injury_move: true}
+  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres"}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 672580, name: "Maikel Garcia"}
+  - {pos: "C",  mlb_id: 521692, name: "Salvador Perez"}
+  - {pos: "OF", mlb_id: 666969, name: "Adolis Garcia"}
+  - {pos: "OF", mlb_id: 662139, name: "Daulton Varsho"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
+  - {pos: "DH", mlb_id: 643396, name: "Isiah Kiner-Falefa"}
+bench:
+  - {pos: "SS", mlb_id: 595879, name: "Javier Baez", injury_move: true}
+  - {pos: "1B", mlb_id: 670042, name: "Luke Raley"}
+  - {pos: "DH", mlb_id: 681481, name: "Kerry Carpenter"}
+  - {pos: "OF", mlb_id: 686823, name: "Will Brennan"}
+rotation:
+  - {pos: "P",  mlb_id: 664285, name: "Framber Valdez"}
+  - {pos: "P",  mlb_id: 547179, name: "Michael Lorenzen"}
+  - {pos: "P",  mlb_id: 665152, name: "Dean Kremer"}
+  - {pos: "P",  mlb_id: 661395, name: "Jhoan Duran"}
+  - {pos: "P",  mlb_id: 661563, name: "Luis Gil"}
+  - {pos: "P",  mlb_id: 623352, name: "Josh Hader"}
+  - {pos: "P",  mlb_id: 519151, name: "Ryan Pressly"}
+minors:
+  - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
+  - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio"}
+  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
+  - {pos: "P",  mlb_id: 547179, name: "Michael Lorenzen"}
+  - {pos: "P",  mlb_id: 672282, name: "Reid Detmers"}

@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 686469, name: "Vinnie Pasquantino"}
+  - {pos: "2B", mlb_id: 664040, name: "Brandon Lowe"}
+  - {pos: "SS", mlb_id: 805779, name: "Jacob Wilson"}
+  - {pos: "3B", mlb_id: 670623, name: "Isaac Paredes"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 668227, name: "Randy Arozarena"}
+  - {pos: "OF", mlb_id: 682985, name: "Riley Greene"}
+  - {pos: "OF", mlb_id: 643217, name: "Andrew Benintendi"}
+  - {pos: "DH", mlb_id: 694384, name: "Nolan Schanuel"}
+bench:
+  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
+  - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
+  - {pos: "SS", mlb_id: 641487, name: "J.P. Crawford"}
+  - {pos: "1B", mlb_id: 572233, name: "Christian Walker"}
+rotation:
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 664285, name: "Framber Valdez"}
+  - {pos: "P",  mlb_id: 669923, name: "George Kirby"}
+  - {pos: "P",  mlb_id: 579328, name: "Yusei Kikuchi"}
+  - {pos: "P",  mlb_id: 668909, name: "Gavin Williams"}
+  - {pos: "P",  mlb_id: 650556, name: "Bryan Abreu"}
+  - {pos: "P",  mlb_id: 668674, name: "Lucas Erceg"}
+minors:
+  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
+  - {pos: "DH", mlb_id: 683734, name: "Andrew Vaughn"}
+  - {pos: "2B", mlb_id: 680869, name: "Zack Gelof"}
+  - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
+  - {pos: "P",  mlb_id: 676710, name: "Kutter Crawford"}
