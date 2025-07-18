@@ -5,25 +5,25 @@ starters:
   - {pos: "3B", mlb_id: 672580, name: "Maikel Garcia"}
   - {pos: "C",  mlb_id: 641680, name: "Jonah Heim"}
   - {pos: "OF", mlb_id: 666176, name: "Jo Adell"}
-  - {pos: "OF", mlb_id: 623993, name: "Anthony Santander"}
+  - {pos: "OF", mlb_id: 623993, name: "Anthony Santander", injury_move: true}
   - {pos: "OF", mlb_id: 694671, name: "Wyatt Langford"}
   - {pos: "DH", mlb_id: 656811, name: "Ryan O'Hearn"}
 bench:
-  - {pos: "OF", mlb_id: 676356, name: "Jonny DeLuca "}
-  - {pos: "3B", mlb_id: 665828, name: "Oswaldo Cabrera"}
+  - {pos: "OF", mlb_id: 656716, name: "Zach McKinstry"}
+  - {pos: "3B", mlb_id: 665828, name: "Oswaldo Cabrera", injury_move: true}
   - {pos: "SS", mlb_id: 700242, name: "Trey Sweeney"}
-  - {pos: "C",  mlb_id: 596142, name: "Gary Sanchez"}
+  - {pos: "C",  mlb_id: 596142, name: "Gary Sanchez", injury_move: true}
 rotation:
   - {pos: "P",  mlb_id: 641154, name: "Pablo Lopez"}
   - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon"}
-  - {pos: "P",  mlb_id: 621107, name: "Zach Eflin"}
+  - {pos: "P",  mlb_id: 605488, name: "Jeffrey Springs"}
   - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
   - {pos: "P",  mlb_id: 608372, name: "Tomoyuki Sugano"}
   - {pos: "P",  mlb_id: 623352, name: "Josh Hader"}
   - {pos: "P",  mlb_id: 662253, name: "Andres Munoz"}
 minors:
-  - {pos: "P",  mlb_id: 605488, name: "Jeffrey Springs"}
+  - {pos: "P",  mlb_id: 621107, name: "Zach Eflin"}
   - {pos: "P",  mlb_id: 641816, name: "Tyler Mahle"}
   - {pos: "P",  mlb_id: 663436, name: "Davis Martin"}
   - {pos: "OF", mlb_id: 664913, name: "Seth Brown"}
-  - {pos: "OF", mlb_id: 656716, name: "Zach McKinstry"}
+  - {pos: "OF", mlb_id: 676356, name: "Jonny DeLuca "}
