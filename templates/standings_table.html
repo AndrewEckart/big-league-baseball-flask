@@ -3,12 +3,12 @@
     <thead>
       <tr>
         <th scope="col">Manager</th>
-        <th scope="col">Offense</th>
-        <th scope="col" data-toggle="tooltip" data-placement="top" title="Excluding bonus/penalty">
+        <th scope="col" style="text-align: center">Offense</th>
+        <th scope="col" style="text-align: center" data-toggle="tooltip" data-placement="top" title="Excluding innings penalty">
           Pitching
         </th>
-        <th scope="col">Bonus/Penalty</th>
-        <th scope="col">Total</th>
+        <th scope="col" style="text-align: center" data-toggle="tooltip" data-placement="top" title="Innings penalty (or bonus)">Innings</th>
+        <th scope="col" style="text-align: center">Total</th>
       </tr>
     </thead>
     <tbody>
@@ -22,10 +22,11 @@
             {{ team.manager }}
           </a>
         </th>
-        <td>{{ "%.3f"|format(team.offense) }}</td>
-        <td>{{ "%.3f"|format(team.pitching) }}</td>
-        <td>{{ "%.3f"|format(team.innings_bonus_or_penalty) }}</td>
-        <td>{{ "%.3f"|format(team.rating) }}</td>
+        {% set precision = team.season.rating_precision %}
+        <td style="text-align: right">{{ "{:.{}f}".format(team.offense, precision) }}</td>
+        <td style="text-align: right">{{ "{:.{}f}".format(team.pitching, precision) }}</td>
+        <td style="text-align: right">{{ "{:.{}f}".format(team.innings_bonus_or_penalty, precision) }}</td>
+        <td style="text-align: right; min-width: 70px">{{ "{:.{}f}".format(team.rating, precision) }}</td>
       </tr>
     {% endfor %}
     </tbody>

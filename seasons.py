@@ -48,6 +48,8 @@ seasons: list[Season] = [
             injured_pitcher_innings_multiplier=0.7,
             injured_pitcher_era_multiplier=1.15,
         ),
+        # Increase rating precision due to near-tie for first!
+        rating_precision=3,
     ),
     Season(
         year=2022,

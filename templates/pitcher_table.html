@@ -30,11 +30,11 @@
         <td>{{ pitcher.team }}</td>
         <td>{{ pitcher.position }}</td>
         <td>{{ pitcher.formatted_ip }}</td>
-        <td>{{ pitcher.er }}</td>
-        <td>{{ pitcher.wins }}</td>
-        <td>{{ pitcher.saves }}</td>
-        <td>{{ pitcher.strikeouts }}</td>
-        <td>{{ pitcher.walks }}</td>
+        <td>{{ pitcher.er | round(1) }}</td>
+        <td>{{ pitcher.wins | round(1) }}</td>
+        <td>{{ pitcher.saves | round(1) }}</td>
+        <td>{{ pitcher.strikeouts | round(1) }}</td>
+        <td>{{ pitcher.walks | round(1) }}</td>
         <td>{{ pitcher.formatted_era }}</td>
         <td>{{ pitcher.notes }}</td>
       </tr>

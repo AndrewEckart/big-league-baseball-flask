@@ -34,6 +34,10 @@ class Season:
     teams: dict[str, "Team"] = field(init=False)
     league_id: int = 103  # Defaults to American League
 
+    # Decimal precision of team ratings.
+    # Defaults to 1 but can be increased in the event of very tight standings.
+    rating_precision: int = 1
+
     def __post_init__(self):
         self.teams = {manager.lower(): Team(manager, self) for manager in self.managers}
 
@@ -456,7 +460,7 @@ class Pitcher(Player):
     def fetch_stats(self):
         super().fetch_stats()
         season, stats = self.season, self.stats
-        if self.year != season.year:
+        if self.stats_year != season.year:
             rules = season.rules
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
