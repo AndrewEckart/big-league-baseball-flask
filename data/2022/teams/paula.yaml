@@ -1,29 +1,28 @@
 starters:
-  1B: "Ryan Mountcastle"
-  2B: "Marcus Semien"
-  SS: "Carlos Correa"
-  3B: "DJ LeMahieu"
-  C: "Mike Zunino (2021)"
-  OF:
-    - "Kole Calhoun"
-    - "Myles Straw"
-    - "Brandon Marsh"
-  DH: "Austin Meadows (2021)"
+  - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
+  - {pos: "2B", mlb_id: 543760, name: "Marcus Semien"}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 518934, name: "DJ LeMahieu"}
+  - {pos: "C",  mlb_id: 572287, name: "Mike Zunino", injury_move: true}
+  - {pos: "OF", mlb_id: 594777, name: "Kole Calhoun"}
+  - {pos: "OF", mlb_id: 664702, name: "Myles Straw"}
+  - {pos: "OF", mlb_id: 669016, name: "Brandon Marsh"}
+  - {pos: "DH", mlb_id: 640457, name: "Austin Meadows", injury_move: true}
 bench:
-  - ["OF", "Joey Gallo"]
-  - ["OF", "Robbie Grossman"]
-  - ["SS", "Elvis Andrus"]
-  - ["OF", "Kevin Kiermaier (2021)"]
+  - {pos: "OF", mlb_id: 608336, name: "Joey Gallo"}
+  - {pos: "OF", mlb_id: 543257, name: "Robbie Grossman"}
+  - {pos: "SS", mlb_id: 462101, name: "Elvis Andrus"}
+  - {pos: "OF", mlb_id: 595281, name: "Kevin Kiermaier", injury_move: true}
 rotation:
-  - "Kevin Gausman"
-  - "Shane McClanahan"
-  - "Jordan Montgomery"
-  - "Cal Quantrill"
-  - "Dane Dunning"
-  - "Jordan Romano"
-  - "Scott Barlow"
+  - {pos: "P",  mlb_id: 592332, name: "Kevin Gausman"}
+  - {pos: "P",  mlb_id: 663556, name: "Shane McClanahan"}
+  - {pos: "P",  mlb_id: 656756, name: "Jordan Montgomery"}
+  - {pos: "P",  mlb_id: 615698, name: "Cal Quantrill"}
+  - {pos: "P",  mlb_id: 641540, name: "Dane Dunning"}
+  - {pos: "P",  mlb_id: 605447, name: "Jordan Romano"}
+  - {pos: "P",  mlb_id: 605130, name: "Scott Barlow"}
 minors:
-  - ["OF", "Justin Upton (2021)"]
-  - ["1B", "Bobby Bradley"]
-  - ["P", "Kris Bubic"]
-  - ["P", "Carlos Hernandez"]
+  - {pos: "OF", mlb_id: 457708, name: "Justin Upton", injury_move: true}
+  - {pos: "1B", mlb_id: 656252, name: "Bobby Bradley"}
+  - {pos: "P",  mlb_id: 663460, name: "Kris Bubic"}
+  - {pos: "P",  mlb_id: 672578, name: "Carlos Hernandez"}

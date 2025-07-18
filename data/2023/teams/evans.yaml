@@ -1,29 +1,28 @@
 starters:
-  1B: "Andrew Vaughn"
-  2B: "Jorge Polanco"
-  SS: "Wander Franco"
-  3B: "Anthony Volpe"
-  C: "Danny Jansen"
-  OF:
-    - "Julio Rodriguez"
-    - "Adam Duvall"
-    - "Luis Robert Jr."
-  DH: "Eloy Jimenez"
+  - {pos: "1B", mlb_id: 683734, name: "Andrew Vaughn"}
+  - {pos: "2B", mlb_id: 593871, name: "Jorge Polanco"}
+  - {pos: "SS", mlb_id: 677551, name: "Wander Franco"}
+  - {pos: "3B", mlb_id: 683011, name: "Anthony Volpe"}
+  - {pos: "C",  mlb_id: 643376, name: "Danny Jansen"}
+  - {pos: "OF", mlb_id: 677594, name: "Julio Rodriguez"}
+  - {pos: "OF", mlb_id: 594807, name: "Adam Duvall"}
+  - {pos: "OF", mlb_id: 673357, name: "Luis Robert"}
+  - {pos: "DH", mlb_id: 650391, name: "Eloy Jimenez"}
 bench:
-  - ["3B", "Anthony Rendon"]
-  - ["1B", "Triston Casas"]
-  - ["2B", "Cavan Biggio"]
-  - ["OF", "Oswaldo Cabrera"]
+  - {pos: "3B", mlb_id: 543685, name: "Anthony Rendon"}
+  - {pos: "1B", mlb_id: 671213, name: "Triston Casas"}
+  - {pos: "2B", mlb_id: 624415, name: "Cavan Biggio"}
+  - {pos: "OF", mlb_id: 665828, name: "Oswaldo Cabrera"}
 rotation:
-  - "Gerrit Cole"
-  - "Tyler Glasnow"
-  - "Carlos Rodon (2022)"
-  - "Clarke Schmidt"
-  - "Grayson Rodriguez"
-  - "Michael King"
-  - "Bailey Ober"
+  - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
+  - {pos: "P",  mlb_id: 607192, name: "Tyler Glasnow"}
+  - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon", injury_move: true}
+  - {pos: "P",  mlb_id: 657376, name: "Clarke Schmidt"}
+  - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
+  - {pos: "P",  mlb_id: 650633, name: "Michael King"}
+  - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
 minors:
-  - ["SS", "Oswald Peraza"]
-  - ["3B", "Josh Donaldson"]
-  - ["SS", "Adalberto Mondesi"]
-  - ["P", "Matthew Boyd"]
+  - {pos: "SS", mlb_id: 672724, name: "Oswald Peraza"}
+  - {pos: "3B", mlb_id: 518626, name: "Josh Donaldson"}
+  - {pos: "SS", mlb_id: 609275, name: "Adalberto Mondesi"}
+  - {pos: "P",  mlb_id: 571510, name: "Matt Boyd"}

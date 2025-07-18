@@ -1,30 +1,29 @@
 starters:
-  1B: "Nolan Schanuel"
-  2B: "Andrés Giménez"
-  SS: "Bobby Witt Jr."
-  3B: "Isaac Paredes"
-  C: "Adley Rutschman"
-  OF:
-    - "Cedric Mullins"
-    - "Jose Siri"
-    - "Leody Taveras"
-  DH: "Mauricio Dubón"
+  - {pos: "1B", mlb_id: 694384, name: "Nolan Schanuel"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "SS", mlb_id: 677951, name: "Bobby Witt Jr."}
+  - {pos: "3B", mlb_id: 670623, name: "Isaac Paredes"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 656775, name: "Cedric Mullins"}
+  - {pos: "OF", mlb_id: 642350, name: "Jose Siri"}
+  - {pos: "OF", mlb_id: 665750, name: "Leody Taveras"}
+  - {pos: "DH", mlb_id: 643289, name: "Mauricio Dubon"}
 bench:
-  - ["1B", "Ryan Noda"]
-  - ["2B", "Brandon Lowe"]
-  - ["OF", "Austin Hays"]
-  - ["2B", "Alejandro Kirk"]
+  - {pos: "1B", mlb_id: 676116, name: "Ryan Noda"}
+  - {pos: "2B", mlb_id: 664040, name: "Brandon Lowe"}
+  - {pos: "OF", mlb_id: 669720, name: "Austin Hays"}
+  - {pos: "2B", mlb_id: 672386, name: "Alejandro Kirk"}
 rotation:
-  - "Logan Gilbert"
-  - "Shane Bieber (2023)"
-  - "Nick Pivetta"
-  - "Kutter Crawford"
-  - "Reese Olson"
-  - "Yennier Cano"
-  - "Jason Adam"
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 669456, name: "Shane Bieber", injury_move: true}
+  - {pos: "P",  mlb_id: 601713, name: "Nick Pivetta"}
+  - {pos: "P",  mlb_id: 676710, name: "Kutter Crawford"}
+  - {pos: "P",  mlb_id: 681857, name: "Reese Olson"}
+  - {pos: "P",  mlb_id: 666974, name: "Yennier Cano"}
+  - {pos: "P",  mlb_id: 592094, name: "Jason Adam"}
 minors:
-  - ["OF", "Ramón Laureano"]
-  - ["OF", "Dominic Canzone"]
-  - ["P", "Griffin Canning"]
-  - ["P", "Chase Silseth"]
-  - ["P", "Jordan Romano"]
+  - {pos: "OF", mlb_id: 657656, name: "Ramon Laureano"}
+  - {pos: "OF", mlb_id: 686527, name: "Dominic Canzone"}
+  - {pos: "P",  mlb_id: 656288, name: "Griffin Canning"}
+  - {pos: "P",  mlb_id: 681217, name: "Chase Silseth"}
+  - {pos: "P",  mlb_id: 605447, name: "Jordan Romano"}

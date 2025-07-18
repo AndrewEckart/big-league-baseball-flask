@@ -1,29 +1,28 @@
 starters:
-  1B: "Ty France"
-  2B: "Andres Gimenez"
-  SS: "Carlos Correa"
-  3B: "Rafael Devers"
-  C: "Cal Raleigh"
-  OF:
-    - "Aaron Judge (2022)"
-    - "Myles Straw"
-    - "Max Kepler"
-  DH: "Spencer Torkelson"
+  - {pos: "1B", mlb_id: 664034, name: "Ty France"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 646240, name: "Rafael Devers"}
+  - {pos: "C",  mlb_id: 663728, name: "Cal Raleigh"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge", injury_move: true}
+  - {pos: "OF", mlb_id: 664702, name: "Myles Straw"}
+  - {pos: "OF", mlb_id: 596146, name: "Max Kepler"}
+  - {pos: "DH", mlb_id: 679529, name: "Spencer Torkelson"}
 bench:
-  - ["2B", "Michael Massey"]
-  - ["OF", "Alex Kirilloff"]
-  - ["OF", "Ramon Laureano"]
-  - ["2B", "Luis Rengifo"]
+  - {pos: "2B", mlb_id: 686681, name: "Michael Massey"}
+  - {pos: "OF", mlb_id: 666135, name: "Alex Kirilloff"}
+  - {pos: "OF", mlb_id: 657656, name: "Ramon Laureano"}
+  - {pos: "2B", mlb_id: 650859, name: "Luis Rengifo"}
 rotation:
-  - "Luis Castillo"
-  - "Chris Bassitt"
-  - "Triston McKenzie (2022)"
-  - "Lucas Giolito"
-  - "Jose Berrios"
-  - "Kyle Gibson"
-  - "Felix Bautista"
+  - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 663474, name: "Triston McKenzie", injury_move: true}
+  - {pos: "P",  mlb_id: 608337, name: "Lucas Giolito"}
+  - {pos: "P",  mlb_id: 621244, name: "Jose Berrios"}
+  - {pos: "P",  mlb_id: 502043, name: "Kyle Gibson"}
+  - {pos: "P",  mlb_id: 642585, name: "Felix Bautista"}
 minors:
-  - ["OF", "Oscar Gonzalez"]
-  - ["OF", "Akil Baddoo"]
-  - ["P", "Marco Gonzales"]
-  - ["P", "Luis Severino"]
+  - {pos: "OF", mlb_id: 660757, name: "Oscar Gonzalez"}
+  - {pos: "OF", mlb_id: 668731, name: "Akil Baddoo"}
+  - {pos: "P",  mlb_id: 594835, name: "Marco Gonzales"}
+  - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}

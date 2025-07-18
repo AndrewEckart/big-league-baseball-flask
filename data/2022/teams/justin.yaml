@@ -1,29 +1,28 @@
 starters:
-  1B: "Josh Naylor"
-  2B: "Andres Gimenez"
-  SS: "Gleyber Torres"
-  3B: "Alex Bregman"
-  C: "Yasmani Grandal (2021)"
-  OF:
-    - "Mike Trout"
-    - "Julio Rodriguez"
-    - "Byron Buxton"
-  DH: "Yordan Alvarez"
+  - {pos: "1B", mlb_id: 647304, name: "Josh Naylor"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "SS", mlb_id: 650402, name: "Gleyber Torres"}
+  - {pos: "3B", mlb_id: 608324, name: "Alex Bregman"}
+  - {pos: "C",  mlb_id: 518735, name: "Yasmani Grandal", injury_move: true}
+  - {pos: "OF", mlb_id: 545361, name: "Mike Trout"}
+  - {pos: "OF", mlb_id: 677594, name: "Julio Rodriguez"}
+  - {pos: "OF", mlb_id: 621439, name: "Byron Buxton"}
+  - {pos: "DH", mlb_id: 670541, name: "Yordan Alvarez"}
 bench:
-  - ["OF", "Tony Kemp"]
-  - ["OF", "Jake Meyers"]
-  - ["1B", "Miguel Sano (2021)"]
-  - ["2B", "David Fletcher (2021)"]
+  - {pos: "OF", mlb_id: 643393, name: "Tony Kemp"}
+  - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
+  - {pos: "1B", mlb_id: 593934, name: "Miguel Sano", injury_move: true}
+  - {pos: "2B", mlb_id: 664058, name: "David Fletcher", injury_move: true}
 rotation:
-  - "Eduardo Rodriguez"
-  - "Michael Kopech"
-  - "Casey Mize (2021)"
-  - "Zack Greinke"
-  - "Jameson Taillon"
-  - "Lance McCullers (2021)"
-  - "Dylan Bundy"
+  - {pos: "P",  mlb_id: 593958, name: "Eduardo Rodriguez"}
+  - {pos: "P",  mlb_id: 656629, name: "Michael Kopech"}
+  - {pos: "P",  mlb_id: 663554, name: "Casey Mize", injury_move: true}
+  - {pos: "P",  mlb_id: 425844, name: "Zack Greinke"}
+  - {pos: "P",  mlb_id: 592791, name: "Jameson Taillon"}
+  - {pos: "P",  mlb_id: 621121, name: "Lance McCullers Jr.", injury_move: true}
+  - {pos: "P",  mlb_id: 605164, name: "Dylan Bundy"}
 minors:
-  - ["DH", "Andy Ibanez"]
-  - ["OF", "Cristian Pache"]
-  - ["P", "Aaron Bummer"]
-  - ["P", "Matt Barnes"]
+  - {pos: "DH", mlb_id: 628451, name: "Andy Ibanez"}
+  - {pos: "OF", mlb_id: 665506, name: "Cristian Pache"}
+  - {pos: "P",  mlb_id: 607481, name: "Aaron Bummer"}
+  - {pos: "P",  mlb_id: 598264, name: "Matt Barnes"}

@@ -1,29 +1,28 @@
 starters:
-  1B: "Nathaniel Lowe"
-  2B: "DJ LeMahieu"
-  SS: "Javier Baez"
-  3B: "Brandon Drury"
-  C: "Martin Maldonado"
-  OF:
-    - "Yordan Alvarez"
-    - "Alex Verdugo"
-    - "Chas McCormick"
-  DH: "Byron Buxton"
+  - {pos: "1B", mlb_id: 663993, name: "Nate Lowe"}
+  - {pos: "2B", mlb_id: 518934, name: "DJ LeMahieu"}
+  - {pos: "SS", mlb_id: 595879, name: "Javier Baez"}
+  - {pos: "3B", mlb_id: 592273, name: "Brandon Drury"}
+  - {pos: "C",  mlb_id: 455117, name: "Martin Maldonado"}
+  - {pos: "OF", mlb_id: 670541, name: "Yordan Alvarez"}
+  - {pos: "OF", mlb_id: 657077, name: "Alex Verdugo"}
+  - {pos: "OF", mlb_id: 676801, name: "Chas McCormick"}
+  - {pos: "DH", mlb_id: 621439, name: "Byron Buxton"}
 bench:
-  - ["OF", "Michael A. Taylor"]
-  - ["OF", "Matt Vierling"]
-  - ["2B", "Santiago Espinal (2022)"]
-  - ["OF", "Aaron Hicks (2022)"]
+  - {pos: "OF", mlb_id: 572191, name: "Michael Taylor"}
+  - {pos: "OF", mlb_id: 663837, name: "Matt Vierling"}
+  - {pos: "2B", mlb_id: 669289, name: "Santiago Espinal", injury_move: true}
+  - {pos: "OF", mlb_id: 543305, name: "Aaron Hicks", injury_move: true}
 rotation:
-  - "Shane McClanahan"
-  - "Logan Gilbert"
-  - "Aaron Civale"
-  - "Sonny Gray"
-  - "Andrew Heaney"
-  - "Clay Holmes"
-  - "Pete Fairbanks"
+  - {pos: "P",  mlb_id: 663556, name: "Shane McClanahan"}
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 650644, name: "Aaron Civale"}
+  - {pos: "P",  mlb_id: 543243, name: "Sonny Gray"}
+  - {pos: "P",  mlb_id: 571760, name: "Andrew Heaney"}
+  - {pos: "P",  mlb_id: 605280, name: "Clay Holmes"}
+  - {pos: "P",  mlb_id: 664126, name: "Pete Fairbanks"}
 minors:
-  - ["OF", "Kyle Isbel"]
-  - ["OF", "Edward Olivares"]
-  - ["P", "Luis Garcia"]
-  - ["P", "Spencer Turnbull"]
+  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
+  - {pos: "OF", mlb_id: 658668, name: "Edward Olivares"}
+  - {pos: "P",  mlb_id: 677651, name: "Luis Garcia"}
+  - {pos: "P",  mlb_id: 605513, name: "Spencer Turnbull"}

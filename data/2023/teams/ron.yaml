@@ -1,28 +1,27 @@
 starters:
-  1B: "Jose Abreu"
-  2B: "J.P. Crawford"
-  SS: "Jeremy Pena"
-  3B: "Justin Turner"
-  C: "Adley Rutschman"
-  OF:
-    - "Mike Trout (2022)"
-    - "Enrique Hernandez"
-    - "Joey Gallo"
-  DH: "Leody Taveras"
+  - {pos: "1B", mlb_id: 547989, name: "Jose Abreu"}
+  - {pos: "2B", mlb_id: 641487, name: "J.P. Crawford"}
+  - {pos: "SS", mlb_id: 665161, name: "Jeremy Pena"}
+  - {pos: "3B", mlb_id: 457759, name: "Justin Turner"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 545361, name: "Mike Trout", injury_move: true}
+  - {pos: "OF", mlb_id: 571771, name: "Enrique Hernandez"}
+  - {pos: "OF", mlb_id: 608336, name: "Joey Gallo"}
+  - {pos: "DH", mlb_id: 665750, name: "Leody Taveras"}
 bench:
-  - ["2B", "Jose Altuve"]
-  - ["OF", "AJ Pollock (2022)"]
-  - ["OF", "Gavin Sheets (2022)"]
-  - ["2B", "Kolten Wong (2022)"]
+  - {pos: "2B", mlb_id: 514888, name: "Jose Altuve"}
+  - {pos: "OF", mlb_id: 572041, name: "A.J. Pollock", injury_move: true}
+  - {pos: "OF", mlb_id: 657757, name: "Gavin Sheets", injury_move: true}
+  - {pos: "2B", mlb_id: 543939, name: "Kolten Wong", injury_move: true}
 rotation:
-  - "Shane Bieber"
-  - "Drew Rasmussen (2022)"
-  - "Patrick Sandoval"
-  - "Jose Urquidy (2022)"
-  - "Yusei Kikuchi"
-  - "Jhoan Duran"
-  - "Jason Adam"
+  - {pos: "P",  mlb_id: 669456, name: "Shane Bieber"}
+  - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen", injury_move: true}
+  - {pos: "P",  mlb_id: 663776, name: "Patrick Sandoval"}
+  - {pos: "P",  mlb_id: 664353, name: "Jose Urquidy", injury_move: true}
+  - {pos: "P",  mlb_id: 579328, name: "Yusei Kikuchi"}
+  - {pos: "P",  mlb_id: 661395, name: "Jhoan Duran"}
+  - {pos: "P",  mlb_id: 592094, name: "Jason Adam"}
 minors:
-  - ["2B", "Aledmys Diaz"]
-  - ["DH", "Jesus Aguilar"]
-  - ["P", "Jose Suarez"]
+  - {pos: "2B", mlb_id: 649557, name: "Aledmys Diaz"}
+  - {pos: "DH", mlb_id: 542583, name: "Jesus Aguilar"}
+  - {pos: "P",  mlb_id: 660761, name: "Jose Suarez"}

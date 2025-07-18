@@ -1,28 +1,27 @@
 starters:
-  1B: "Mitch Haniger (2021)"
-  2B: "Jose Altuve"
-  SS: "Xander Bogaerts"
-  3B: "Rafael Devers"
-  C: "Adley Rutschman"
-  OF:
-    - "Alex Verdugo"
-    - "Seth Brown"
-    - "Hunter Dozier"
-  DH: "Isiah Kiner-Falefa"
+  - {pos: "1B", mlb_id: 571745, name: "Mitch Haniger", injury_move: true}
+  - {pos: "2B", mlb_id: 514888, name: "Jose Altuve"}
+  - {pos: "SS", mlb_id: 593428, name: "Xander Bogaerts"}
+  - {pos: "3B", mlb_id: 646240, name: "Rafael Devers"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 657077, name: "Alex Verdugo"}
+  - {pos: "OF", mlb_id: 664913, name: "Seth Brown"}
+  - {pos: "OF", mlb_id: 641531, name: "Hunter Dozier"}
+  - {pos: "DH", mlb_id: 643396, name: "Isiah Kiner-Falefa"}
 bench:
-  - ["1B", "Spencer Torkelson"]
-  - ["2B", "Ramon Urias"]
-  - ["3B", "Jeimer Candelario"]
-  - ["1B", "Bobby Dalbec"]
+  - {pos: "1B", mlb_id: 679529, name: "Spencer Torkelson"}
+  - {pos: "2B", mlb_id: 602104, name: "Ramon Urias"}
+  - {pos: "3B", mlb_id: 600869, name: "Jeimer Candelario"}
+  - {pos: "1B", mlb_id: 666915, name: "Bobby Dalbec"}
 rotation:
-  - "Frankie Montas"
-  - "Marco Gonzales"
-  - "Luis Garcia"
-  - "Brad Keller"
-  - "James Kaprielian"
-  - "Jake Odorizzi"
-  - "Liam Hendriks"
+  - {pos: "P",  mlb_id: 593423, name: "Frankie Montas"}
+  - {pos: "P",  mlb_id: 594835, name: "Marco Gonzales"}
+  - {pos: "P",  mlb_id: 677651, name: "Luis Garcia"}
+  - {pos: "P",  mlb_id: 641745, name: "Brad Keller"}
+  - {pos: "P",  mlb_id: 621076, name: "James Kaprielian"}
+  - {pos: "P",  mlb_id: 543606, name: "Jake Odorizzi"}
+  - {pos: "P",  mlb_id: 521230, name: "Liam Hendriks"}
 minors:
-  - ["C", "Kyle Higashioka"]
-  - ["P", "Bailey Ober"]
-  - ["P", "Tyler Alexander"]
+  - {pos: "C",  mlb_id: 543309, name: "Kyle Higashioka"}
+  - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
+  - {pos: "P",  mlb_id: 641302, name: "Tyler Alexander"}

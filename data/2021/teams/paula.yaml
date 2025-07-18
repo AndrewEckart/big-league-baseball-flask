@@ -1,32 +1,31 @@
 starters:
-  1B: "Nate Lowe"
-  2B: "Gleyber Torres (2019)"
-  SS: "Alex Bregman (2019)"
-  3B: "Yoan Moncada"
-  C: "Mitch Garver (2019)"
-  OF:
-    - "Max Kepler (2019)"
-    - "Kevin Kiermaier (2019)"
-    - "David Dahl (2019)"
-  DH: "Yordan Alvarez"
+  - {pos: "1B", mlb_id: 663993, name: "Nate Lowe"}
+  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres", injury_move: true}
+  - {pos: "SS", mlb_id: 608324, name: "Alex Bregman", injury_move: true}
+  - {pos: "3B", mlb_id: 660162, name: "Yoan Moncada"}
+  - {pos: "C",  mlb_id: 641598, name: "Mitch Garver", injury_move: true}
+  - {pos: "OF", mlb_id: 596146, name: "Max Kepler", injury_move: true}
+  - {pos: "OF", mlb_id: 595281, name: "Kevin Kiermaier", injury_move: true}
+  - {pos: "OF", mlb_id: 621311, name: "David Dahl", injury_move: true}
+  - {pos: "DH", mlb_id: 670541, name: "Yordan Alvarez"}
 bench:
-  - ["OF", "Byron Buxton (2019)"]
-  - ["OF", "Dylan Moore"]
-  - ["1B", "Luke Voit (2019)"]
-  - ["3B", "Marwin Gonzalez (2019)"]
-  - ["2B", "Rougned Odor (2019)"]
+  - {pos: "OF", mlb_id: 621439, name: "Byron Buxton", injury_move: true}
+  - {pos: "OF", mlb_id: 664238, name: "Dylan Moore"}
+  - {pos: "1B", mlb_id: 572228, name: "Luke Voit", injury_move: true}
+  - {pos: "3B", mlb_id: 503556, name: "Marwin Gonzalez", injury_move: true}
+  - {pos: "2B", mlb_id: 596059, name: "Rougned Odor", injury_move: true}
 rotation:
-  - "Tyler Glasnow"
-  - "Chris Bassitt"
-  - "Domingo German"
-  - "Ryan Yarbrough"
-  - "Jake Odorizzi"
-  - "Ryan Pressly"
-  - "James Karinchak"
-  - "Aaron Bummer"
+  - {pos: "P",  mlb_id: 607192, name: "Tyler Glasnow"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 593334, name: "Domingo German"}
+  - {pos: "P",  mlb_id: 642232, name: "Ryan Yarbrough"}
+  - {pos: "P",  mlb_id: 543606, name: "Jake Odorizzi"}
+  - {pos: "P",  mlb_id: 519151, name: "Ryan Pressly"}
+  - {pos: "P",  mlb_id: 675916, name: "James Karinchak"}
+  - {pos: "P",  mlb_id: 607481, name: "Aaron Bummer"}
 minors:
-  - ["OF", "Tyler Wade"]
-  - ["2B", "Aledmys Diaz"]
-  - ["P", "J.B. Wendelken"]
-  - ["P", "Michael Wacha"]
-  - ["P", "Greg Holland"]
+  - {pos: "OF", mlb_id: 642180, name: "Tyler Wade"}
+  - {pos: "2B", mlb_id: 649557, name: "Aledmys Diaz"}
+  - {pos: "P",  mlb_id: 605525, name: "J.B. Wendelken"}
+  - {pos: "P",  mlb_id: 608379, name: "Michael Wacha"}
+  - {pos: "P",  mlb_id: 518813, name: "Greg Holland"}

@@ -1,30 +1,29 @@
 starters:
-  1B: "Nathaniel Lowe"
-  2B: "Brandon Drury (2023)"
-  SS: "Gio Urshela"
-  3B: "Gunnar Henderson"
-  C: "Logan O'Hoppe"
-  OF:
-    - "Julio Rodríguez"
-    - "Hunter Renfroe"
-    - "Trent Grisham (2023)"
-  DH: "David Fry"
+  - {pos: "1B", mlb_id: 663993, name: "Nate Lowe"}
+  - {pos: "2B", mlb_id: 592273, name: "Brandon Drury", injury_move: true}
+  - {pos: "SS", mlb_id: 570482, name: "Giovanny Urshela"}
+  - {pos: "3B", mlb_id: 683002, name: "Gunnar Henderson"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "OF", mlb_id: 677594, name: "Julio Rodriguez"}
+  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe"}
+  - {pos: "OF", mlb_id: 663757, name: "Trent Grisham", injury_move: true}
+  - {pos: "DH", mlb_id: 681807, name: "David Fry"}
 bench:
-  - ["3B", "Yoán Moncada (2023)"]
-  - ["1B", "Alex Kirilloff (2023)"]
-  - ["DH", "Joey Votto (2023)"]
-  - ["OF", "Evan Carter"]
+  - {pos: "3B", mlb_id: 660162, name: "Yoan Moncada", injury_move: true}
+  - {pos: "1B", mlb_id: 666135, name: "Alex Kirilloff", injury_move: true}
+  - {pos: "DH", mlb_id: 458015, name: "Joey Votto", injury_move: true}
+  - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
 rotation:
-  - "Tarik Skubal"
-  - "Cole Ragans"
-  - "Bryan Woo"
-  - "Garrett Whitlock"
-  - "Ronel Blanco"
-  - "Tanner Houck"
-  - "Emmanuel Clase"
+  - {pos: "P",  mlb_id: 669373, name: "Tarik Skubal"}
+  - {pos: "P",  mlb_id: 666142, name: "Cole Ragans"}
+  - {pos: "P",  mlb_id: 693433, name: "Bryan Woo"}
+  - {pos: "P",  mlb_id: 676477, name: "Garrett Whitlock"}
+  - {pos: "P",  mlb_id: 669854, name: "Ronel Blanco"}
+  - {pos: "P",  mlb_id: 656557, name: "Tanner Houck"}
+  - {pos: "P",  mlb_id: 661403, name: "Emmanuel Clase"}
 minors:
-  - ["OF", "Aaron Hicks"]
-  - ["OF", "Dominic Fletcher"]
-  - ["P", "Nathan Eovaldi"]
-  - ["P", "Michael Soroka"]
-  - ["P", "Cody Bradford"]
+  - {pos: "OF", mlb_id: 543305, name: "Aaron Hicks"}
+  - {pos: "OF", mlb_id: 666150, name: "Dominic Fletcher"}
+  - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
+  - {pos: "P",  mlb_id: 647336, name: "Mike Soroka"}
+  - {pos: "P",  mlb_id: 674003, name: "Cody Bradford"}

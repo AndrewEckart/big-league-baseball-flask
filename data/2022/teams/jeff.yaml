@@ -1,29 +1,28 @@
 starters:
-  1B: "Vladimir Guerrero Jr."
-  2B: "Jorge Mateo"
-  SS: "Trevor Story"
-  3B: "Eugenio Suarez"
-  C: "Salvador Perez (2021)"
-  OF:
-    - "Adolis Garcia"
-    - "Raimel Tapia"
-    - "Michael A. Taylor"
-  DH: "Trey Mancini"
+  - {pos: "1B", mlb_id: 665489, name: "Vladimir Guerrero Jr."}
+  - {pos: "2B", mlb_id: 622761, name: "Jorge Mateo"}
+  - {pos: "SS", mlb_id: 596115, name: "Trevor Story"}
+  - {pos: "3B", mlb_id: 553993, name: "Eugenio Suarez"}
+  - {pos: "C",  mlb_id: 521692, name: "Salvador Perez", injury_move: true}
+  - {pos: "OF", mlb_id: 666969, name: "Adolis Garcia"}
+  - {pos: "OF", mlb_id: 606132, name: "Raimel Tapia"}
+  - {pos: "OF", mlb_id: 572191, name: "Michael Taylor"}
+  - {pos: "DH", mlb_id: 641820, name: "Trey Mancini"}
 bench:
-  - ["OF", "Gavin Sheets"]
-  - ["OF", "Manuel Margot"]
-  - ["OF", "Akil Baddoo (2021)"]
-  - ["2B", "Enrique Hernandez (2021)"]
+  - {pos: "OF", mlb_id: 657757, name: "Gavin Sheets"}
+  - {pos: "OF", mlb_id: 622534, name: "Manuel Margot"}
+  - {pos: "OF", mlb_id: 668731, name: "Akil Baddoo", injury_move: true}
+  - {pos: "2B", mlb_id: 571771, name: "Enrique Hernandez", injury_move: true}
 rotation:
-  - "Jose Berrios"
-  - "Alek Manoah"
-  - "John Means (2021)"
-  - "Chris Flexen"
-  - "Tyler Wells"
-  - "Cole Irvin"
-  - "Chad Green (2021)"
+  - {pos: "P",  mlb_id: 621244, name: "Jose Berrios"}
+  - {pos: "P",  mlb_id: 666201, name: "Alek Manoah"}
+  - {pos: "P",  mlb_id: 607644, name: "John Means", injury_move: true}
+  - {pos: "P",  mlb_id: 623167, name: "Chris Flexen"}
+  - {pos: "P",  mlb_id: 669330, name: "Tyler Wells"}
+  - {pos: "P",  mlb_id: 608344, name: "Cole Irvin"}
+  - {pos: "P",  mlb_id: 643338, name: "Chad Green", injury_move: true}
 minors:
-  - ["2B", "Matt Duffy"]
-  - ["OF", "Bradley Zimmer"]
-  - ["P", "Drew Steckenrider (2021)"]
-  - ["P", "Michael Pineda"]
+  - {pos: "2B", mlb_id: 622110, name: "Matt Duffy"}
+  - {pos: "OF", mlb_id: 605548, name: "Bradley Zimmer"}
+  - {pos: "P",  mlb_id: 608716, name: "Drew Steckenrider", injury_move: true}
+  - {pos: "P",  mlb_id: 501381, name: "Michael Pineda"}

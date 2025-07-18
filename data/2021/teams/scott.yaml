@@ -1,32 +1,31 @@
 starters:
-  1B: "Bobby Dalbec"
-  2B: "Nick Solak"
-  SS: "Anthony Rendon (2019)"
-  3B: "Bo Bichette"
-  C: "Sean Murphy"
-  OF:
-    - "Eddie Rosario (2019)"
-    - "Anthony Santander"
-    - "Ryan Mountcastle"
-  DH: "Shohei Ohtani"
+  - {pos: "1B", mlb_id: 666915, name: "Bobby Dalbec"}
+  - {pos: "2B", mlb_id: 669256, name: "Nick Solak"}
+  - {pos: "SS", mlb_id: 543685, name: "Anthony Rendon", injury_move: true}
+  - {pos: "3B", mlb_id: 666182, name: "Bo Bichette"}
+  - {pos: "C",  mlb_id: 669221, name: "Sean Murphy"}
+  - {pos: "OF", mlb_id: 592696, name: "Eddie Rosario", injury_move: true}
+  - {pos: "OF", mlb_id: 623993, name: "Anthony Santander"}
+  - {pos: "OF", mlb_id: 663624, name: "Ryan Mountcastle"}
+  - {pos: "DH", mlb_id: 660271, name: "Shohei Ohtani"}
 bench:
-  - ["OF", "Clint Frazier (2019)"]
-  - ["2B", "Cavan Biggio (2019)"]
-  - ["3B", "Maikel Franco"]
-  - ["OF", "Nomar Mazara (2019)"]
-  - ["1B", "Rowdy Tellez"]
+  - {pos: "OF", mlb_id: 640449, name: "Clint Frazier", injury_move: true}
+  - {pos: "2B", mlb_id: 624415, name: "Cavan Biggio", injury_move: true}
+  - {pos: "3B", mlb_id: 596748, name: "Maikel Franco"}
+  - {pos: "OF", mlb_id: 608577, name: "Nomar Mazara", injury_move: true}
+  - {pos: "1B", mlb_id: 642133, name: "Rowdy Tellez"}
 rotation:
-  - "Lucas Giolito"
-  - "Zach Plesac"
-  - "Marco Gonzales"
-  - "Cristian Javier"
-  - "Dane Dunning"
-  - "Josh Fleming"
-  - "Jonathan Loaisiga"
-  - "Liam Hendriks"
+  - {pos: "P",  mlb_id: 608337, name: "Lucas Giolito"}
+  - {pos: "P",  mlb_id: 668676, name: "Zach Plesac"}
+  - {pos: "P",  mlb_id: 594835, name: "Marco Gonzales"}
+  - {pos: "P",  mlb_id: 664299, name: "Cristian Javier"}
+  - {pos: "P",  mlb_id: 641540, name: "Dane Dunning"}
+  - {pos: "P",  mlb_id: 676596, name: "Josh Fleming"}
+  - {pos: "P",  mlb_id: 642528, name: "Jonathan Loaisiga"}
+  - {pos: "P",  mlb_id: 521230, name: "Liam Hendriks"}
 minors:
-  - ["OF", "Leody Taveras"]
-  - ["C", "Samuel Huff"]
-  - ["P", "Kohei Arihara"]
-  - ["P", "Justus Sheffield"]
-  - ["P", "Jorge Alcala"]
+  - {pos: "OF", mlb_id: 665750, name: "Leody Taveras"}
+  - {pos: "C",  mlb_id: 669087, name: "Sam Huff"}
+  - {pos: "P",  mlb_id: 685503, name: "Kohei Arihara"}
+  - {pos: "P",  mlb_id: 656954, name: "Justus Sheffield"}
+  - {pos: "P",  mlb_id: 660896, name: "Jorge Alcala"}

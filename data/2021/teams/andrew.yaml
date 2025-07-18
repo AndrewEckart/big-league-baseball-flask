@@ -1,32 +1,31 @@
 starters:
-  1B: "Matt Olson"
-  2B: "Jose Altuve"
-  SS: "Jorge Polanco"
-  3B: "Rafael Devers"
-  C: "Mike Zunino"
-  OF:
-    - "George Springer (2019)"
-    - "Franmil Reyes"
-    - "Enrique Hernandez"
-  DH: "Kyle Seager"
+  - {pos: "1B", mlb_id: 621566, name: "Matt Olson"}
+  - {pos: "2B", mlb_id: 514888, name: "Jose Altuve"}
+  - {pos: "SS", mlb_id: 593871, name: "Jorge Polanco"}
+  - {pos: "3B", mlb_id: 646240, name: "Rafael Devers"}
+  - {pos: "C",  mlb_id: 572287, name: "Mike Zunino"}
+  - {pos: "OF", mlb_id: 543807, name: "George Springer", injury_move: true}
+  - {pos: "OF", mlb_id: 614177, name: "Franmil Reyes"}
+  - {pos: "OF", mlb_id: 571771, name: "Enrique Hernandez"}
+  - {pos: "DH", mlb_id: 572122, name: "Kyle Seager"}
 bench:
-  - ["3B", "Wilson Ramos (2019)"]
-  - ["OF", "Michael Brantley"]
-  - ["SS", "Andrelton Simmons"]
-  - ["OF", "Adam Eaton (2019)"]
-  - ["SS", "J.P. Crawford"]
+  - {pos: "3B", mlb_id: 467092, name: "Wilson Ramos", injury_move: true}
+  - {pos: "OF", mlb_id: 488726, name: "Michael Brantley"}
+  - {pos: "SS", mlb_id: 592743, name: "Andrelton Simmons"}
+  - {pos: "OF", mlb_id: 594809, name: "Adam Eaton", injury_move: true}
+  - {pos: "SS", mlb_id: 641487, name: "J.P. Crawford"}
 rotation:
-  - "Hyun-Jin Ryu"
-  - "Lance Lynn"
-  - "Andrew Heaney"
-  - "Sean Manaea"
-  - "Alex Cobb"
-  - "Peter Fairbanks"
-  - "Chris Flexen"
-  - "Garrett Crochet"
+  - {pos: "P",  mlb_id: 547943, name: "Hyun-Jin Ryu"}
+  - {pos: "P",  mlb_id: 458681, name: "Lance Lynn"}
+  - {pos: "P",  mlb_id: 571760, name: "Andrew Heaney"}
+  - {pos: "P",  mlb_id: 640455, name: "Sean Manaea"}
+  - {pos: "P",  mlb_id: 502171, name: "Alex Cobb"}
+  - {pos: "P",  mlb_id: 664126, name: "Pete Fairbanks"}
+  - {pos: "P",  mlb_id: 623167, name: "Chris Flexen"}
+  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
 minors:
-  - ["OF", "Kyle Lewis"]
-  - ["OF", "Aaron Hicks"]
-  - ["P", "Jose Quintana"]
-  - ["P", "J.A. Happ"]
-  - ["P", "Chris Archer"]
+  - {pos: "OF", mlb_id: 641786, name: "Kyle Lewis"}
+  - {pos: "OF", mlb_id: 543305, name: "Aaron Hicks"}
+  - {pos: "P",  mlb_id: 500779, name: "Jose Quintana"}
+  - {pos: "P",  mlb_id: 457918, name: "J.A. Happ"}
+  - {pos: "P",  mlb_id: 502042, name: "Chris Archer"}

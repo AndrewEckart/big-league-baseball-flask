@@ -1,30 +1,29 @@
 starters:
-  1B: "Yandy Díaz"
-  2B: "Marcus Semien"
-  SS: "J.P. Crawford (2023)"
-  3B: "Willi Castro"
-  C: "Yainer Diaz"
-  OF:
-    - "Anthony Santander"
-    - "Steven Kwan"
-    - "Brent Rooker"
-  DH: "Justin Turner"
+  - {pos: "1B", mlb_id: 650490, name: "Yandy Diaz"}
+  - {pos: "2B", mlb_id: 543760, name: "Marcus Semien"}
+  - {pos: "SS", mlb_id: 641487, name: "J.P. Crawford", injury_move: true}
+  - {pos: "3B", mlb_id: 650489, name: "Willi Castro"}
+  - {pos: "C",  mlb_id: 673237, name: "Yainer Diaz"}
+  - {pos: "OF", mlb_id: 623993, name: "Anthony Santander"}
+  - {pos: "OF", mlb_id: 680757, name: "Steven Kwan"}
+  - {pos: "OF", mlb_id: 667670, name: "Brent Rooker"}
+  - {pos: "DH", mlb_id: 457759, name: "Justin Turner"}
 bench:
-  - ["OF", "Jake Meyers"]
-  - ["SS", "José Caballero"]
-  - ["2B", "Tyler Freeman"]
-  - ["3B", "J.D. Davis (2023)"]
+  - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
+  - {pos: "SS", mlb_id: 676609, name: "Jose Caballero"}
+  - {pos: "2B", mlb_id: 671289, name: "Tyler Freeman"}
+  - {pos: "3B", mlb_id: 605204, name: "J.D. Davis", injury_move: true}
 rotation:
-  - "Seth Lugo"
-  - "Brayan Bello"
-  - "Kyle Bradish (2023)"
-  - "Zack Littell"
-  - "Gavin Williams"
-  - "Andrew Heaney"
-  - "Clarke Schmidt"
+  - {pos: "P",  mlb_id: 607625, name: "Seth Lugo"}
+  - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
+  - {pos: "P",  mlb_id: 680694, name: "Kyle Bradish", injury_move: true}
+  - {pos: "P",  mlb_id: 641793, name: "Zack Littell"}
+  - {pos: "P",  mlb_id: 668909, name: "Gavin Williams"}
+  - {pos: "P",  mlb_id: 571760, name: "Andrew Heaney"}
+  - {pos: "P",  mlb_id: 657376, name: "Clarke Schmidt"}
 minors:
-  - ["OF", "Kevin Kiermaier"]
-  - ["OF", "Mitch Haniger"]
-  - ["3B", "Kyle Farmer"]
-  - ["P", "J.P. France"]
-  - ["P", "Cole Irvin"]
+  - {pos: "OF", mlb_id: 595281, name: "Kevin Kiermaier"}
+  - {pos: "OF", mlb_id: 571745, name: "Mitch Haniger"}
+  - {pos: "3B", mlb_id: 571657, name: "Kyle Farmer"}
+  - {pos: "P",  mlb_id: 641585, name: "J.P. France"}
+  - {pos: "P",  mlb_id: 608344, name: "Cole Irvin"}

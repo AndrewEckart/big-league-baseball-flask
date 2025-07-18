@@ -1,30 +1,28 @@
 starters:
-  1B: "Ryan Noda"
-  2B: "Gleyber Torres"
-  SS: "Jorge Mateo"
-  3B: "Gunnar Henderson"
-  C: "MJ Melendez"
-  OF:
-    - "Kyle Tucker"
-    - "George Springer"
-    - "Hunter Renfroe"
-  DH: "Shea Langeliers"
+  - {pos: "1B", mlb_id: 676116, name: "Ryan Noda"}
+  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres"}
+  - {pos: "SS", mlb_id: 622761, name: "Jorge Mateo"}
+  - {pos: "3B", mlb_id: 683002, name: "Gunnar Henderson"}
+  - {pos: "C",  mlb_id: 669004, name: "MJ Melendez"}
+  - {pos: "OF", mlb_id: 663656, name: "Kyle Tucker"}
+  - {pos: "OF", mlb_id: 543807, name: "George Springer"}
+  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe"}
+  - {pos: "DH", mlb_id: 669127, name: "Shea Langeliers"}
 bench:
-  - ["SS", "Elvis Andrus"]
-  - ["1B", "Jared Walsh (2022)"]
-  - ["DH", "Franmil Reyes (2022)"]
-  - ["1B", "Brandon Belt"]
+  - {pos: "SS", mlb_id: 462101, name: "Elvis Andrus"}
+  - {pos: "1B", mlb_id: 665120, name: "Jared Walsh", injury_move: true}
+  - {pos: "DH", mlb_id: 614177, name: "Franmil Reyes", injury_move: true}
+  - {pos: "1B", mlb_id: 474832, name: "Brandon Belt"}
 rotation:
-  - "Zack Greinke"
-  - "Robbie Ray (2022)"
-  - "Martin Perez"
-  - "Lance Lynn"
-  - "Brock Burke"
-  - "Jordan Romano"
-  - "Jon Gray"
+  - {pos: "P",  mlb_id: 425844, name: "Zack Greinke"}
+  - {pos: "P",  mlb_id: 592662, name: "Robbie Ray", injury_move: true}
+  - {pos: "P",  mlb_id: 527048, name: "Martin Perez"}
+  - {pos: "P",  mlb_id: 458681, name: "Lance Lynn"}
+  - {pos: "P",  mlb_id: 656271, name: "Brock Burke"}
+  - {pos: "P",  mlb_id: 605447, name: "Jordan Romano"}
+  - {pos: "P",  mlb_id: 592351, name: "Jon Gray"}
 minors:
-  - ["C", "Mike Zunino"]
-  - ["P", "Alek Manoah"]
-  - ["P", "Brad Keller"]
-  - ["P", "Tyler Mahle"]
-
+  - {pos: "C",  mlb_id: 572287, name: "Mike Zunino"}
+  - {pos: "P",  mlb_id: 666201, name: "Alek Manoah"}
+  - {pos: "P",  mlb_id: 641745, name: "Brad Keller"}
+  - {pos: "P",  mlb_id: 641816, name: "Tyler Mahle"}

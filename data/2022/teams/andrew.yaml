@@ -1,30 +1,29 @@
 starters:
-  1B: "Nate Lowe"
-  2B: "Luis Arraez"
-  SS: "Jeremy Pena"
-  3B: "Matt Chapman"
-  C: "Eric Haase"
-  OF:
-    - "George Springer"
-    - "J.D. Martinez"
-    - "Austin Hays"
-  DH: "Franmil Reyes (2021)"
+  - {pos: "1B", mlb_id: 663993, name: "Nate Lowe"}
+  - {pos: "2B", mlb_id: 650333, name: "Luis Arraez"}
+  - {pos: "SS", mlb_id: 665161, name: "Jeremy Pena"}
+  - {pos: "3B", mlb_id: 656305, name: "Matt Chapman"}
+  - {pos: "C",  mlb_id: 606992, name: "Eric Haase"}
+  - {pos: "OF", mlb_id: 543807, name: "George Springer"}
+  - {pos: "OF", mlb_id: 502110, name: "J.D. Martinez"}
+  - {pos: "OF", mlb_id: 669720, name: "Austin Hays"}
+  - {pos: "DH", mlb_id: 614177, name: "Franmil Reyes", injury_move: true}
 bench:
-  - ["OF", "Jackie Bradley Jr."]
-  - ["1B", "Ji-Man Choi"]
-  - ["SS", "Nicky Lopez"]
-  - ["OF", "Ramon Laureano"]
+  - {pos: "OF", mlb_id: 598265, name: "Jackie Bradley Jr."}
+  - {pos: "1B", mlb_id: 596847, name: "Ji-Man Choi"}
+  - {pos: "SS", mlb_id: 670032, name: "Nicky Lopez"}
+  - {pos: "OF", mlb_id: 657656, name: "Ramon Laureano"}
 rotation:
-  - "Gerrit Cole"
-  - "Robbie Ray"
-  - "Nathan Eovaldi"
-  - "Hyun-Jin Ryu (2021)"
-  - "Logan Gilbert"
-  - "Taylor Rogers"
-  - "Garrett Whitlock"
+  - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
+  - {pos: "P",  mlb_id: 592662, name: "Robbie Ray"}
+  - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
+  - {pos: "P",  mlb_id: 547943, name: "Hyun-Jin Ryu", injury_move: true}
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 573124, name: "Taylor Rogers"}
+  - {pos: "P",  mlb_id: 676477, name: "Garrett Whitlock"}
 minors:
-  - ["C", "Luis Torrens"]
-  - ["1B", "Eric Thames"]
-  - ["C", "Mitch Garver"]
-  - ["P", "Lou Trivino"]
-  - ["P", "Jose Suarez"]
+  - {pos: "C",  mlb_id: 620443, name: "Luis Torrens"}
+  - {pos: "1B", mlb_id: 519346, name: "Eric Thames"}
+  - {pos: "C",  mlb_id: 641598, name: "Mitch Garver"}
+  - {pos: "P",  mlb_id: 642152, name: "Lou Trivino"}
+  - {pos: "P",  mlb_id: 660761, name: "Jose Suarez"}

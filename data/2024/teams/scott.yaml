@@ -1,30 +1,29 @@
 starters:
-  1B: "Ty France"
-  2B: "Jordan Westburg"
-  SS: "Zach Neto"
-  3B: "Matt Vierling"
-  C: "Shea Langeliers"
-  OF:
-    - "Kyle Tucker (2023)"
-    - "Ceddanne Rafaela"
-    - "Tyler O'Neill"
-  DH: "Giancarlo Stanton"
+  - {pos: "1B", mlb_id: 664034, name: "Ty France"}
+  - {pos: "2B", mlb_id: 676059, name: "Jordan Westburg"}
+  - {pos: "SS", mlb_id: 687263, name: "Zach Neto"}
+  - {pos: "3B", mlb_id: 663837, name: "Matt Vierling"}
+  - {pos: "C",  mlb_id: 669127, name: "Shea Langeliers"}
+  - {pos: "OF", mlb_id: 663656, name: "Kyle Tucker", injury_move: true}
+  - {pos: "OF", mlb_id: 678882, name: "Ceddanne Rafaela"}
+  - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill"}
+  - {pos: "DH", mlb_id: 519317, name: "Giancarlo Stanton"}
 bench:
-  - ["SS", "Amed Rosario (2023)"]
-  - ["OF", "Mickey Moniak"]
-  - ["2B", "Jorge Polanco"]
-  - ["2B", "Adam Frazier (2023)"]
+  - {pos: "SS", mlb_id: 642708, name: "Amed Rosario", injury_move: true}
+  - {pos: "OF", mlb_id: 666160, name: "Mickey Moniak"}
+  - {pos: "2B", mlb_id: 593871, name: "Jorge Polanco"}
+  - {pos: "2B", mlb_id: 624428, name: "Adam Frazier", injury_move: true}
 rotation:
-  - "Corbin Burnes"
-  - "George Kirby"
-  - "Kevin Gausman"
-  - "Garrett Crochet"
-  - "Louie Varland (2023)"
-  - "Pete Fairbanks"
-  - "Griffin Jax"
+  - {pos: "P",  mlb_id: 669203, name: "Corbin Burnes"}
+  - {pos: "P",  mlb_id: 669923, name: "George Kirby"}
+  - {pos: "P",  mlb_id: 592332, name: "Kevin Gausman"}
+  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
+  - {pos: "P",  mlb_id: 686973, name: "Louie Varland", injury_move: true}
+  - {pos: "P",  mlb_id: 664126, name: "Pete Fairbanks"}
+  - {pos: "P",  mlb_id: 643377, name: "Griffin Jax"}
 minors:
-  - ["P", "Patrick Sandoval"]
-  - ["P", "Dane Dunning"]
-  - ["P", "Tyler Alexander"]
-  - ["SS", "Vaughn Grissom"]
-  - ["1B", "Kyle Manzardo"]
+  - {pos: "SS", mlb_id: 687093, name: "Vaughn Grissom"}
+  - {pos: "1B", mlb_id: 700932, name: "Kyle Manzardo"}
+  - {pos: "P",  mlb_id: 663776, name: "Patrick Sandoval"}
+  - {pos: "P",  mlb_id: 641540, name: "Dane Dunning"}
+  - {pos: "P",  mlb_id: 641302, name: "Tyler Alexander"}

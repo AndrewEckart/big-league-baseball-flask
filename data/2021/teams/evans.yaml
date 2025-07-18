@@ -1,32 +1,31 @@
 starters:
-  1B: "Jared Walsh"
-  2B: "Wander Franco (90%)"
-  SS: "Carlos Correa"
-  3B: "Vladimir Guerrero Jr."
-  C: "Gary Sanchez"
-  OF:
-    - "Aaron Judge"
-    - "Hunter Renfroe"
-    - "Austin Hays"
-  DH: "Giancarlo Stanton"
+  - {pos: "1B", mlb_id: 665120, name: "Jared Walsh"}
+  - {pos: "2B", mlb_id: 677551, name: "Wander Franco", minors_penalty: true}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 665489, name: "Vladimir Guerrero Jr."}
+  - {pos: "C",  mlb_id: 596142, name: "Gary Sanchez"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
+  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe"}
+  - {pos: "OF", mlb_id: 669720, name: "Austin Hays"}
+  - {pos: "DH", mlb_id: 519317, name: "Giancarlo Stanton"}
 bench:
-  - ["1B", "Miguel Cabrera"]
-  - ["1B", "Andrew Vaughn"]
-  - ["2B", "Andres Gimenez"]
-  - ["OF", "Hunter Dozier"]
-  - ["OF", "Luis Robert"]
+  - {pos: "1B", mlb_id: 408234, name: "Miguel Cabrera"}
+  - {pos: "1B", mlb_id: 683734, name: "Andrew Vaughn"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "OF", mlb_id: 641531, name: "Hunter Dozier"}
+  - {pos: "OF", mlb_id: 673357, name: "Luis Robert"}
 rotation:
-  - "Gerrit Cole"
-  - "Aroldis Chapman"
-  - "Aaron Civale"
-  - "Corey Kluber"
-  - "Robbie Ray"
-  - "Jameson Taillon"
-  - "Steven Matz"
-  - "Michael Kopech"
+  - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
+  - {pos: "P",  mlb_id: 547973, name: "Aroldis Chapman"}
+  - {pos: "P",  mlb_id: 650644, name: "Aaron Civale"}
+  - {pos: "P",  mlb_id: 446372, name: "Corey Kluber"}
+  - {pos: "P",  mlb_id: 592662, name: "Robbie Ray"}
+  - {pos: "P",  mlb_id: 592791, name: "Jameson Taillon"}
+  - {pos: "P",  mlb_id: 571927, name: "Steven Matz"}
+  - {pos: "P",  mlb_id: 656629, name: "Michael Kopech"}
 minors:
-  - ["3B", "Miguel Andujar"]
-  - ["OF", "Brett Gardner"]
-  - ["P", "Mike Foltynewicz"]
-  - ["P", "Luis Severino"]
-  - ["P", "Nate Pearson"]
+  - {pos: "3B", mlb_id: 609280, name: "Miguel Andujar"}
+  - {pos: "OF", mlb_id: 458731, name: "Brett Gardner"}
+  - {pos: "P",  mlb_id: 592314, name: "Mike Foltynewicz"}
+  - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
+  - {pos: "P",  mlb_id: 663878, name: "Nate Pearson"}

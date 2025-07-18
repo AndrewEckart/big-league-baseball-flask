@@ -1,30 +1,29 @@
 starters:
-  1B: "Carlos Santana"
-  2B: "Edouard Julien (2023)"
-  SS: "Anthony Volpe"
-  3B: "Alex Bregman"
-  C: "Cal Raleigh"
-  OF:
-    - "George Springer"
-    - "Alex Verdugo"
-    - "Colton Cowser"
-  DH: "Mark Canha"
+  - {pos: "1B", mlb_id: 467793, name: "Carlos Santana"}
+  - {pos: "2B", mlb_id: 666397, name: "Edouard Julien", injury_move: true}
+  - {pos: "SS", mlb_id: 683011, name: "Anthony Volpe"}
+  - {pos: "3B", mlb_id: 608324, name: "Alex Bregman"}
+  - {pos: "C",  mlb_id: 663728, name: "Cal Raleigh"}
+  - {pos: "OF", mlb_id: 543807, name: "George Springer"}
+  - {pos: "OF", mlb_id: 657077, name: "Alex Verdugo"}
+  - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
+  - {pos: "DH", mlb_id: 592192, name: "Mark Canha"}
 bench:
-  - ["OF", "Masataka Yoshida (2023)"]
-  - ["SS", "Brayan Rocchio"]
-  - ["OF", "MJ Melendez"]
-  - ["OF", "Andrew Benintendi"]
+  - {pos: "OF", mlb_id: 807799, name: "Masataka Yoshida", injury_move: true}
+  - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio"}
+  - {pos: "OF", mlb_id: 669004, name: "MJ Melendez"}
+  - {pos: "OF", mlb_id: 643217, name: "Andrew Benintendi"}
 rotation:
-  - "Pablo López"
-  - "Chris Bassitt"
-  - "Cristian Javier"
-  - "Ben Lively"
-  - "JP Sears"
-  - "Clay Holmes"
-  - "Jason Foley"
+  - {pos: "P",  mlb_id: 641154, name: "Pablo Lopez"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 664299, name: "Cristian Javier"}
+  - {pos: "P",  mlb_id: 594902, name: "Ben Lively"}
+  - {pos: "P",  mlb_id: 676664, name: "JP Sears"}
+  - {pos: "P",  mlb_id: 605280, name: "Clay Holmes"}
+  - {pos: "P",  mlb_id: 671345, name: "Jason Foley"}
 minors:
-  - ["C", "Jose Trevino"]
-  - ["2B", "Nicky Lopez"]
-  - ["P", "Paul Blackburn"]
-  - ["P", "Alex Lange"]
-  - ["P", "Logan Allen"]
+  - {pos: "C",  mlb_id: 624431, name: "Jose Trevino"}
+  - {pos: "2B", mlb_id: 670032, name: "Nicky Lopez"}
+  - {pos: "P",  mlb_id: 621112, name: "Paul Blackburn"}
+  - {pos: "P",  mlb_id: 656638, name: "Alex Lange"}
+  - {pos: "P",  mlb_id: 671106, name: "Logan Allen"}
