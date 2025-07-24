@@ -13,7 +13,6 @@ bench:
   - {pos: "OF", mlb_id: 657041, name: "Lane Thomas", injury_move: true}
   - {pos: "DH", mlb_id: 666624, name: "Christopher Morel"}
   - {pos: "2B", mlb_id: 692225, name: "Kristian Campbell"}
-  # - {pos: "3B", mlb_id: 663837, name: "Matt Vierling"}
   # - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}
 rotation:
   - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
