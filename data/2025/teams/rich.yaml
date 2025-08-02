@@ -16,14 +16,13 @@ bench:
 rotation:
   - {pos: "P",  mlb_id: 676440, name: "Tanner Bibee"}
   - {pos: "P",  mlb_id: 686613, name: "Hunter Brown"}
-  - {pos: "P",  mlb_id: 455119, name: "Chris Martin"}
+  - {pos: "P",  mlb_id: 681293, name: "Spencer Arrighetti"}
   - {pos: "P",  mlb_id: 671737, name: "Taj Bradley"}
   - {pos: "P",  mlb_id: 663460, name: "Kris Bubic"}
   - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
   - {pos: "P",  mlb_id: 661395, name: "Jhoan Duran"}
 minors:
   - {pos: "C",  mlb_id: 668670, name: "Jake Rogers"}
-  - {pos: "2B", mlb_id: 686797, name: "Brooks Lee"}
   - {pos: "P",  mlb_id: 677958, name: "Kumar Rocker"}
-  - {pos: "P",  mlb_id: 681293, name: "Spencer Arrighetti"}
+  - {pos: "P",  mlb_id: 455119, name: "Chris Martin"}
   - {pos: "P",  mlb_id: 670102, name: "Bowden Francis"}

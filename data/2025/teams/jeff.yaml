@@ -12,9 +12,9 @@ bench:
   - {pos: "2B", mlb_id: 663697, name: "Jonathan India"}
   - {pos: "DH", mlb_id: 624585, name: "Jorge Soler"}
   - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
-  - {pos: "3B", mlb_id: 570482, name: "Gio Urshela"}
+  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe", injury_move: true}
 rotation:
-  - {pos: "P",  mlb_id: 656427, name: "Jack Flaherty"}
+  - {pos: "P",  mlb_id: 683004, name: "Jack Leiter"}
   - {pos: "P",  mlb_id: 608379, name: "Michael Wacha"}
   - {pos: "P",  mlb_id: 621244, name: "Jose Berrios"}
   - {pos: "P",  mlb_id: 641793, name: "Zack Littell"}
@@ -23,7 +23,7 @@ rotation:
   - {pos: "P",  mlb_id: 643377, name: "Griffin Jax"}
 minors:
   - {pos: "OF", mlb_id: 678877, name: "Johnkensky Noel"}
-  - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe"}
   - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
   - {pos: "P",  mlb_id: 471911, name: "Carlos Carrasco"}
-  - {pos: "P",  mlb_id: 683004, name: "Jack Leiter"}
+  - {pos: "P",  mlb_id: 656427, name: "Jack Flaherty"}
+  - {pos: "3B", mlb_id: 570482, name: "Gio Urshela"}

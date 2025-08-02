@@ -10,20 +10,21 @@ starters:
   - {pos: "DH", mlb_id: 663616, name: "Trevor Larnach"}
 bench:
   - {pos: "OF", mlb_id: 670242, name: "Matt Wallner"}
-  - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio "}
-  - {pos: "2B", mlb_id: 663898, name: "Brendan Rogers"}
-  - {pos: "3B", mlb_id: 663837, name: "Matt Vierling"}
+  - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio"}
+  - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
+  - {pos: "3B", mlb_id: 663837, name: "Matt Vierling", injury_move: true}
 rotation:
   - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
   - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
   - {pos: "P",  mlb_id: 592332, name: "Kevin Gausman"}
   - {pos: "P",  mlb_id: 547179, name: "Michael Lorenzen"}
-  - {pos: "P",  mlb_id: 695549, name: "Jackson Jobe"}
+  - {pos: "P",  mlb_id: 669211, name: "Keegan Akin"}
   - {pos: "P",  mlb_id: 453286, name: "Max Scherzer"}
   - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
 minors:
-  - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
+  - {pos: "2B", mlb_id: 663898, name: "Brendan Rogers"}
   - {pos: "OF", mlb_id: 665750, name: "Leody Taveras"}
   - {pos: "DH", mlb_id: 807799, name: "Masataka Yoshida"}
+  # - {pos: "P",  mlb_id: 695549, name: "Jackson Jobe"}
   - {pos: "P",  mlb_id: 676664, name: "JP Sears"}
   - {pos: "P",  mlb_id: 527048, name: "Martin Perez"}

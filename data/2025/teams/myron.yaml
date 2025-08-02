@@ -1,29 +1,32 @@
 starters:
-  - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
+  - {pos: "1B", mlb_id: 642133, name: "Rowdy Tellez"}
+  # - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
   - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres"}
   - {pos: "SS", mlb_id: 678882, name: "Ceddane Raffaela"}
-  - {pos: "3B", mlb_id: 646240, name: "Rafael Devers"}
+  - {pos: "3B", mlb_id: 672820, name: "Lenyn Sosa"}
+  # - {pos: "3B", mlb_id: 646240, name: "Rafael Devers"}
   - {pos: "C",  mlb_id: 521692, name: "Salvador Perez"}
   - {pos: "OF", mlb_id: 666969, name: "Adolis Garcia"}
   - {pos: "OF", mlb_id: 680757, name: "Steven Kwan"}
   - {pos: "OF", mlb_id: 543807, name: "George Springer"}
-  - {pos: "DH", mlb_id: 680777, name: "Ryan Jeffers"}
+  - {pos: "DH", mlb_id: 666160, name: "Mickey Moniak"}
 bench:
-  - {pos: "2B", mlb_id: 695238, name: "Will Wagner"}
-  - {pos: "1B", mlb_id: 642133, name: "Rowdy Tellez"}
-  - {pos: "2B", mlb_id: 672820, name: "Lenyn Sosa"}
+  - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}
+  - {pos: "3B", mlb_id: 686797, name: "Brooks Lee"}
+  - {pos: "SS", mlb_id: 670764, name: "Taylor Walls"}
   - {pos: "1B", mlb_id: 643289, name: "Mauricio Dubon"}
 rotation:
   - {pos: "P",  mlb_id: 669373, name: "Tarik Skubal"}
-  - {pos: "P",  mlb_id: 621111, name: "Walker Buehler"}
-  - {pos: "P",  mlb_id: 656557, name: "Tanner Houck"}
-  - {pos: "P",  mlb_id: 573186, name: "Marcus Stroman"}
+  - {pos: "P",  mlb_id: 686752, name: "Ryan Pepiot"}
+  - {pos: "P",  mlb_id: 656557, name: "Tanner Houck", injury_move: true}
+  - {pos: "P",  mlb_id: 665152, name: "Dean Kremer"}
   - {pos: "P",  mlb_id: 450203, name: "Charlie Morton"}
   - {pos: "P",  mlb_id: 543294, name: "Kyle Hendricks"}
   - {pos: "P",  mlb_id: 642585, name: "Felix Bautista"}
 minors:
-  - {pos: "P",  mlb_id: 665152, name: "Dean Kremer"}
+  - {pos: "P",  mlb_id: 573186, name: "Marcus Stroman"}
   - {pos: "P",  mlb_id: 701542, name: "Will Warren"}
   - {pos: "P",  mlb_id: 663474, name: "Triston McKenzie"}
   - {pos: "1B", mlb_id: 518934, name: "DJ LeMahieu"}
-  - {pos: "SS", mlb_id: 670764, name: "Taylor Walls"}
+  # - {pos: "2B", mlb_id: 695238, name: "Will Wagner"}
+  - {pos: "P",  mlb_id: 621111, name: "Walker Buehler"}
