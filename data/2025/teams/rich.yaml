@@ -1,5 +1,5 @@
 starters:
-  - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
+  - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle", injury_move: true}
   - {pos: "2B", mlb_id: 690993, name: "Colt Keith"}
   - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
   - {pos: "3B", mlb_id: 691406, name: "Junior Caminero"}
