@@ -7,10 +7,10 @@ starters:
   - {pos: "OF", mlb_id: 691176, name: "Jasson Dominguez"}
   - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
   - {pos: "OF", mlb_id: 645302, name: "Victor Robles", injury_move: true}
-  - {pos: "DH", mlb_id: 668904, name: "Royce Lewis"}
+  - {pos: "DH", mlb_id: 700250, name: "Ben Rice"}
 bench:
   - {pos: "1B", mlb_id: 660162, name: "Yoan Moncada"}
-  - {pos: "OF", mlb_id: 700250, name: "Ben Rice"}
+  - {pos: "DH", mlb_id: 668904, name: "Royce Lewis"}
   - {pos: "2B", mlb_id: 695657, name: "Colson Montgomery"}
   - {pos: "OF", mlb_id: 678009, name: "Parker Meadows"}
 rotation:
