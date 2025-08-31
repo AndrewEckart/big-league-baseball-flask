@@ -1,6 +1,6 @@
 starters:
   - {pos: "1B", mlb_id: 665489, name: "Vladimir Guerrero, Jr."}
-  - {pos: "2B", mlb_id: 650489, name: "Willi Castro"}
+  - {pos: "2B", mlb_id: 663697, name: "Jonathan India"}
   - {pos: "SS", mlb_id: 665161, name: "Jeremy Pena"}
   - {pos: "3B", mlb_id: 676391, name: "Ernie Clement"}
   - {pos: "C",  mlb_id: 663728, name: "Cal Raleigh"}
@@ -9,8 +9,8 @@ starters:
   - {pos: "OF", mlb_id: 621439, name: "Byron Buxton"}
   - {pos: "DH", mlb_id: 664034, name: "Ty France"}
 bench:
-  - {pos: "2B", mlb_id: 663697, name: "Jonathan India"}
-  - {pos: "DH", mlb_id: 624585, name: "Jorge Soler"}
+  - {pos: "2B", mlb_id: 650489, name: "Willi Castro", injury_move: true}
+  - {pos: "DH", mlb_id: 624585, name: "Jorge Soler", injury_move: true}
   - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
   - {pos: "OF", mlb_id: 592669, name: "Hunter Renfroe", injury_move: true}
 rotation:
