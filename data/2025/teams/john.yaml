@@ -6,13 +6,13 @@ starters:
   - {pos: "C",  mlb_id: 669127, name: "Shea Langeliers"}
   - {pos: "OF", mlb_id: 681481, name: "Kerry Carpenter"}
   - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill", injury_move: true}
-  - {pos: "OF", mlb_id: 643565, name: "Mike Tauchman", minors_penalty: true}
+  - {pos: "OF", mlb_id: 609280, name: "Miguel Andujar"} 
   - {pos: "DH", mlb_id: 608369, name: "Corey Seager"}
 bench:
   - {pos: "DH", mlb_id: 700932, name: "Kyle Manzardo"}
   - {pos: "2B", mlb_id: 650859, name: "Luis Rengifo"}
   - {pos: "OF", mlb_id: 670042, name: "Luke Raley", injury_move: true}
-  - {pos: "OF", mlb_id: 609280, name: "Miguel Andujar"}
+  - {pos: "OF", mlb_id: 643565, name: "Mike Tauchman"}
 rotation:
   - {pos: "P",  mlb_id: 682243, name: "Bryce Miller", injury_move: true}
   - {pos: "P",  mlb_id: 693433, name: "Bryan Woo"}
