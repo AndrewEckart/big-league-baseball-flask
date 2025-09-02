@@ -1,6 +1,6 @@
 starters:
   - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom"}
-  - {pos: "SS", mlb_id: 687263, name: "Zach Neto"}
+  - {pos: "2B", mlb_id: 687263, name: "Zach Neto"}
   - {pos: "SS", mlb_id: 677951, name: "Bobby Witt Jr."}
   - {pos: "3B", mlb_id: 608324, name: "Alex Bregman"}
   - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
