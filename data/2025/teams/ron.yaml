@@ -1,18 +1,18 @@
 starters:
   - {pos: "1B", mlb_id: 666018, name: "Jonathan Aranda"}
-  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "2B", mlb_id: 663837, name: "Matt Vierling", injury_move: true} 
   - {pos: "SS", mlb_id: 683002, name: "Gunnar Henderson"}
   - {pos: "3B", mlb_id: 665862, name: "Jazz Chisholm Jr."}
   - {pos: "C",  mlb_id: 672386, name: "Alejandro Kirk"}
-  - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
+  - {pos: "OF", mlb_id: 681297, name: "Colton Cowser", injury_move: true}
   - {pos: "OF", mlb_id: 669394, name: "Jake Burger"}
-  - {pos: "OF", mlb_id: 668709, name: "JJ Bleday"}
+  - {pos: "OF", mlb_id: 668709, name: "JJ Bleday", injury_move: true}
   - {pos: "DH", mlb_id: 663616, name: "Trevor Larnach"}
 bench:
   - {pos: "OF", mlb_id: 670242, name: "Matt Wallner"}
   - {pos: "SS", mlb_id: 677587, name: "Brayan Rocchio"}
   - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
-  - {pos: "3B", mlb_id: 663837, name: "Matt Vierling", injury_move: true}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez", injury_move: true}
 rotation:
   - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
   - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
