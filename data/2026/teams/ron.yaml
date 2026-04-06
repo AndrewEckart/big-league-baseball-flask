@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 669394, name: "Jake Burger"}
+  - {pos: "2B", mlb_id: 665862, name: "Jazz Chisholm Jr."}
+  - {pos: "SS", mlb_id: 665161, name: "Jeremy Pena"}
+  - {pos: "3B", mlb_id: 672960, name: "Kazuma Okamoto"}
+  - {pos: "C",  mlb_id: 672386, name: "Alejandro Kirk"}
+  - {pos: "OF", mlb_id: 641355, name: "Cody Bellinger"}
+  - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
+  - {pos: "OF", mlb_id: 660821, name: "Jesus Sanchez"}
+  - {pos: "DH", mlb_id: 624413, name: "Pete Alonso"}
+bench:
+  - {pos: "3B", mlb_id: 805367, name: "Colt Keith"}
+  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
+  - {pos: "SS", mlb_id: 666310, name: "Josh Smith"}
+  - {pos: "2B", mlb_id: 657041, name: "Kody Clemens"}
+rotation:
+  - {pos: "P",  mlb_id: 666142, name: "Cole Ragans"}
+  - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
+  - {pos: "P",  mlb_id: 669022, name: "MacKenzie Gore"}
+  - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon"}
+  - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
+  - {pos: "P",  mlb_id: 621107, name: "Zach Eflin"}
+  - {pos: "P",  mlb_id: 656641, name: "Jacob Latz"}
+minors:
+  - {pos: "1B", mlb_id: 670042, name: "Luke Raley"}
+  - {pos: "OF", mlb_id: 663837, name: "Matt Vierling"}
+  - {pos: "3B", mlb_id: 676059, name: "Jordan Westburg"}
+  - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
+  - {pos: "P",  mlb_id: 453286, name: "Max Scherzer"}

@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 575929, name: "Willson Contreras"}
+  - {pos: "2B", mlb_id: 807712, name: "Luke Keaschall"}
+  - {pos: "SS", mlb_id: 621043, name: "Carlos Correa"}
+  - {pos: "3B", mlb_id: 678246, name: "Miguel Vargas"}
+  - {pos: "C",  mlb_id: 521692, name: "Salvador Perez"}
+  - {pos: "OF", mlb_id: 668227, name: "Randy Arozarena"}
+  - {pos: "OF", mlb_id: 621493, name: "Taylor Ward"}
+  - {pos: "OF", mlb_id: 678882, name: "Ceddanne Rafaela"}
+  - {pos: "DH", mlb_id: 686469, name: "Vinnie Pasquantino"}
+bench:
+  - {pos: "OF", mlb_id: 643217, name: "Andrew Benintendi"}
+  - {pos: "2B", mlb_id: 805367, name: "Chase Meidroth"}
+  - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}
+  - {pos: "OF", mlb_id: 657041, name: "Lane Thomas"}
+rotation:
+  - {pos: "P",  mlb_id: 669373, name: "Tarik Skubal"}
+  - {pos: "P",  mlb_id: 624133, name: "Ranger Suarez"}
+  - {pos: "P",  mlb_id: 656427, name: "Jack Flaherty"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 664074, name: "Cody Ponce"}
+  - {pos: "P",  mlb_id: 691799, name: "Grant Taylor"}
+  - {pos: "P",  mlb_id: 676684, name: "Will Vest"}
+minors:
+  - {pos: "SS", mlb_id: 683011, name: "Anthony Volpe"}
+  - {pos: "OF", mlb_id: 672016, name: "Denzel Clarke"}
+  - {pos: "DH", mlb_id: 592626, name: "Joc Pederson"}
+  - {pos: "P",  mlb_id: 672282, name: "Reid Detmers"}
+  - {pos: "P",  mlb_id: 676282, name: "Joey Cantillo"}

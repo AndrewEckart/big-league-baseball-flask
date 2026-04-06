@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 701762, name: "Nick Kurtz"}
+  - {pos: "2B", mlb_id: 680977, name: "Brendan Donovan"}
+  - {pos: "SS", mlb_id: 608369, name: "Corey Seager"}
+  - {pos: "3B", mlb_id: 672580, name: "Maikel Garcia"}
+  - {pos: "C",  mlb_id: 680777, name: "Ryan Jeffers"}
+  - {pos: "OF", mlb_id: 682985, name: "Riley Greene"}
+  - {pos: "OF", mlb_id: 681481, name: "Kerry Carpenter"}
+  - {pos: "OF", mlb_id: 662139, name: "Daulton Varsho"}
+  - {pos: "DH", mlb_id: 624585, name: "Jorge Soler"}
+bench:
+  - {pos: "OF", mlb_id: 686555, name: "Isaac Collins"}
+  - {pos: "3B", mlb_id: 660162, name: "Yoan Moncada"}
+  - {pos: "C", mlb_id: 695600, name: "Carter Jensen"}
+  - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
+rotation:
+  - {pos: "P",  mlb_id: 669432, name: "Trevor Rogers"}
+  - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen"}
+  - {pos: "P",  mlb_id: 663460, name: "Kris Bubic"}
+  - {pos: "P",  mlb_id: 702070, name: "Noah Cameron"}
+  - {pos: "P",  mlb_id: 813349, name: "Connelly Early"}
+  - {pos: "P",  mlb_id: 547973, name: "Aroldis Chapman"}
+  - {pos: "P",  mlb_id: 676477, name: "Garrett Whitlock"}
+minors:
+  - {pos: "3B", mlb_id: 691785, name: "Marcelo Mayer"}
+  - {pos: "C", mlb_id: 665966, name: "Carlos Narvaez"}
+  - {pos: "P", mlb_id: 806960, name: "Luis Morales"}
+  - {pos: "P",  mlb_id: 641778, name: "Eric Lauer"}
+  - {pos: "P",  mlb_id: 641743, name: "Anthony Kay"}

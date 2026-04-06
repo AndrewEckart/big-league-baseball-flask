@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom"}
+  - {pos: "2B", mlb_id: 676391, name: "Ernie Clement"}
+  - {pos: "SS", mlb_id: 805779, name: "Jacob Wilson"}
+  - {pos: "3B", mlb_id: 805808, name: "Kevin McGonigle"}
+  - {pos: "C",  mlb_id: 669127, name: "Shea Langeliers"}
+  - {pos: "OF", mlb_id: 680757, name: "Steven Kwan"}
+  - {pos: "OF", mlb_id: 666201, name: "Jo Adell"}
+  - {pos: "OF", mlb_id: 686527, name: "Dominic Canzone"}
+  - {pos: "DH", mlb_id: 605137, name: "Josh Bell"}
+bench:
+  - {pos: "1B", mlb_id: 656555, name: "Rhys Hoskins"}
+  - {pos: "OF", mlb_id: 669720, name: "Austin Hays"}
+  - {pos: "2B", mlb_id: 702284, name: "Cole Young"}
+  - {pos: "OF", mlb_id: 664770, name: "Nathan Lukes"}
+rotation:
+  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
+  - {pos: "P",  mlb_id: 669923, name: "George Kirby"}
+  - {pos: "P",  mlb_id: 681293, name: "Jack Leiter"}
+  - {pos: "P",  mlb_id: 702056, name: "Trey Yesavage"}
+  - {pos: "P",  mlb_id: 608349, name: "Seth Lugo"}
+  - {pos: "P",  mlb_id: 677944, name: "Slade Cecconi"}
+  - {pos: "P",  mlb_id: 676395, name: "Robert Garcia"}
+minors:
+  - {pos: "P",  mlb_id: 663436, name: "Davis Martin"}
+  - {pos: "P",  mlb_id: 643511, name: "Taylor Rogers"}
+  - {pos: "P",  mlb_id: 690953, name: "Mick Abel"}
+  - {pos: "C",  mlb_id: 605170, name: "Victor Caratini"}
+  - {pos: "2B", mlb_id: 672761, name: "Oswald Peraza"}

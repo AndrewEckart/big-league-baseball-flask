@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 665489, name: "Vladimir Guerrero Jr."}
+  - {pos: "2B", mlb_id: 672820, name: "Lenyn Sosa"}
+  - {pos: "SS", mlb_id: 595879, name: "Javier Baez"}
+  - {pos: "3B", mlb_id: 608070, name: "Jose Ramirez"}
+  - {pos: "C",  mlb_id: 673237, name: "Yainer Diaz"}
+  - {pos: "OF", mlb_id: 621439, name: "Byron Buxton"}
+  - {pos: "OF", mlb_id: 671732, name: "Lawrence Butler"}
+  - {pos: "OF", mlb_id: 514888, name: "Jose Altuve"}
+  - {pos: "DH", mlb_id: 694212, name: "Samuel Basallo"}
+bench:
+  - {pos: "DH", mlb_id: 516782, name: "Starling Marte"}
+  - {pos: "DH", mlb_id: 457705, name: "Andrew McCutchen"}
+  - {pos: "2B", mlb_id: 676914, name: "Davis Schneider"}
+  - {pos: "2B", mlb_id: 676609, name: "Jose Caballero"}
+rotation:
+  - {pos: "P",  mlb_id: 664285, name: "Framber Valdez"}
+  - {pos: "P",  mlb_id: 592332, name: "Kevin Gausman"}
+  - {pos: "P",  mlb_id: 676440, name: "Tanner Bibee"}
+  - {pos: "P",  mlb_id: 608379, name: "Michael Wacha"}
+  - {pos: "P",  mlb_id: 605488, name: "Jeffrey Springs"}
+  - {pos: "P",  mlb_id: 671922, name: "Cade Smith"}
+  - {pos: "P",  mlb_id: 623352, name: "Josh Hader"}
+minors:
+  - {pos: "SS", mlb_id: 643396, name: "Isiah Kiner-Falefa"}
+  - {pos: "OF", mlb_id: 672761, name: "Wenceel Perez"}
+  - {pos: "P",  mlb_id: 664299, name: "Cristian Javier"}
+  - {pos: "P",  mlb_id: 434378, name: "Justin Verlander"}
+  - {pos: "P",  mlb_id: 621121, name: "Lance McCullers Jr."}

@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 647351, name: "Josh Naylor"}
+  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres"}
+  - {pos: "SS", mlb_id: 683002, name: "Gunnar Henderson"}
+  - {pos: "3B", mlb_id: 691406, name: "Junior Caminero"}
+  - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
+  - {pos: "OF", mlb_id: 694671, name: "Wyatt Langford"}
+  - {pos: "OF", mlb_id: 677594, name: "Wilyer Abreu"}
+  - {pos: "OF", mlb_id: 670242, name: "Matt Wallner"}
+  - {pos: "DH", mlb_id: 700932, name: "Kyle Manzardo"}
+bench:
+  - {pos: "2B", mlb_id: 641856, name: "Jeff McNeil"}
+  - {pos: "SS", mlb_id: 677551, name: "Brayan Rocchio"}
+  - {pos: "OF", mlb_id: 665487, name: "Kyle Isbel"}
+  - {pos: "3B", mlb_id: 810938, name: "Ben Williamson"}
+rotation:
+  - {pos: "P",  mlb_id: 656302, name: "Dylan Cease"}
+  - {pos: "P",  mlb_id: 622491, name: "Luis Castillo"}
+  - {pos: "P",  mlb_id: 668909, name: "Gavin Williams"}
+  - {pos: "P",  mlb_id: 681347, name: "Mike Burrows"}
+  - {pos: "P",  mlb_id: 800048, name: "Parker Messick"}
+  - {pos: "P",  mlb_id: 662253, name: "Andres Munoz"}
+  - {pos: "P",  mlb_id: 642350, name: "Ryan Helsley"}
+minors:
+  - {pos: "P",  mlb_id: 680573, name: "Simeon Woods Richardson"}
+  - {pos: "P",  mlb_id: 687830, name: "Jacob Lopez"}
+  - {pos: "P",  mlb_id: 678606, name: "Jose A. Ferrer"}
+  - {pos: "OF", mlb_id: 687637, name: "Dylan Beavers"}
+  - {pos: "C",  mlb_id: 700337, name: "Edgar Quero"}

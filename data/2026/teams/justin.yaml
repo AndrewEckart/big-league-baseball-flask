@@ -1,0 +1,29 @@
+starters:
+  - {pos: "1B", mlb_id: 694384, name: "Nolan Schanuel"}
+  - {pos: "2B", mlb_id: 665926, name: "Andres Gimenez"}
+  - {pos: "SS", mlb_id: 687263, name: "Zach Neto"}
+  - {pos: "3B", mlb_id: 670623, name: "Isaac Paredes"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "OF", mlb_id: 592450, name: "Aaron Judge"}
+  - {pos: "OF", mlb_id: 680776, name: "Jarren Duran"}
+  - {pos: "OF", mlb_id: 695506, name: "Jac Caglianone"}
+  - {pos: "DH", mlb_id: 650490, name: "Yandy Diaz"}
+bench:
+  - {pos: "OF", mlb_id: 666139, name: "Josh Lowe"}
+  - {pos: "3B", mlb_id: 673962, name: "Josh Jung"}
+  - {pos: "C", mlb_id: 693307, name: "Dillon Dingler"}
+  - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill"}
+rotation:
+  - {pos: "P",  mlb_id: 686613, name: "Hunter Brown"}
+  - {pos: "P",  mlb_id: 669302, name: "Logan Gilbert"}
+  - {pos: "P",  mlb_id: 543243, name: "Sonny Gray"}
+  - {pos: "P",  mlb_id: 669358, name: "Shane Baz"}
+  - {pos: "P",  mlb_id: 663554, name: "Casey Mize"}
+  - {pos: "P",  mlb_id: 656546, name: "Jeff Hoffman"}
+  - {pos: "P",  mlb_id: 445276, name: "Kenley Jansen"}
+minors:
+  - {pos: "C", mlb_id: 691019, name: "Kyle Teel"}
+  - {pos: "OF", mlb_id: 645302, name: "Victor Robles"}
+  - {pos: "1B", mlb_id: 502671, name: "Paul Goldschmidt"}
+  - {pos: "P",  mlb_id: 605447, name: "Jordan Romano"}
+  - {pos: "P",  mlb_id: 677958, name: "Kumar Rocker"}
