@@ -7,12 +7,12 @@ starters:
   - {pos: "OF", mlb_id: 677594, name: "Julio Rodriguez"}
   - {pos: "OF", mlb_id: 607043, name: "Brandon Nimmo"}
   - {pos: "OF", mlb_id: 543807, name: "George Springer"}
-  - {pos: "DH", mlb_id: 663630, name: "Trevor Larnach"}
+  - {pos: "DH", mlb_id: 663616, name: "Trevor Larnach"}
 bench:
   - {pos: "OF", mlb_id: 665923, name: "Cedric Mullins II"}
   - {pos: "OF", mlb_id: 802415, name: "Chandler Simpson"}
-  - {pos: "OF", mlb_id: 670764, name: "Jake Meyers"}
-  - {pos: "3B", mlb_id: 660162, name: "Zach McKinstry"}
+  - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
+  - {pos: "3B", mlb_id: 656716, name: "Zach McKinstry"}
 rotation:
   - {pos: "P",  mlb_id: 608331, name: "Max Fried"}
   - {pos: "P",  mlb_id: 693645, name: "Cam Schlittler"}
@@ -20,10 +20,10 @@ rotation:
   - {pos: "P",  mlb_id: 701542, name: "Will Warren"}
   - {pos: "P",  mlb_id: 579328, name: "Yusei Kikuchi"}
   - {pos: "P",  mlb_id: 670280, name: "David Bednar"}
-  - {pos: "P",  mlb_id: 657571, name: "Carlos Estevez"}
+  - {pos: "P",  mlb_id: 622554, name: "Seranthony Dominguez"}
 minors:
   - {pos: "P",  mlb_id: 671737, name: "Taj Bradley"}
   - {pos: "P",  mlb_id: 607259, name: "Nick Martinez"}
-  - {pos: "P",  mlb_id: 622554, name: "Seranthony Dominguez"}
+  - {pos: "P",  mlb_id: 608032, name: "Carlos Estevez"}
   - {pos: "OF", mlb_id: 624428, name: "Adam Frazier"}
   - {pos: "C",  mlb_id: 543309, name: "Kyle Higashioka"}

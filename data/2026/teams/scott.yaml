@@ -11,19 +11,19 @@ starters:
 bench:
   - {pos: "SS", mlb_id: 641487, name: "J.P. Crawford"}
   - {pos: "1B", mlb_id: 666018, name: "Jonathan Aranda"}
-  - {pos: "3B", mlb_id: 663586, name: "Ryan McMahon"}
+  - {pos: "3B", mlb_id: 641857, name: "Ryan McMahon"}
   - {pos: "OF", mlb_id: 666158, name: "Gavin Lux"}
 rotation:
   - {pos: "P",  mlb_id: 693433, name: "Bryan Woo"}
   - {pos: "P",  mlb_id: 680694, name: "Kyle Bradish"}
   - {pos: "P",  mlb_id: 663556, name: "Shane McClanahan"}
-  - {pos: "P",  mlb_id: 612434, name: "Tatsuya Imai"}
+  - {pos: "P",  mlb_id: 837227, name: "Tatsuya Imai"}
   - {pos: "P",  mlb_id: 661563, name: "Luis Gil"}
   - {pos: "P",  mlb_id: 643511, name: "Tyler Rogers"}
   - {pos: "P",  mlb_id: 571927, name: "Steven Matz"}
 minors:
-  - {pos: "OF", mlb_id: 664702, name: "James Outman"}
+  - {pos: "OF", mlb_id: 681546, name: "James Outman"}
   - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
   - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
   - {pos: "P",  mlb_id: 681343, name: "Shane Smith"}
-  - {pos: "P",  mlb_id: 663372, name: "Shane Bieber"}
+  - {pos: "P",  mlb_id: 669456, name: "Shane Bieber"}
