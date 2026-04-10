@@ -25,5 +25,5 @@ minors:
   - {pos: "P",  mlb_id: 666808, name: "Camilo Doval"}
   - {pos: "P",  mlb_id: 801739, name: "Carlos Lagrange"}
   - {pos: "P",  mlb_id: 518585, name: "Fernando Cruz"}
-  - {pos: "C",  mlb_id: 605170, name: "Victor Caratini"}
-  - {pos: "2B", mlb_id: 672724, name: "Oswald Peraza"}
+  - {pos: "OF",  mlb_id: 691176, name: "Jasson Dominguez"}
+  - {pos: "OF", mlb_id: 682987, name: "Spencer Jones"}
