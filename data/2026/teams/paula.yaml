@@ -9,7 +9,7 @@ starters:
   - {pos: "OF", mlb_id: 543807, name: "George Springer"}
   - {pos: "DH", mlb_id: 663616, name: "Trevor Larnach"}
 bench:
-  - {pos: "OF", mlb_id: 665923, name: "Cedric Mullins II"}
+  - {pos: "OF", mlb_id: 656775, name: "Cedric Mullins II"}
   - {pos: "OF", mlb_id: 802415, name: "Chandler Simpson"}
   - {pos: "OF", mlb_id: 676694, name: "Jake Meyers"}
   - {pos: "3B", mlb_id: 656716, name: "Zach McKinstry"}
