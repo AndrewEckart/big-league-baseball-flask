@@ -17,6 +17,7 @@ seasons: list[Season] = [
             innings_surplus_multiplier=0,
             injured_pitcher_innings_multiplier=0.7,
             injured_pitcher_era_multiplier=1.15,
+            injured_pitcher_minimum_era=3.65,
         )
     ),
     Season(

@@ -24,6 +24,7 @@ class Rules:
     innings_surplus_multiplier: float
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
+    injured_pitcher_minimum_era: float = 0.0
 
 
 @dataclass
@@ -120,7 +121,7 @@ class Team:
             Position.CATCHER: 1,
             Position.OUTFIELD: 3,
             Position.DESIGNATED_HITTER: 1,
-        }, "Starter position counts failed validation!"
+        }, f"[{self.manager}] Starter position counts failed validation!"
         
         return result
 
@@ -465,11 +466,12 @@ class Pitcher(Player):
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
             stats["outs"] = stats.get("outs", 0) * ip_multiplier * season.progress
-            stats["earnedRuns"] = (stats.get("earnedRuns", 0)
-                * ip_multiplier
-                * er_multiplier
-                * season.progress
-            )
+
+            minimum_era = rules.injured_pitcher_minimum_era
+            minimum_earned_runs = minimum_era * stats["outs"] / 3 / 9
+            earned_runs = stats.get("earnedRuns", 0) * ip_multiplier * er_multiplier * season.progress
+            stats["earnedRuns"] = max(earned_runs, minimum_earned_runs)
+
         if self.multiplier != 1:
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
                 if key not in stats:
