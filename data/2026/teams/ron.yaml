@@ -5,14 +5,14 @@ starters:
   - {pos: "3B", mlb_id: 672960, name: "Kazuma Okamoto"}
   - {pos: "C",  mlb_id: 672386, name: "Alejandro Kirk"}
   - {pos: "OF", mlb_id: 641355, name: "Cody Bellinger"}
+  - {pos: "OF", mlb_id: 665019, name: "Kody Clemens"}
+  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
+  - {pos: "DH", mlb_id: 669394, name: "Jake Burger"}
+bench:
+  - {pos: "DH", mlb_id: 690993, name: "Colt Keith"}
+  - {pos: "DH", mlb_id: 592626, name: "Joc Pederson"}
   - {pos: "OF", mlb_id: 694497, name: "Evan Carter"}
   - {pos: "OF", mlb_id: 660821, name: "Jesus Sanchez"}
-  - {pos: "DH", mlb_id: 690993, name: "Colt Keith"}
-bench:
-  - {pos: "1B", mlb_id: 669394, name: "Jake Burger"}
-  - {pos: "OF", mlb_id: 701358, name: "Cam Smith"}
-  - {pos: "2B", mlb_id: 665019, name: "Kody Clemens"}
-  - {pos: "DH", mlb_id: 592626, name: "Joc Pederson"}
 rotation:
   - {pos: "P",  mlb_id: 666142, name: "Cole Ragans"}
   - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
