@@ -7,7 +7,7 @@ starters:
   - {pos: "OF", mlb_id: 668227, name: "Randy Arozarena"}
   - {pos: "OF", mlb_id: 621493, name: "Taylor Ward"}
   - {pos: "OF", mlb_id: 678882, name: "Ceddanne Rafaela"}
-  - {pos: "DH", mlb_id: 686469, name: "Vinnie Pasquantino"}
+  - {pos: "DH", mlb_id: 686469, name: "Vinnie Pasquantino", injury_move: true}
 bench:
   - {pos: "OF", mlb_id: 643217, name: "Andrew Benintendi"}
   - {pos: "1B", mlb_id: 670042, name: "Luke Raley"}
@@ -24,6 +24,6 @@ rotation:
 minors:
   - {pos: "OF", mlb_id: 672016, name: "Denzel Clarke"}
   - {pos: "P",  mlb_id: 664074, name: "Cody Ponce"}
-  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt"}
+  - {pos: "P",  mlb_id: 605135, name: "Chris Bassitt", injury_move: true}
   - {pos: "P",  mlb_id: 676684, name: "Will Vest"}
   - {pos: "C",  mlb_id: 666310, name: "Bo Naylor"}

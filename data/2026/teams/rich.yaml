@@ -1,6 +1,6 @@
 starters:
   - {pos: "1B", mlb_id: 647304, name: "Josh Naylor"}
-  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres"}
+  - {pos: "2B", mlb_id: 650402, name: "Gleyber Torres", injury_move: true}
   - {pos: "SS", mlb_id: 683002, name: "Gunnar Henderson"}
   - {pos: "3B", mlb_id: 691406, name: "Junior Caminero"}
   - {pos: "C",  mlb_id: 668939, name: "Adley Rutschman"}
@@ -9,9 +9,9 @@ starters:
   - {pos: "OF", mlb_id: 624585, name: "Jorge Soler"}
   - {pos: "DH", mlb_id: 700932, name: "Kyle Manzardo"}
 bench:
-  - {pos: "OF", mlb_id: 670242, name: "Matt Wallner"}
+  - {pos: "OF", mlb_id: 670242, name: "Matt Wallner", injury_move: true}
   - {pos: "2B", mlb_id: 643446, name: "Jeff McNeil"}
-  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
+  - {pos: "OF", mlb_id: 687637, name: "Dylan Beavers"}
   - {pos: "3B", mlb_id: 810938, name: "Ben Williamson"}
 rotation:
   - {pos: "P",  mlb_id: 656302, name: "Dylan Cease"}
@@ -26,5 +26,5 @@ minors:
   - {pos: "P",  mlb_id: 682052, name: "Jacob Lopez"}
   - {pos: "P",  mlb_id: 664854, name: "Ryan Helsley"}
   # - {pos: "P",  mlb_id: 681347, name: "Mike Burrows"}
-  - {pos: "OF", mlb_id: 687637, name: "Dylan Beavers"}
+  - {pos: "OF", mlb_id: 664728, name: "Kyle Isbel"}
   - {pos: "C",  mlb_id: 700337, name: "Edgar Quero"}
