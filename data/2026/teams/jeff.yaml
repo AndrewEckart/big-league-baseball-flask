@@ -14,7 +14,7 @@ bench:
   - {pos: "2B", mlb_id: 702284, name: "Cole Young"}
   - {pos: "OF", mlb_id: 664770, name: "Nathan Lukes"}
 rotation:
-  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet"}
+  - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet", injury_move: true}
   - {pos: "P",  mlb_id: 669923, name: "George Kirby"}
   - {pos: "P",  mlb_id: 663436, name: "Davis Martin"}
   - {pos: "P",  mlb_id: 702056, name: "Trey Yesavage"}

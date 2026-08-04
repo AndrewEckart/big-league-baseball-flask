@@ -12,7 +12,7 @@ bench:
   - {pos: "OF", mlb_id: 686555, name: "Isaac Collins"}
   - {pos: "3B", mlb_id: 660162, name: "Yoan Moncada", injury_move: true}
   - {pos: "2B", mlb_id: 680977, name: "Brendan Donovan", injury_move: true}
-  - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias"}
+  - {pos: "SS", mlb_id: 672356, name: "Gabriel Arias", injury_move: true}
 rotation:
   - {pos: "P",  mlb_id: 669432, name: "Trevor Rogers"}
   - {pos: "P",  mlb_id: 656876, name: "Drew Rasmussen"}

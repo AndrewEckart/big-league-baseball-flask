@@ -10,7 +10,7 @@ starters:
   - {pos: "DH", mlb_id: 673962, name: "Josh Jung"}
 bench:
   - {pos: "1B", mlb_id: 694384, name: "Nolan Schanuel"}
-  - {pos: "OF", mlb_id: 666139, name: "Josh Lowe"}
+  - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill"}
   - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
   - {pos: "1B", mlb_id: 502671, name: "Paul Goldschmidt"}
 rotation:
@@ -23,7 +23,7 @@ rotation:
   - {pos: "P",  mlb_id: 677958, name: "Kumar Rocker"}
 minors:
   - {pos: "C", mlb_id: 691019, name: "Kyle Teel"}
-  - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill"}
+  - {pos: "OF", mlb_id: 666139, name: "Josh Lowe"}
   - {pos: "OF", mlb_id: 645302, name: "Victor Robles"}
   - {pos: "P",  mlb_id: 605447, name: "Jordan Romano"}
   - {pos: "P",  mlb_id: 445276, name: "Kenley Jansen"}

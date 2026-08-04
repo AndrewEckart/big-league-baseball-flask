@@ -19,11 +19,11 @@ rotation:
   - {pos: "P",  mlb_id: 669022, name: "MacKenzie Gore"}
   - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon"}
   - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
-  - {pos: "P",  mlb_id: 621107, name: "Zach Eflin"}
+  - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
   - {pos: "P",  mlb_id: 656641, name: "Jacob Latz"}
 minors:
+  - {pos: "P",  mlb_id: 621107, name: "Zach Eflin"}
   - {pos: "SS", mlb_id: 669701, name: "Josh Smith"}
   - {pos: "OF", mlb_id: 663837, name: "Matt Vierling"}
   - {pos: "3B", mlb_id: 676059, name: "Jordan Westburg"}
-  - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
   - {pos: "P",  mlb_id: 453286, name: "Max Scherzer"}

@@ -17,13 +17,13 @@ rotation:
   - {pos: "P",  mlb_id: 693433, name: "Bryan Woo"}
   - {pos: "P",  mlb_id: 680694, name: "Kyle Bradish"}
   - {pos: "P",  mlb_id: 663556, name: "Shane McClanahan"}
-  - {pos: "P",  mlb_id: 837227, name: "Tatsuya Imai"}
-  - {pos: "P",  mlb_id: 661563, name: "Luis Gil"}
+  - {pos: "P",  mlb_id: 661563, name: "Luis Gil", injury_move: true}
+  - {pos: "P",  mlb_id: 669456, name: "Shane Bieber"}
   - {pos: "P",  mlb_id: 643511, name: "Tyler Rogers"}
-  - {pos: "P",  mlb_id: 571927, name: "Steven Matz"}
+  - {pos: "P",  mlb_id: 681343, name: "Shane Smith", injury_move: true}
 minors:
+  - {pos: "P",  mlb_id: 837227, name: "Tatsuya Imai"}
   - {pos: "OF", mlb_id: 681546, name: "James Outman"}
   - {pos: "1B", mlb_id: 663624, name: "Ryan Mountcastle"}
   - {pos: "P",  mlb_id: 680570, name: "Grayson Rodriguez"}
-  - {pos: "P",  mlb_id: 681343, name: "Shane Smith"}
-  - {pos: "P",  mlb_id: 669456, name: "Shane Bieber"}
+  - {pos: "P",  mlb_id: 571927, name: "Steven Matz"}
