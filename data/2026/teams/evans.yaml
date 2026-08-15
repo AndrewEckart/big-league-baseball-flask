@@ -7,16 +7,16 @@ starters:
   - {pos: "OF", mlb_id: 670541, name: "Yordan Alvarez"}
   - {pos: "OF", mlb_id: 800050, name: "Chase DeLauter"}
   - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
-  - {pos: "DH", mlb_id: 519317, name: "Giancarlo Stanton"}
+  - {pos: "DH", mlb_id: 691723, name: "Coby Mayo"}
 bench:
-  - {pos: "1B", mlb_id: 691723, name: "Coby Mayo"}
-  - {pos: "OF", mlb_id: 678009, name: "Parker Meadows"}
+  - {pos: "1B", mlb_id: 519317, name: "Giancarlo Stanton"}
+  - {pos: "OF", mlb_id: 682987, name: "Spencer Jones"}
   - {pos: "2B", mlb_id: 691777, name: "Max Muncy"}
   - {pos: "2B", mlb_id: 682668, name: "Luisangel Acuna"}
 rotation:
   - {pos: "P",  mlb_id: 594798, name: "Jacob deGrom"}
   - {pos: "P",  mlb_id: 657746, name: "Joe Ryan"}
-  - {pos: "P",  mlb_id: 686752, name: "Ryan Pepiot"}
+  - {pos: "P",  mlb_id: 518585 name: "Fernando Cruz"}
   - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
   - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
   - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
@@ -24,6 +24,6 @@ rotation:
 minors:
   - {pos: "P",  mlb_id: 666808, name: "Camilo Doval"}
   - {pos: "P",  mlb_id: 801739, name: "Carlos Lagrange"}
-  - {pos: "P",  mlb_id: 518585, name: "Fernando Cruz"}
+  - {pos: "P",  mlb_id: 686752, name: "Ryan Pepiot"}
   - {pos: "OF",  mlb_id: 691176, name: "Jasson Dominguez"}
-  - {pos: "OF", mlb_id: 682987, name: "Spencer Jones"}
+  - {pos: "OF", mlb_id: 678009, name: "Parker Meadows"}
