@@ -16,7 +16,7 @@ bench:
 rotation:
   - {pos: "P",  mlb_id: 594798, name: "Jacob deGrom"}
   - {pos: "P",  mlb_id: 657746, name: "Joe Ryan"}
-  - {pos: "P",  mlb_id: 518585 name: "Fernando Cruz"}
+  - {pos: "P",  mlb_id: 518585, name: "Fernando Cruz"}
   - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
   - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
   - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
