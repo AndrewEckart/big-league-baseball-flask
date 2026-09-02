@@ -1,6 +1,6 @@
 starters:
   - {pos: "1B", mlb_id: 572233, name: "Christian Walker"}
-  - {pos: "2B", mlb_id: 702616, name: "Jackson Holliday"}
+  - {pos: "2B", mlb_id: 702616, name: "Jackson Holliday", injury_move: true}
   - {pos: "SS", mlb_id: 677951, name: "Bobby Witt Jr."}
   - {pos: "3B", mlb_id: 668904, name: "Royce Lewis"}
   - {pos: "C",  mlb_id: 700250, name: "Ben Rice"}
@@ -9,7 +9,7 @@ starters:
   - {pos: "OF", mlb_id: 681297, name: "Colton Cowser"}
   - {pos: "DH", mlb_id: 691723, name: "Coby Mayo"}
 bench:
-  - {pos: "1B", mlb_id: 519317, name: "Giancarlo Stanton"}
+  - {pos: "1B", mlb_id: 519317, name: "Giancarlo Stanton", injury_move: true}
   - {pos: "OF", mlb_id: 682987, name: "Spencer Jones"}
   - {pos: "2B", mlb_id: 691777, name: "Max Muncy"}
   - {pos: "2B", mlb_id: 682668, name: "Luisangel Acuna"}
@@ -19,7 +19,7 @@ rotation:
   - {pos: "P",  mlb_id: 518585, name: "Fernando Cruz"}
   - {pos: "P",  mlb_id: 543037, name: "Gerrit Cole"}
   - {pos: "P",  mlb_id: 641927, name: "Bailey Ober"}
-  - {pos: "P",  mlb_id: 622663, name: "Luis Severino"}
+  - {pos: "P",  mlb_id: 622663, name: "Luis Severino", injury_move: true}
   - {pos: "P",  mlb_id: 677960, name: "Ryan Weathers"}
 minors:
   - {pos: "P",  mlb_id: 666808, name: "Camilo Doval"}

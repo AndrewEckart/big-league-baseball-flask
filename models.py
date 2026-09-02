@@ -25,6 +25,14 @@ class Rules:
     injured_pitcher_innings_multiplier: float
     injured_pitcher_era_multiplier: float
     injured_pitcher_minimum_era: float = 0.0
+    injured_pitcher_max_appearances: int = 19
+    injured_hitter_max_appearances: int = 119
+
+    def injury_move_max_appearances(self, position: Position) -> int:
+        if position == Position.PITCHER:
+            return self.injured_pitcher_max_appearances
+        else:
+            return self.injured_hitter_max_appearances
 
 
 @dataclass
@@ -231,6 +239,7 @@ class Player:
     team: str = ""
     stats: Dict[str, Any] = {}
     multiplier: float = 1
+    injury_move_disallowed: bool = False
 
     def __init__(
         self,
@@ -258,24 +267,50 @@ class Player:
         return f"https://www.mlb.com/player/{self.mlb_id}"
 
     @property
+    def injury_move_attempted(self) -> bool:
+        return self.stats_year != self.season.year
+
+    @property
     def notes(self) -> str:
-        notes = ""
-        if self.multiplier != 1:
-            notes += f"{round(self.multiplier * 100)}%"
-        if self.stats_year != self.season.year:
-            notes += f" of {self.stats_year}"
-        return notes
+        if self.injury_move_attempted and self.injury_move_disallowed:
+            return f"Disallowed ({self.stats['gamesPlayed']}G)"
+        elif self.injury_move_attempted:
+            return f"{round(self.multiplier * 100)}% of {self.stats_year}"
+        else:
+            return ""
 
     def fetch_stats(self):
-        data = statsapi.player_stat_data(
+        response = statsapi.player_stat_data(
             self.mlb_id, group=self.stats_group, type="yearByYear"
         )
-        self.team = data.get("current_team")
+        self.team = response.get("ccurrent_team")
         self.team = TEAM_ABBREVIATIONS.get(self.team, self.team)
-        results = data.get("stats", [])
-        stats = [s["stats"] for s in results if int(s["season"]) == self.stats_year]
-        if stats:
-            self.stats = max(stats, key=lambda s: s["gamesPlayed"])
+        yearly_stats = response.get("stats", [])
+
+        def get_stats_for_year(year: int) -> dict[str, Any] | None:
+            # Find all stats for the requested year.
+            stats = [s["stats"] for s in yearly_stats if int(s["season"]) == year]
+
+            # If a player is traded mid-season, there may be multiple entries for the same year.
+            # Select the entry with the most games played.
+            return max(stats, key=lambda s: s["gamesPlayed"], default=None)
+
+        # Get stats for the current season.
+        stats = get_stats_for_year(self.season.year)
+
+        if self.injury_move_attempted:
+            # Check if current season appearances exceed the maximum allowed for an injury move.
+            rules = self.season.rules
+            max_appearances = rules.injury_move_max_appearances(self.position)
+            if stats and stats["gamesPlayed"] > max_appearances:
+                self.injury_move_disallowed = True
+            else:
+                # If the injury move is allowed, get stats for the previous season.
+                stats = get_stats_for_year(self.stats_year)
+
+        if stats is None:
+            logging.warning(f"No stats found for {self.name} ({self.mlb_id}) in {self.stats_year}")
+        self.stats = stats or {}
 
 
 class Hitter(Player):
@@ -510,15 +545,35 @@ if __name__ == "__main__":
         injured_pitcher_innings_multiplier=0.8,
         injured_pitcher_era_multiplier=1.3,
     )
-    szn = Season(year=2024, managers=["Andrew"], rules=rules)
+    szn = Season(year=2026, managers=["Andrew"], rules=rules)
     andrew = Team("Andrew", szn)
 
-    pitcher = Pitcher("Shane Bieber", szn)
-    pitcher.fetch_stats()
-    print(pitcher.stats)
+    def test_fetch(player: Player):
+        print(f"Fetching stats for {player.name} ({player.position}) in {player.stats_year}...")
+        player.fetch_stats()
+        # print(player.stats)
+        print(player.notes)
 
-    hitter = Hitter("Aaron Judge", Position.OUTFIELD, szn)
-    hitter.fetch_stats()
-    print(hitter.stats)
-    print(HitterList([hitter], role=Role.STARTER).get_summary_stats())
+    # Hitter traded mid-season (Taylor Ward, 2026).
+    hitter = Hitter(mlb_id=621493, position=Position.OUTFIELD, season=szn, stats_year=szn.year)
+    test_fetch(hitter)
 
+    # Hitter with injury move (Vinnie Pasquantino, 2026).
+    hitter = Hitter(mlb_id=686469, position=Position.OUTFIELD, season=szn, stats_year=2025, multiplier=0.7 * szn.progress)
+    test_fetch(hitter)
+
+    # Hitter with injury move disallowed (Ceddanne Rafaela, 2026).
+    hitter = Hitter(mlb_id=678882, position=Position.OUTFIELD, season=szn, stats_year=2025, multiplier=0.7 * szn.progress)
+    test_fetch(hitter)
+
+    # Pitcher traded mid-season (Tarik Skubal, 2026).
+    pitcher = Pitcher(mlb_id=669373, season=szn, stats_year=szn.year)
+    test_fetch(pitcher)
+
+    # Pitcher with injury move (Luis Severino, 2026).
+    pitcher = Pitcher(mlb_id=622663, season=szn, stats_year=2025, multiplier=0.7 * szn.progress)
+    test_fetch(pitcher)
+
+    # Pitcher with injury move disallowed (Reid Detmers, 2026).
+    pitcher = Pitcher(mlb_id=672282, season=szn, stats_year=2025, multiplier=0.7 * szn.progress)
+    test_fetch(pitcher)

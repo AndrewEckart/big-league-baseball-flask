@@ -11,7 +11,7 @@ starters:
 bench:
   - {pos: "1B", mlb_id: 694384, name: "Nolan Schanuel"}
   - {pos: "OF", mlb_id: 641933, name: "Tyler O'Neill"}
-  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe"}
+  - {pos: "C",  mlb_id: 681351, name: "Logan O'Hoppe", injury_move: true}
   - {pos: "1B", mlb_id: 502671, name: "Paul Goldschmidt"}
 rotation:
   - {pos: "P",  mlb_id: 686613, name: "Hunter Brown"}
