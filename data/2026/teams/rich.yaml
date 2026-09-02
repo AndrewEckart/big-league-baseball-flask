@@ -7,10 +7,10 @@ starters:
   - {pos: "OF", mlb_id: 694671, name: "Wyatt Langford"}
   - {pos: "OF", mlb_id: 677800, name: "Wilyer Abreu"}
   - {pos: "OF", mlb_id: 624585, name: "Jorge Soler"}
-  - {pos: "DH", mlb_id: 700932, name: "Kyle Manzardo"}
+  - {pos: "DH", mlb_id: 643446, name: "Jeff McNeil"}
 bench:
   - {pos: "OF", mlb_id: 670242, name: "Matt Wallner", injury_move: true}
-  - {pos: "2B", mlb_id: 643446, name: "Jeff McNeil"}
+  - {pos: "2B", mlb_id: 700932, name: "Kyle Manzardo"}
   - {pos: "OF", mlb_id: 687637, name: "Dylan Beavers"}
   - {pos: "3B", mlb_id: 810938, name: "Ben Williamson"}
 rotation:
