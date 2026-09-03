@@ -1,7 +1,7 @@
 starters:
-  - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom"}
+  - {pos: "1B", mlb_id: 691016, name: "Tyler Soderstrom", injury_move: true}
   - {pos: "2B", mlb_id: 676391, name: "Ernie Clement"}
-  - {pos: "SS", mlb_id: 805779, name: "Jacob Wilson"}
+  - {pos: "SS", mlb_id: 702284, name: "Cole Young"}
   - {pos: "3B", mlb_id: 805808, name: "Kevin McGonigle"}
   - {pos: "C",  mlb_id: 669127, name: "Shea Langeliers"}
   - {pos: "OF", mlb_id: 680757, name: "Steven Kwan"}
@@ -11,8 +11,8 @@ starters:
 bench:
   - {pos: "1B", mlb_id: 656555, name: "Rhys Hoskins"}
   - {pos: "C",  mlb_id: 605170, name: "Victor Caratini"}
-  - {pos: "2B", mlb_id: 702284, name: "Cole Young"}
   - {pos: "OF", mlb_id: 664770, name: "Nathan Lukes"}
+  - {pos: "SS", mlb_id: 805779, name: "Jacob Wilson", injury_move: true}
 rotation:
   - {pos: "P",  mlb_id: 676979, name: "Garrett Crochet", injury_move: true}
   - {pos: "P",  mlb_id: 669923, name: "George Kirby"}

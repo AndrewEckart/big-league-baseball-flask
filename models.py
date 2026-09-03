@@ -283,7 +283,7 @@ class Player:
         response = statsapi.player_stat_data(
             self.mlb_id, group=self.stats_group, type="yearByYear"
         )
-        self.team = response.get("ccurrent_team")
+        self.team = response.get("current_team")
         self.team = TEAM_ABBREVIATIONS.get(self.team, self.team)
         yearly_stats = response.get("stats", [])
 
