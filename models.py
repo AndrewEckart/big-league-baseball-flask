@@ -304,6 +304,7 @@ class Player:
             max_appearances = rules.injury_move_max_appearances(self.position)
             if stats and stats["gamesPlayed"] > max_appearances:
                 self.injury_move_disallowed = True
+                self.multiplier = 1.0
             else:
                 # If the injury move is allowed, get stats for the previous season.
                 stats = get_stats_for_year(self.stats_year)
