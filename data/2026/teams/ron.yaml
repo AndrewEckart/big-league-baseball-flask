@@ -17,7 +17,7 @@ rotation:
   - {pos: "P",  mlb_id: 666142, name: "Cole Ragans"}
   - {pos: "P",  mlb_id: 543135, name: "Nathan Eovaldi"}
   - {pos: "P",  mlb_id: 669022, name: "MacKenzie Gore"}
-  - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon"}
+  - {pos: "P",  mlb_id: 607074, name: "Carlos Rodon", injury_move: true}
   - {pos: "P",  mlb_id: 678394, name: "Brayan Bello"}
   - {pos: "P",  mlb_id: 663947, name: "Tyler Holton"}
   - {pos: "P",  mlb_id: 656641, name: "Jacob Latz"}
