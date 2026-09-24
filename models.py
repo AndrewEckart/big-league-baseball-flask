@@ -271,6 +271,10 @@ class Player:
         return self.stats_year != self.season.year
 
     @property
+    def injury_move_applied(self) -> bool:
+        return self.injury_move_attempted and not self.injury_move_disallowed
+
+    @property
     def notes(self) -> str:
         if self.injury_move_attempted and self.injury_move_disallowed:
             return f"Disallowed ({self.stats['gamesPlayed']}G)"
@@ -396,7 +400,7 @@ class Hitter(Player):
             for key in ["atBats", "runs", "hits", "homeRuns", "rbi", "stolenBases"]:
                 if key not in self.stats:
                     continue
-                self.stats[key] = self.multiplier * self.stats[key]
+                self.stats[key] *= self.multiplier
 
 
 def format_batting_average(average: float) -> str:
@@ -497,7 +501,7 @@ class Pitcher(Player):
     def fetch_stats(self):
         super().fetch_stats()
         season, stats = self.season, self.stats
-        if self.stats_year != season.year:
+        if self.injury_move_applied:
             rules = season.rules
             ip_multiplier = rules.injured_pitcher_innings_multiplier
             er_multiplier = rules.injured_pitcher_era_multiplier
@@ -512,7 +516,7 @@ class Pitcher(Player):
             for key in ["wins", "saves", "strikeOuts", "baseOnBalls"]:
                 if key not in stats:
                     continue
-                stats[key] = self.multiplier * stats[key]
+                stats[key] *= self.multiplier
 
 
 def format_innings_pitched(innings_pitched: float) -> str:
